@@ -16,7 +16,6 @@ namespace NetworkMiner {
         [STAThread]
         static void Main(string[] args) {
 
-
             SetupLogger("NetworkMiner");
 
             bool legacyGui = false;
@@ -28,14 +27,14 @@ namespace NetworkMiner {
                     checkForUpdates = false;
             }
 
-            if(!legacyGui)
+            if (!legacyGui)
                 Application.EnableVisualStyles();
             //Application.SetCompatibleTextRenderingDefault(false);//causes mono on OSX to hang?
             PacketParser.Utils.Logger.Log("Starting the application", System.Diagnostics.EventLogEntryType.Information);
 
             try {
                 NetworkMinerForm networkMinerForm = new NetworkMinerForm();
-                if(checkForUpdates)
+                if (checkForUpdates)
                     NetworkMiner.UpdateCheck.ShowNewVersionFormIfAvailableAsync(networkMinerForm, System.Reflection.Assembly.GetEntryAssembly().GetName().Version);
                 else
                     PacketParser.Utils.Logger.Log("Skipping update check", System.Diagnostics.EventLogEntryType.Information);

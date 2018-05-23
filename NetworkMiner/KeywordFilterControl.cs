@@ -200,6 +200,11 @@ namespace NetworkMiner {
             this.clearKeywordButton_Click(null, null);
         }
 
+        private void columnComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         internal class KeywordFilter {
             public enum FilterMode { ExactPhrase, AllWords, AnyWord }
 

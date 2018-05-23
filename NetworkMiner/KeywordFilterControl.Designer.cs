@@ -40,19 +40,19 @@
             this.label1.Margin = new System.Windows.Forms.Padding(4);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(0, 6, 0, 0);
-            this.label1.Size = new System.Drawing.Size(99, 23);
+            this.label1.Size = new System.Drawing.Size(86, 23);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Filter keyword:";
+            this.label1.Text = "Lọc từ khóa:";
             // 
             // keywordComboBox
             // 
             this.keywordComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.keywordComboBox.FormattingEnabled = true;
-            this.keywordComboBox.Location = new System.Drawing.Point(99, 0);
+            this.keywordComboBox.Location = new System.Drawing.Point(86, 0);
             this.keywordComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.keywordComboBox.MinimumSize = new System.Drawing.Size(105, 0);
             this.keywordComboBox.Name = "keywordComboBox";
-            this.keywordComboBox.Size = new System.Drawing.Size(455, 24);
+            this.keywordComboBox.Size = new System.Drawing.Size(468, 24);
             this.keywordComboBox.TabIndex = 1;
             this.keywordComboBox.TextChanged += new System.EventHandler(this.validateInputSettings);
             this.keywordComboBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keywordComboBox_KeyDown);
@@ -119,6 +119,7 @@
             this.columnComboBox.Name = "columnComboBox";
             this.columnComboBox.Size = new System.Drawing.Size(132, 24);
             this.columnComboBox.TabIndex = 6;
+            this.columnComboBox.SelectedIndexChanged += new System.EventHandler(this.columnComboBox_SelectedIndexChanged);
             // 
             // KeywordFilterControl
             // 

@@ -194,6 +194,9 @@
     <EmbeddedResource Include="KeywordFilterControl.resx">
       <DependentUpon>KeywordFilterControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KeywordFilterControl.vi-VN.resx">
+      <DependentUpon>KeywordFilterControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="KeywordFilterControlForListViewItems.resx">
       <DependentUpon>KeywordFilterControlForListViewItems.cs</DependentUpon>
     </EmbeddedResource>

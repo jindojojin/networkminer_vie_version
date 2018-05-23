@@ -18,7 +18,7 @@ using NetresecShared.Pcap;
 
 namespace NetworkMiner {
     public partial class NetworkMinerForm : Form {
-
+        private List<NetworkWrapper.IAdapter> networkAdapters;
         public static System.Collections.ObjectModel.ReadOnlyCollection<string> RecommendedMonoPackages = new System.Collections.ObjectModel.ReadOnlyCollection<string>(
             new string[] {
             "libmono-system-windows-forms4.0-cil",
@@ -537,7 +537,7 @@ namespace NetworkMiner {
 
             //this.nFilesReceived=0;
 
-            List<NetworkWrapper.IAdapter> networkAdapters = new List<NetworkWrapper.IAdapter>();
+            networkAdapters = new List<NetworkWrapper.IAdapter>();
             networkAdapters.Add(new NetworkWrapper.NullAdapter());
 
             List<string> dllDirectories = new List<string>();
@@ -3296,6 +3296,26 @@ finally {
                     }
                 }
             }
+        }
+
+        private void vietnameseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var culture = System.Globalization.CultureInfo.GetCultureInfo("vi-VN");
+            System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+            this.Controls.Clear();
+            this.InitializeComponent();
+            this.networkAdaptersComboBox.DataSource = networkAdapters;
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var culture = System.Globalization.CultureInfo.GetCultureInfo("");
+            System.Threading.Thread.CurrentThread.CurrentCulture = culture;
+            System.Threading.Thread.CurrentThread.CurrentUICulture = culture;
+            this.Controls.Clear();
+            this.InitializeComponent();
+            this.networkAdaptersComboBox.DataSource = networkAdapters;
         }
 
         private void filesListView_SelectedIndexChanged(object sender, EventArgs e) {
