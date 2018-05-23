@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "NetworkWrapper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        }
+      },
+      "PacketParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "NetworkWrapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PacketParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacketParser.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win": {
+      "NetworkWrapper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        }
+      },
+      "PacketParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "NetworkWrapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PacketParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacketParser.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x64": {
+      "NetworkWrapper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        }
+      },
+      "PacketParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "NetworkWrapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PacketParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacketParser.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x86": {
+      "NetworkWrapper/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetworkWrapper.dll": {}
+        }
+      },
+      "PacketParser/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5",
+        "dependencies": {
+          "NetworkWrapper": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PacketParser.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PacketParser.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NetworkWrapper/1.0.0": {
+      "type": "project",
+      "path": "../WinPCapWrapper/NetworkWrapper.csproj",
+      "msbuildProject": "../WinPCapWrapper/NetworkWrapper.csproj"
+    },
+    "PacketParser/1.0.0": {
+      "type": "project",
+      "path": "../PacketParser/PacketParser.csproj",
+      "msbuildProject": "../PacketParser/PacketParser.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "NetworkWrapper >= 1.0.0",
+      "PacketParser >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Tran Quang Linh\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\NetworkMiner\\NetworkMiner.csproj",
+      "projectName": "NetworkMiner",
+      "projectPath": "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\NetworkMiner\\NetworkMiner.csproj",
+      "packagesPath": "C:\\Users\\Tran Quang Linh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\NetworkMiner\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Tran Quang Linh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net45": {
+          "projectReferences": {
+            "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\PacketParser\\PacketParser.csproj": {
+              "projectPath": "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\PacketParser\\PacketParser.csproj"
+            },
+            "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "C:\\Users\\Tran Quang Linh\\Desktop\\NetworkMiner_2-3-1_source\\WinPCapWrapper\\NetworkWrapper.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net45": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\bin\Debug\NetworkWrapper.dll
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\bin\Debug\NetworkWrapper.pdb
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\obj\Debug\NetworkWrapper.csprojResolveAssemblyReference.cache
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\obj\Debug\NetworkWrapper.csproj.CoreCompileInputs.cache
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\obj\Debug\NetworkWrapper.dll
+C:\Users\Tran Quang Linh\Desktop\NetworkMiner_2-3-1_source\WinPCapWrapper\obj\Debug\NetworkWrapper.pdb
