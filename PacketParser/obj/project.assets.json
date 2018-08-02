@@ -59,34 +59,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\vu dinh huong\\.nuget\\packages\\": {}
+    "C:\\Users\\linhtq\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\vu dinh huong\\Desktop\\pcap\\git\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "projectUniqueName": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
       "projectName": "PacketParser",
-      "projectPath": "C:\\Users\\vu dinh huong\\Desktop\\pcap\\git\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
-      "packagesPath": "C:\\Users\\vu dinh huong\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\vu dinh huong\\Desktop\\pcap\\git\\networkminer_vie_version\\PacketParser\\obj\\",
+      "projectPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "packagesPath": "C:\\Users\\linhtq\\.nuget\\packages\\",
+      "outputPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\vu dinh huong\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\linhtq\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net45"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "C:\\Users\\vu dinh huong\\Desktop\\pcap\\git\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "C:\\Users\\vu dinh huong\\Desktop\\pcap\\git\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }

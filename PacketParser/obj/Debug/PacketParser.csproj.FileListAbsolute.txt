@@ -36,3 +36,22 @@ C:\Users\vu dinh huong\Desktop\pcap\git\networkminer_vie_version\PacketParser\ob
 C:\Users\vu dinh huong\Desktop\pcap\git\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.csproj.CopyComplete
 C:\Users\vu dinh huong\Desktop\pcap\git\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.dll
 C:\Users\vu dinh huong\Desktop\pcap\git\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.pdb
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\CleartextTools\all-words.txt
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\dhcp.xml
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\oui.txt
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\tcp.xml
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\etter.finger.os
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\p0f.fp
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\p0fa.fp
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\Fingerprints\p0f.fp.netsa
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\PacketParser.dll
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\PacketParser.pdb
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\NetworkWrapper.dll
+E:\NCKH\networkminer_vie_version\PacketParser\bin\Debug\NetworkWrapper.pdb
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.csprojAssemblyReference.cache
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.Properties.Resources.resources
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.csproj.GenerateResource.cache
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.csproj.CoreCompileInputs.cache
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.csproj.CopyComplete
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.dll
+E:\NCKH\networkminer_vie_version\PacketParser\obj\Debug\PacketParser.pdb

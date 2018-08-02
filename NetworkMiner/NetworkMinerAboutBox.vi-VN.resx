@@ -130,7 +130,7 @@
     <value>NetworkMinerAboutBox</value>
   </data>
   <data name="okButton.Text" xml:space="preserve">
-    <value>&amp;ĐƯỢC</value>
+    <value>Đồng ý</value>
   </data>
   <data name="linkLabelHomepage.Text" xml:space="preserve">
     <value>http://www.netresec.com/?page=NetworkMiner</value>

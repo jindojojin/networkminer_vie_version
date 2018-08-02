@@ -530,19 +530,19 @@
     <value>Khung nr.</value>
   </data>
   <data name="sessionClientHostColumnHeader.Text" xml:space="preserve">
-    <value>client host</value>
+    <value>Máy khách</value>
   </data>
   <data name="sessionClientPortColumnHeader.Text" xml:space="preserve">
     <value>cổng C.</value>
   </data>
   <data name="sessionServerHostColumnHeader.Text" xml:space="preserve">
-    <value>Máy chủ lưu trữ</value>
+    <value>Máy chủ</value>
   </data>
   <data name="sessionServerPortColumnHeader.Text" xml:space="preserve">
     <value>cổng S.</value>
   </data>
   <data name="sessionProtocolColumnHeader.Text" xml:space="preserve">
-    <value>Protocol (lớp ứng dụng)</value>
+    <value>Protocol (tầng ứng dụng)</value>
   </data>
   <data name="sessionStartTimeColumnHeader.Text" xml:space="preserve">
     <value>Thời gian bắt đầu</value>
@@ -563,7 +563,7 @@
     <value>Khung nr.</value>
   </data>
   <data name="columnHeaderDnsTimestamp.Text" xml:space="preserve">
-    <value>Dấu thời gian</value>
+    <value>Tem thời gian</value>
   </data>
   <data name="columnHeaderDnsClient.Text" xml:space="preserve">
     <value>khách hàng</value>
@@ -608,10 +608,10 @@
     <value>Giá trị tham số</value>
   </data>
   <data name="parameterFrameNumber.Text" xml:space="preserve">
-    <value>số khung</value>
+    <value>Số Frame</value>
   </data>
   <data name="parameterSourceHost.Text" xml:space="preserve">
-    <value>chủ nguồn</value>
+    <value>Máy nguồn</value>
   </data>
   <data name="parameterSourcePort.Text" xml:space="preserve">
     <value>Cổng nguồn</value>
@@ -671,10 +671,10 @@
     <value>0, 373</value>
   </data>
   <data name="removeKeywordButton.Text" xml:space="preserve">
-    <value>Tẩy</value>
+    <value>Xóa bỏ</value>
   </data>
   <data name="columnHeaderFrameNr.Text" xml:space="preserve">
-    <value>số khung</value>
+    <value>Số Frame</value>
   </data>
   <data name="columnHeaderTimestamp.Text" xml:space="preserve">
     <value>Dấu thời gian</value>
@@ -686,16 +686,16 @@
     <value>Bối cảnh</value>
   </data>
   <data name="columnHeaderSourceHost.Text" xml:space="preserve">
-    <value>Máy chủ nguồn</value>
+    <value>Máy  nguồn</value>
   </data>
   <data name="columnHeaderSourcePort.Text" xml:space="preserve">
     <value>Cổng nguồn</value>
   </data>
   <data name="columnDestinationHost.Text" xml:space="preserve">
-    <value>điểm đến máy chủ</value>
+    <value>Máy đích</value>
   </data>
   <data name="columnHeaderDestinationPort.Text" xml:space="preserve">
-    <value>điểm đến Cảng</value>
+    <value>Cổng đích</value>
   </data>
   <data name="detectedKeywordsListView.Size" type="System.Drawing.Size, System.Drawing">
     <value>480, 401</value>
@@ -731,37 +731,37 @@
     <value>Không phân tích cú pháp - Chỉ tìm kiếm trong các giao thức không phân tích cú pháp</value>
   </data>
   <data name="cleartextSearchModeComboBox.Items3" xml:space="preserve">
-    <value>Khuyết tật - Disable tìm kiếm dạng cleartext</value>
+    <value>Đã vô hiệu hóa - Vô hiệu hóa tìm kiếm dạng cleartext</value>
   </data>
   <data name="dictionaryNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
   </data>
   <data name="dictionaryNameLabel.Text" xml:space="preserve">
-    <value>không ai</value>
+    <value>không</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 17</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>Từ điển Loaded:</value>
+    <value>Từ điển đã được tải</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>Thông thoáng</value>
+    <value>Dọn dẹp</value>
   </data>
   <data name="tabPageCleartext.Text" xml:space="preserve">
     <value>cleartext</value>
   </data>
   <data name="ReceivedFramesClearButton.Text" xml:space="preserve">
-    <value>Thông thoáng</value>
+    <value>Trống</value>
   </data>
   <data name="clearAnomaliesButton.Text" xml:space="preserve">
-    <value>Thông thoáng</value>
+    <value>Trống</value>
   </data>
   <data name="tabPageAnomalyLog.Text" xml:space="preserve">
     <value>bất thường</value>
   </data>
   <data name="caseFilenameColumn.Text" xml:space="preserve">
-    <value>filename</value>
+    <value>Tên tệp tin</value>
   </data>
   <data name="showMetadataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 24</value>
@@ -791,16 +791,16 @@
     <value>389, 100</value>
   </data>
   <data name="reloadCaseFilesButton.Text" xml:space="preserve">
-    <value>Nạp lại Case Files</value>
+    <value>Nạp lại tệp trường hợp (Case)</value>
   </data>
   <data name="casePanelBox.Text" xml:space="preserve">
-    <value>trường hợp Bảng điều chỉnh</value>
+    <value>Bảng điều khiển các trường hợp (Case)</value>
   </data>
   <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
     <value>174, 21</value>
   </data>
   <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Khung đệm để phân tích:</value>
+    <value>Bộ đệm Frame để phân tích:</value>
   </data>
   <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
@@ -812,19 +812,19 @@
     <value>256, 26</value>
   </data>
   <data name="readFromPacketCacheToolStripMenuItem.Text" xml:space="preserve">
-    <value>Đọc từ gói &amp; bộ nhớ cache</value>
+    <value>Đọc từ bộ nhớ Packet Cache</value>
   </data>
   <data name="receivePcapOverIPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
   </data>
   <data name="receivePcapOverIPToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Nhận pcap qua IP</value>
+    <value>Nhận pcap qua IP</value>
   </data>
   <data name="credentialsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
   <data name="credentialsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Thông tin đăng nhập</value>
+    <value>Thông tin đăng nhập (Credentials)</value>
   </data>
   <data name="dnsRecordsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
@@ -839,7 +839,7 @@
     <value>222, 26</value>
   </data>
   <data name="hostsToolStripMenuItem.Text" xml:space="preserve">
-    <value>hosts</value>
+    <value>Máy</value>
   </data>
   <data name="messagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
@@ -1428,5 +1428,53 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 </value>
+  </data>
+  <data name="statusStrip1.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="dnsRecordsToolStripMenuItem.Text" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="findNextToolStripMenuItem.Text" xml:space="preserve">
+    <value>Find Next</value>
+  </data>
+  <data name="destinationHostHeader.Text" xml:space="preserve">
+    <value>Destination host</value>
+  </data>
+  <data name="messageDestinationHostColumnHeader.Text" xml:space="preserve">
+    <value>Destination host</value>
+  </data>
+  <data name="showCookiesCheckBox.Text" xml:space="preserve">
+    <value>Show Cookies</value>
+  </data>
+  <data name="VoipEncodingColumn.HeaderText" xml:space="preserve">
+    <value>Encoding</value>
+  </data>
+  <data name="tabPageVoIP.Text" xml:space="preserve">
+    <value>VoIP</value>
+  </data>
+  <data name="columnHeaderDnsIpTtl.Text" xml:space="preserve">
+    <value>IP TTL</value>
+  </data>
+  <data name="columnHeaderDnsQuery.Text" xml:space="preserve">
+    <value>DNS Query</value>
+  </data>
+  <data name="tabPageDns.Text" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="parameterDestinationHost.Text" xml:space="preserve">
+    <value>Máy đích</value>
+  </data>
+  <data name="tabPageReceivedFrames.Text" xml:space="preserve">
+    <value>Frames</value>
+  </data>
+  <data name="caseMd5Column.Text" xml:space="preserve">
+    <value>MD5</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>NetworkMiner 2.3.1</value>
   </data>
 </root>

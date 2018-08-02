@@ -318,9 +318,9 @@
     <value>1</value>
   </data>
   <data name="textLabel.Text" xml:space="preserve">
-    <value>Tải [gì đó]</value>
+    <value>Đang tải [something]</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>tập tin pcap tải</value>
+    <value>Đang tải tập tin PCAP</value>
   </data>
 </root>

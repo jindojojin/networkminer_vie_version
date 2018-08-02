@@ -2257,7 +2257,7 @@
     <value>cập nhật</value>
   </data>
   <data name="releaseNoteLinkLabel.Text" xml:space="preserve">
-    <value>Mở phiên bản Note</value>
+    <value>Mở ghi chú phiên bản mới</value>
   </data>
   <data name="downloadButton.Text" xml:space="preserve">
     <value>Tải về</value>
