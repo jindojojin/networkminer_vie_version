@@ -315,7 +315,7 @@
 </value>
   </data>
   <data name="percentLabel.Text" xml:space="preserve">
-    <value>1</value>
+    <value>100 %</value>
   </data>
   <data name="textLabel.Text" xml:space="preserve">
     <value>Đang tải [something]</value>

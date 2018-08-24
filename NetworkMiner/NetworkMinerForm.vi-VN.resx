@@ -140,13 +140,13 @@
     <value>203, 24</value>
   </data>
   <data name="selectHostColorMenuItem.Text" xml:space="preserve">
-    <value>Set chủ Màu</value>
+    <value>Thiết lập màu cho máy (Host)</value>
   </data>
   <data name="removeHostColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 24</value>
   </data>
   <data name="removeHostColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Di chuyển chủ Màu</value>
+    <value>Xóa màu cho máy (Host)</value>
   </data>
   <data name="hostMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>204, 124</value>
@@ -155,7 +155,7 @@
     <value>149, 17</value>
   </data>
   <data name="hostSortingLabel.Text" xml:space="preserve">
-    <value>Sắp xếp các host trên:</value>
+    <value>Sắp xếp các máy (host) trên:</value>
   </data>
   <data name="hostSortOrderComboBox.Items" xml:space="preserve">
     <value>Địa chỉ IP (tăng dần)</value>
@@ -164,19 +164,19 @@
     <value>Địa chỉ MAC (tăng dần)</value>
   </data>
   <data name="hostSortOrderComboBox.Items2" xml:space="preserve">
-    <value>hostname</value>
+    <value>Tên máy (hostname)</value>
   </data>
   <data name="hostSortOrderComboBox.Items3" xml:space="preserve">
-    <value>Các gói tin gửi (giảm dần)</value>
+    <value>Các gói tin đã gửi (giảm dần)</value>
   </data>
   <data name="hostSortOrderComboBox.Items4" xml:space="preserve">
-    <value>Gói nhận (giảm dần)</value>
+    <value>Các gói tin đã nhận (giảm dần)</value>
   </data>
   <data name="hostSortOrderComboBox.Items5" xml:space="preserve">
-    <value>Bytes Sent (giảm dần)</value>
+    <value>Số Byte đã gửi (giảm dần)</value>
   </data>
   <data name="hostSortOrderComboBox.Items6" xml:space="preserve">
-    <value>Bytes nhận (giảm dần)</value>
+    <value>Số Byte đã nhận (giảm dần)</value>
   </data>
   <data name="hostSortOrderComboBox.Items7" xml:space="preserve">
     <value>Số cổng TCP mở (giảm dần)</value>
@@ -188,22 +188,22 @@
     <value>Router Hops Khoảng cách (tăng dần)</value>
   </data>
   <data name="detectedHostsTreeRebuildButton.Text" xml:space="preserve">
-    <value>Sắp xếp và Refresh</value>
+    <value>Sắp xếp và Làm mới</value>
   </data>
   <data name="tabPageDetectedHosts.Text" xml:space="preserve">
-    <value>hosts</value>
+    <value>Các máy (Hosts)</value>
   </data>
   <data name="setAdvertismentColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>259, 24</value>
   </data>
   <data name="setAdvertismentColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Đặt QUẢNG CÁO Màu</value>
+    <value>Thiết lập màu cho quảng cáo</value>
   </data>
   <data name="setInternetTrackerColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>259, 24</value>
   </data>
   <data name="setInternetTrackerColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Đặt Internet Tracker Màu</value>
+    <value>Thiết lập màu cho Internet Tracker</value>
   </data>
   <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 6</value>
@@ -218,7 +218,7 @@
     <value>259, 24</value>
   </data>
   <data name="collapseAllButThisToolStripMenuItem.Text" xml:space="preserve">
-    <value>Thu gọn tất cả Nhưng chọn</value>
+    <value>Thu gọn tất cả trừ các mục đã chọn</value>
   </data>
   <data name="expandAllToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>259, 24</value>
@@ -233,7 +233,7 @@
     <value>259, 24</value>
   </data>
   <data name="selectParentNodeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Chọn Node Chánh</value>
+    <value>Chọn nút cha</value>
   </data>
   <data name="browsersMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>260, 178</value>
@@ -277,7 +277,7 @@
     <value>Trường hợp nhạy cảm</value>
   </data>
   <data name="findHttpTransactionButton.Text" xml:space="preserve">
-    <value>Tìm thấy</value>
+    <value>Tìm</value>
   </data>
   <data name="findHttpTransactionLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>66, 17</value>
@@ -292,31 +292,31 @@
     <value>722, 409</value>
   </data>
   <data name="tabPageBrowsers.Text" xml:space="preserve">
-    <value>trình duyệt</value>
+    <value>Trình duyệt</value>
   </data>
   <data name="reconstructedFileInitialFrameNumber.Text" xml:space="preserve">
     <value>Khung nr.</value>
   </data>
   <data name="filenameHeader.Text" xml:space="preserve">
-    <value>filename</value>
+    <value>Tên tệp tin</value>
   </data>
   <data name="extensionHeader.Text" xml:space="preserve">
-    <value>Sự mở rộng</value>
+    <value>Đuôi mở rộng</value>
   </data>
   <data name="fileSizeHeader.Text" xml:space="preserve">
     <value>Kích thước</value>
   </data>
   <data name="sourceHostHeader.Text" xml:space="preserve">
-    <value>chủ nguồn</value>
+    <value>Máy nguồn</value>
   </data>
   <data name="sourcePortHeader.Text" xml:space="preserve">
-    <value>cổng S.</value>
+    <value>Cổng nguồn</value>
   </data>
   <data name="destinationPortHeader.Text" xml:space="preserve">
-    <value>cổng D.</value>
+    <value>Cổng đích</value>
   </data>
   <data name="protocolHeader.Text" xml:space="preserve">
-    <value>Nghị định thư</value>
+    <value>Giao thức</value>
   </data>
   <data name="reconstructedFileTimestampColumnHeader.Text" xml:space="preserve">
     <value>Dấu thời gian</value>
@@ -349,13 +349,13 @@
     <value>722, 409</value>
   </data>
   <data name="tabPageImages.Text" xml:space="preserve">
-    <value>hình ảnh</value>
+    <value>Các hình ảnh</value>
   </data>
   <data name="messageFrameColumnHeader.Text" xml:space="preserve">
     <value>Khung nr.</value>
   </data>
   <data name="messageSourceHostColumnHeader.Text" xml:space="preserve">
-    <value>chủ nguồn</value>
+    <value>Máy nguồn</value>
   </data>
   <data name="messageFromColumnHeader.Text" xml:space="preserve">
     <value>Từ</value>
@@ -364,10 +364,10 @@
     <value>Đến</value>
   </data>
   <data name="messageSubjectColumnHeader.Text" xml:space="preserve">
-    <value>Môn học</value>
+    <value>Đối tượng</value>
   </data>
   <data name="messageProtocolColumnHeader.Text" xml:space="preserve">
-    <value>Nghị định thư</value>
+    <value>Giao thức</value>
   </data>
   <data name="messageTimestampColumnHeader.Text" xml:space="preserve">
     <value>Dấu thời gian</value>
@@ -388,7 +388,7 @@
     <value>164, 191</value>
   </data>
   <data name="columnHeader1.Text" xml:space="preserve">
-    <value>attachement</value>
+    <value>Sự liên kết</value>
   </data>
   <data name="columnHeader2.Text" xml:space="preserve">
     <value>Kích thước</value>
@@ -422,13 +422,13 @@
     <value>Tin nhắn</value>
   </data>
   <data name="loggedInClientHeader.Text" xml:space="preserve">
-    <value>khách hàng</value>
+    <value>Máy khách</value>
   </data>
   <data name="serverHostHeader.Text" xml:space="preserve">
-    <value>máy chủ</value>
+    <value>Máy chủ</value>
   </data>
   <data name="protocolStringHeader.Text" xml:space="preserve">
-    <value>Nghị định thư</value>
+    <value>Giao thức</value>
   </data>
   <data name="usernameHeader.Text" xml:space="preserve">
     <value>Tên đăng nhập</value>
@@ -461,7 +461,7 @@
     <value>Thông tin đăng nhập</value>
   </data>
   <data name="VoipPlayColumn.HeaderText" xml:space="preserve">
-    <value>Chơi</value>
+    <value>Chạy</value>
   </data>
   <data name="VoipPlayColumn.Width" type="System.Int32, mscorlib">
     <value>42</value>
@@ -491,7 +491,7 @@
     <value>93</value>
   </data>
   <data name="VoipDurationColumn.HeaderText" xml:space="preserve">
-    <value>thời gian</value>
+    <value>Thời lượng</value>
   </data>
   <data name="VoipCallIDColumn.HeaderText" xml:space="preserve">
     <value>Id cuộc gọi</value>
@@ -500,19 +500,19 @@
     <value>105</value>
   </data>
   <data name="VoipSourceColumn.HeaderText" xml:space="preserve">
-    <value>nguồn</value>
+    <value>Nguồn</value>
   </data>
   <data name="VoipSourceColumn.Width" type="System.Int32, mscorlib">
     <value>77</value>
   </data>
   <data name="VoipDestinationColumn.HeaderText" xml:space="preserve">
-    <value>Nơi Đến</value>
+    <value>Đích</value>
   </data>
   <data name="VoipDestinationColumn.Width" type="System.Int32, mscorlib">
     <value>88</value>
   </data>
   <data name="VoipSaveWavColumn.HeaderText" xml:space="preserve">
-    <value>Xuất khẩu</value>
+    <value>Xuất</value>
   </data>
   <data name="VoipSaveWavColumn.Width" type="System.Int32, mscorlib">
     <value>78</value>
@@ -533,13 +533,13 @@
     <value>Máy khách</value>
   </data>
   <data name="sessionClientPortColumnHeader.Text" xml:space="preserve">
-    <value>cổng C.</value>
+    <value>Cổng máy khách</value>
   </data>
   <data name="sessionServerHostColumnHeader.Text" xml:space="preserve">
     <value>Máy chủ</value>
   </data>
   <data name="sessionServerPortColumnHeader.Text" xml:space="preserve">
-    <value>cổng S.</value>
+    <value>Cổng máy chủ</value>
   </data>
   <data name="sessionProtocolColumnHeader.Text" xml:space="preserve">
     <value>Protocol (tầng ứng dụng)</value>
@@ -557,28 +557,28 @@
     <value>722, 409</value>
   </data>
   <data name="tabPageSessions.Text" xml:space="preserve">
-    <value>phiên</value>
+    <value>Các phiên</value>
   </data>
   <data name="columnHeaderDnsFrameNumber.Text" xml:space="preserve">
     <value>Khung nr.</value>
   </data>
   <data name="columnHeaderDnsTimestamp.Text" xml:space="preserve">
-    <value>Tem thời gian</value>
+    <value>Dấu thời gian</value>
   </data>
   <data name="columnHeaderDnsClient.Text" xml:space="preserve">
-    <value>khách hàng</value>
+    <value>Máy khách</value>
   </data>
   <data name="columnHeaderDnsClientPort.Text" xml:space="preserve">
-    <value>Cảng khách hàng</value>
+    <value>Cổng máy khách</value>
   </data>
   <data name="columnHeaderDnsServer.Text" xml:space="preserve">
-    <value>máy chủ</value>
+    <value>Máy chủ</value>
   </data>
   <data name="columnHeaderDnsServerPort.Text" xml:space="preserve">
     <value>Cổng máy chủ</value>
   </data>
   <data name="columnHeaderDnsDnsTtl.Text" xml:space="preserve">
-    <value>DNS TTL (thời gian)</value>
+    <value>Thời gian sống của DNS</value>
   </data>
   <data name="columnHeaderDnsTransactionId.Text" xml:space="preserve">
     <value>ID giao dịch</value>
@@ -587,7 +587,7 @@
     <value>Kiểu</value>
   </data>
   <data name="columnHeaderDnsAnswer.Text" xml:space="preserve">
-    <value>DNS trả lời</value>
+    <value>Trả lời DNS</value>
   </data>
   <data name="columnHeaderAlexaTop1M.Text" xml:space="preserve">
     <value>Alexa Lên trên 1M</value>
@@ -650,7 +650,7 @@
     <value>722, 409</value>
   </data>
   <data name="tabPageParameters.Text" xml:space="preserve">
-    <value>Thông số</value>
+    <value>Các thông số</value>
   </data>
   <data name="keywordListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>229, 275</value>
@@ -662,7 +662,7 @@
     <value>Thêm vào</value>
   </data>
   <data name="keywordTextBox.AccessibleDescription" xml:space="preserve">
-    <value>hình thức đầu vào từ khóa</value>
+    <value>Kiểu từ khóa đầu vào</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Nhập từ khóa như chuỗi như "foo" hoặc ở định dạng hex như "0x626172"</value>
@@ -719,19 +719,19 @@
     <value>156, 17</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>tìm kiếm dạng cleartext:</value>
+    <value>tìm kiếm văn bản thuần túy</value>
   </data>
   <data name="cleartextSearchModeComboBox.Items" xml:space="preserve">
-    <value>Toàn bộ - Tìm kiếm dữ liệu gói đầy đủ trong tất cả các gói</value>
+    <value>Toàn bộ - Tìm kiếm đầy đủ dữ liệu gói trong tất cả các gói</value>
   </data>
   <data name="cleartextSearchModeComboBox.Items1" xml:space="preserve">
-    <value>lớp ứng dụng - Tìm kiếm payload của TCP và UDP gói</value>
+    <value>lớp ứng dụng - Tìm kiếm payload của các gói tin TCP và UDP</value>
   </data>
   <data name="cleartextSearchModeComboBox.Items2" xml:space="preserve">
     <value>Không phân tích cú pháp - Chỉ tìm kiếm trong các giao thức không phân tích cú pháp</value>
   </data>
   <data name="cleartextSearchModeComboBox.Items3" xml:space="preserve">
-    <value>Đã vô hiệu hóa - Vô hiệu hóa tìm kiếm dạng cleartext</value>
+    <value>Đã vô hiệu hóa - Vô hiệu hóa tìm kiếm dạng văn bản thuần túy</value>
   </data>
   <data name="dictionaryNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 17</value>
@@ -749,13 +749,13 @@
     <value>Dọn dẹp</value>
   </data>
   <data name="tabPageCleartext.Text" xml:space="preserve">
-    <value>cleartext</value>
+    <value>Dọn dẹp văn bản</value>
   </data>
   <data name="ReceivedFramesClearButton.Text" xml:space="preserve">
-    <value>Trống</value>
+    <value>Dọn dẹp</value>
   </data>
   <data name="clearAnomaliesButton.Text" xml:space="preserve">
-    <value>Trống</value>
+    <value>Dọn dẹp</value>
   </data>
   <data name="tabPageAnomalyLog.Text" xml:space="preserve">
     <value>bất thường</value>
@@ -767,25 +767,25 @@
     <value>388, 24</value>
   </data>
   <data name="showMetadataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hiện Metadata</value>
+    <value>Hiện siêu dữ liệu</value>
   </data>
   <data name="openParentFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 24</value>
   </data>
   <data name="openParentFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>thư mục mở mẹ</value>
+    <value>Mở thư mục cha</value>
   </data>
   <data name="removeCaseFileMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 24</value>
   </data>
   <data name="removeCaseFileMenuItem.Text" xml:space="preserve">
-    <value>Di chuyển tập tin được chọn từ Case</value>
+    <value>Xóa các tệp tin đã được trọn trong Case</value>
   </data>
   <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>388, 24</value>
   </data>
   <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Gỡ bỏ các file được lựa chọn và Nạp Case Files</value>
+    <value>Xóa các tệp tin đã được trọn và tải lại các tệp tin trong Case</value>
   </data>
   <data name="caseFileContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>389, 100</value>
@@ -806,7 +806,7 @@
     <value>256, 26</value>
   </data>
   <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Mở</value>
+    <value>Mở</value>
   </data>
   <data name="readFromPacketCacheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
@@ -833,61 +833,61 @@
     <value>222, 26</value>
   </data>
   <data name="fileInfosToolStripMenuItem.Text" xml:space="preserve">
-    <value>tệp siêu dữ liệu</value>
+    <value>Tệp tin siêu dữ liệu</value>
   </data>
   <data name="hostsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
   <data name="hostsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Máy</value>
+    <value>Các máy (Hosts)</value>
   </data>
   <data name="messagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
   <data name="messagesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Tin nhắn</value>
+    <value>Các tin nhắn</value>
   </data>
   <data name="parametersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
   <data name="parametersToolStripMenuItem.Text" xml:space="preserve">
-    <value>Thông số</value>
+    <value>Các thông số</value>
   </data>
   <data name="sessionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
   <data name="sessionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>phiên</value>
+    <value>Các phiên</value>
   </data>
   <data name="exportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
   </data>
   <data name="exportToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Export File</value>
+    <value>Xuất ra file</value>
   </data>
   <data name="printReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
   </data>
   <data name="printReportToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;In báo cáo</value>
+    <value>In báo cáo</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>256, 26</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>Lối thoát</value>
+    <value>Thoát</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 24</value>
   </data>
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Tập tin</value>
+    <value>Tập tin</value>
   </data>
   <data name="settingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 26</value>
   </data>
   <data name="settingsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Cài đặt</value>
+    <value>Cài đặt</value>
   </data>
   <data name="downloadRIPEDBToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 26</value>
@@ -902,13 +902,13 @@
     <value>265, 26</value>
   </data>
   <data name="startCapturingToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Bắt đầu chụp</value>
+    <value>Bắt đầu thu thập</value>
   </data>
   <data name="stopCapturingToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 26</value>
   </data>
   <data name="stopCapturingToolStripMenuItem.Text" xml:space="preserve">
-    <value>S &amp; chụp đầu</value>
+    <value>Dừng thu thập</value>
   </data>
   <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
     <value>262, 6</value>
@@ -1156,34 +1156,34 @@
     <value>265, 26</value>
   </data>
   <data name="clearGUIToolStripMenuItem.Text" xml:space="preserve">
-    <value>rõ ràng GUI</value>
+    <value>Dọn dẹp giao diện</value>
   </data>
   <data name="resetCapturedDataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>265, 26</value>
   </data>
   <data name="resetCapturedDataToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Xóa chụp dữ liệu</value>
+    <value>Xóa dữ liệu đã thu thập</value>
   </data>
   <data name="resetCapturedDataToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>Xóa GUI và loại bỏ tất cả các file trong AssembledFiles và thư mục Captures</value>
+    <value>Dọn dẹp giao diện và xóa tất cả các tệp tin đã tái hợp nhất và các từ điển thu thập</value>
   </data>
   <data name="toolsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 24</value>
   </data>
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Công cụ</value>
+    <value>Công cụ</value>
   </data>
   <data name="getUpgradeCodeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 26</value>
   </data>
   <data name="getUpgradeCodeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nhận &amp; Nâng cấp Mã</value>
+    <value>Nhận mã nâng cấp</value>
   </data>
   <data name="signWithLicenseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>216, 26</value>
   </data>
   <data name="signWithLicenseToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp; Authenticate</value>
+    <value>Xác thực</value>
   </data>
   <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 6</value>
@@ -1192,7 +1192,7 @@
     <value>216, 26</value>
   </data>
   <data name="checkForUpdatesToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Kiểm tra cập nhật</value>
+    <value>Kiểm tra cập nhật</value>
   </data>
   <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 6</value>
@@ -1201,13 +1201,13 @@
     <value>216, 26</value>
   </data>
   <data name="aboutNetworkMinerToolStripMenuItem.Text" xml:space="preserve">
-    <value>Về &amp; NetworkMiner</value>
+    <value>Giới thiệu về NetworkMiner</value>
   </data>
   <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 24</value>
   </data>
   <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Cứu giúp</value>
+    <value>Trợ giúp</value>
   </data>
   <data name="vietnameseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 26</value>
@@ -1216,22 +1216,22 @@
     <value>159, 26</value>
   </data>
   <data name="exportDataToFileDialog.Filter" xml:space="preserve">
-    <value>CSV (giá trị bằng dấu phẩy) | * .csv | JSON (CASE / UCO) | * .json | XML | * .xml | Tất cả các file |. * *</value>
+    <value>CSV (comma-separated values)|*.csv|JSON (CASE/UCO)|*.json|XML|*.xml|All files|*.*</value>
   </data>
   <data name="exportDataToFileDialog.Title" xml:space="preserve">
-    <value>Xuất khẩu sang CASE, CSV hoặc tập tin XML</value>
+    <value>Xuất ra CASE, CSV hoặc tập tin XML</value>
   </data>
   <data name="openTextFileDialog.Filter" xml:space="preserve">
-    <value>tập tin văn bản | * .txt | All files | * *.</value>
+    <value>Text files|*.txt|All files|*.*</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>Lọc</value>
+    <value>Bộ lọc</value>
   </data>
   <data name="stopButton.Text" xml:space="preserve">
     <value>Dừng lại</value>
   </data>
   <data name="startButton.Text" xml:space="preserve">
-    <value>Khởi đầu</value>
+    <value>Bắt đầu</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1439,28 +1439,28 @@
     <value>menuStrip1</value>
   </data>
   <data name="findNextToolStripMenuItem.Text" xml:space="preserve">
-    <value>Find Next</value>
+    <value>Tìm giá trị tiếp theo</value>
   </data>
   <data name="destinationHostHeader.Text" xml:space="preserve">
-    <value>Destination host</value>
+    <value>Máy đích</value>
   </data>
   <data name="messageDestinationHostColumnHeader.Text" xml:space="preserve">
-    <value>Destination host</value>
+    <value>Máy đích</value>
   </data>
   <data name="showCookiesCheckBox.Text" xml:space="preserve">
-    <value>Show Cookies</value>
+    <value>Hiển thị cookie</value>
   </data>
   <data name="VoipEncodingColumn.HeaderText" xml:space="preserve">
-    <value>Encoding</value>
+    <value>Mã hóa</value>
   </data>
   <data name="tabPageVoIP.Text" xml:space="preserve">
     <value>VoIP</value>
   </data>
   <data name="columnHeaderDnsIpTtl.Text" xml:space="preserve">
-    <value>IP TTL</value>
+    <value>Thời gian sống của IP</value>
   </data>
   <data name="columnHeaderDnsQuery.Text" xml:space="preserve">
-    <value>DNS Query</value>
+    <value>Truy vấn DNS</value>
   </data>
   <data name="tabPageDns.Text" xml:space="preserve">
     <value>DNS</value>
@@ -1469,7 +1469,7 @@
     <value>Máy đích</value>
   </data>
   <data name="tabPageReceivedFrames.Text" xml:space="preserve">
-    <value>Frames</value>
+    <value>Các khung</value>
   </data>
   <data name="caseMd5Column.Text" xml:space="preserve">
     <value>MD5</value>

@@ -71,7 +71,6 @@ namespace NetworkMiner {
             this.reconstructedFileTimestampColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.reconstructedFilePathHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.detailsHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.filesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.tabPageImages = new System.Windows.Forms.TabPage();
             this.imagesListView = new System.Windows.Forms.ListView();
             this.tabPageMessages = new System.Windows.Forms.TabPage();
@@ -85,7 +84,6 @@ namespace NetworkMiner {
             this.messageSubjectColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.messageProtocolColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.messageTimestampColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.messagesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.messageAttributeListView = new System.Windows.Forms.ListView();
             this.attributeNameColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -131,7 +129,6 @@ namespace NetworkMiner {
             this.sessionServerPortColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sessionProtocolColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.sessionStartTimeColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sessionsKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.tabPageDns = new System.Windows.Forms.TabPage();
             this.dnsListView = new System.Windows.Forms.ListView();
             this.columnHeaderDnsFrameNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -147,7 +144,6 @@ namespace NetworkMiner {
             this.columnHeaderDnsQuery = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderDnsAnswer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderAlexaTop1M = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dnsKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.tabPageParameters = new System.Windows.Forms.TabPage();
             this.parametersListView = new System.Windows.Forms.ListView();
             this.parameterName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -162,7 +158,6 @@ namespace NetworkMiner {
             this.parametersContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.copyParameterNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyParameterValueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.parametersKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.tabPageKeywords = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.keywordListBox = new System.Windows.Forms.ListBox();
@@ -252,6 +247,11 @@ namespace NetworkMiner {
             this.button2 = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
+            this.filesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
+            this.messagesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
+            this.sessionsKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
+            this.dnsKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
+            this.parametersKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -657,11 +657,6 @@ namespace NetworkMiner {
             // 
             resources.ApplyResources(this.detailsHeader, "detailsHeader");
             // 
-            // filesKeywordFilterControl
-            // 
-            resources.ApplyResources(this.filesKeywordFilterControl, "filesKeywordFilterControl");
-            this.filesKeywordFilterControl.Name = "filesKeywordFilterControl";
-            // 
             // tabPageImages
             // 
             this.tabPageImages.Controls.Add(this.imagesListView);
@@ -752,11 +747,6 @@ namespace NetworkMiner {
             // messageTimestampColumnHeader
             // 
             resources.ApplyResources(this.messageTimestampColumnHeader, "messageTimestampColumnHeader");
-            // 
-            // messagesKeywordFilterControl
-            // 
-            resources.ApplyResources(this.messagesKeywordFilterControl, "messagesKeywordFilterControl");
-            this.messagesKeywordFilterControl.Name = "messagesKeywordFilterControl";
             // 
             // splitContainer3
             // 
@@ -1102,11 +1092,6 @@ namespace NetworkMiner {
             // 
             resources.ApplyResources(this.sessionStartTimeColumnHeader, "sessionStartTimeColumnHeader");
             // 
-            // sessionsKeywordFilterControl
-            // 
-            resources.ApplyResources(this.sessionsKeywordFilterControl, "sessionsKeywordFilterControl");
-            this.sessionsKeywordFilterControl.Name = "sessionsKeywordFilterControl";
-            // 
             // tabPageDns
             // 
             this.tabPageDns.Controls.Add(this.dnsListView);
@@ -1191,11 +1176,6 @@ namespace NetworkMiner {
             // columnHeaderAlexaTop1M
             // 
             resources.ApplyResources(this.columnHeaderAlexaTop1M, "columnHeaderAlexaTop1M");
-            // 
-            // dnsKeywordFilterControl
-            // 
-            resources.ApplyResources(this.dnsKeywordFilterControl, "dnsKeywordFilterControl");
-            this.dnsKeywordFilterControl.Name = "dnsKeywordFilterControl";
             // 
             // tabPageParameters
             // 
@@ -1282,12 +1262,6 @@ namespace NetworkMiner {
             this.copyParameterValueToolStripMenuItem.Name = "copyParameterValueToolStripMenuItem";
             resources.ApplyResources(this.copyParameterValueToolStripMenuItem, "copyParameterValueToolStripMenuItem");
             this.copyParameterValueToolStripMenuItem.Click += new System.EventHandler(this.copyParameterValueToolStripMenuItem_Click);
-            // 
-            // parametersKeywordFilterControl
-            // 
-            resources.ApplyResources(this.parametersKeywordFilterControl, "parametersKeywordFilterControl");
-            this.parametersKeywordFilterControl.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.parametersKeywordFilterControl.Name = "parametersKeywordFilterControl";
             // 
             // tabPageKeywords
             // 
@@ -1905,6 +1879,32 @@ namespace NetworkMiner {
             this.startButton.Name = "startButton";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // filesKeywordFilterControl
+            // 
+            resources.ApplyResources(this.filesKeywordFilterControl, "filesKeywordFilterControl");
+            this.filesKeywordFilterControl.Name = "filesKeywordFilterControl";
+            // 
+            // messagesKeywordFilterControl
+            // 
+            resources.ApplyResources(this.messagesKeywordFilterControl, "messagesKeywordFilterControl");
+            this.messagesKeywordFilterControl.Name = "messagesKeywordFilterControl";
+            // 
+            // sessionsKeywordFilterControl
+            // 
+            resources.ApplyResources(this.sessionsKeywordFilterControl, "sessionsKeywordFilterControl");
+            this.sessionsKeywordFilterControl.Name = "sessionsKeywordFilterControl";
+            // 
+            // dnsKeywordFilterControl
+            // 
+            resources.ApplyResources(this.dnsKeywordFilterControl, "dnsKeywordFilterControl");
+            this.dnsKeywordFilterControl.Name = "dnsKeywordFilterControl";
+            // 
+            // parametersKeywordFilterControl
+            // 
+            resources.ApplyResources(this.parametersKeywordFilterControl, "parametersKeywordFilterControl");
+            this.parametersKeywordFilterControl.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.parametersKeywordFilterControl.Name = "parametersKeywordFilterControl";
             // 
             // NetworkMinerForm
             // 

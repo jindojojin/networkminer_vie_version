@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBoxDescription.Text" xml:space="preserve">
-    <value>NetworkMiner là một mã nguồn mở Mạng Forensic Analysis Tool (NFAT) với một công cụ chụp built-in thụ động mạng sniffer / gói. Nó có thể phát hiện của hệ điều hành, phiên, tên máy chủ, cổng mở vv mà không đặt bất kỳ giao thông trên mạng. NetworkMiner cũng có thể phân tích các file pcap để phân tích off-line.
+    <value>NetworkMiner là một mã nguồn mở Network Forensic Analysis Tool (NFAT) với một công cụ chụp built-in thụ động mạng sniffer / gói. Nó có thể phát hiện của hệ điều hành, phiên, tên máy chủ, cổng mở vv.. mà không đặt bất kỳ giao thông trên mạng. NetworkMiner cũng có thể phân tích các file pcap để phân tích off-line.
  
  Tác giả: Erik Hjelmvik, &lt;erik.hjelmvik [at] gmail.com&gt;
  
@@ -139,9 +139,9 @@
     <value>Phiên bản</value>
   </data>
   <data name="labelProductName.Text" xml:space="preserve">
-    <value>sản phẩm</value>
+    <value>Sản phẩm</value>
   </data>
   <data name="labelCopyright.Text" xml:space="preserve">
-    <value>bản quyền</value>
+    <value>Bản quyền</value>
   </data>
 </root>
