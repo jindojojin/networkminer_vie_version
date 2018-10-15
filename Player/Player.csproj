@@ -46,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Analyse.cs" />
+    <Compile Include="chooseFileOrFolderToScan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseFileOrFolderToScan.Designer.cs">
+      <DependentUpon>chooseFileOrFolderToScan.cs</DependentUpon>
+    </Compile>
     <Compile Include="VoipPlayer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="chooseFileOrFolderToScan.resx">
+      <DependentUpon>chooseFileOrFolderToScan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

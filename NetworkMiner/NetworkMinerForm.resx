@@ -128,373 +128,43 @@
   <data name="splitContainer1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Name" xml:space="preserve">
-    <value>tabPageDetectedHosts</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tabPageBrowsers.Name" xml:space="preserve">
-    <value>tabPageBrowsers</value>
-  </data>
-  <data name="&gt;&gt;tabPageBrowsers.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageBrowsers.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageBrowsers.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;tabPageFiles.Name" xml:space="preserve">
-    <value>tabPageFiles</value>
-  </data>
-  <data name="&gt;&gt;tabPageFiles.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageFiles.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageFiles.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;tabPageImages.Name" xml:space="preserve">
-    <value>tabPageImages</value>
-  </data>
-  <data name="&gt;&gt;tabPageImages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageImages.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageImages.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Name" xml:space="preserve">
-    <value>tabPageMessages</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;tabPageCredentials.Name" xml:space="preserve">
-    <value>tabPageCredentials</value>
-  </data>
-  <data name="&gt;&gt;tabPageCredentials.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageCredentials.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageCredentials.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Name" xml:space="preserve">
-    <value>tabPageVoIP</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Name" xml:space="preserve">
-    <value>tabPageSessions</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Name" xml:space="preserve">
-    <value>tabPageDns</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;tabPageParameters.Name" xml:space="preserve">
-    <value>tabPageParameters</value>
-  </data>
-  <data name="&gt;&gt;tabPageParameters.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageParameters.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageParameters.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeywords.Name" xml:space="preserve">
-    <value>tabPageKeywords</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeywords.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeywords.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageKeywords.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;tabPageCleartext.Name" xml:space="preserve">
-    <value>tabPageCleartext</value>
-  </data>
-  <data name="&gt;&gt;tabPageCleartext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageCleartext.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageCleartext.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Name" xml:space="preserve">
-    <value>tabPageReceivedFrames</value>
-  </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Name" xml:space="preserve">
-    <value>tabPageAnomalyLog</value>
-  </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="tabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabControl.ItemSize" type="System.Drawing.Size, System.Drawing">
-    <value>16, 18</value>
-  </data>
-  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="tabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabControl.Padding" type="System.Drawing.Point, System.Drawing">
-    <value>5, 3</value>
-  </data>
-  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>730, 487</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
-    <value>splitContainer1.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;casePanelFileListView.Name" xml:space="preserve">
-    <value>casePanelFileListView</value>
-  </data>
-  <data name="&gt;&gt;casePanelFileListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;casePanelFileListView.Parent" xml:space="preserve">
-    <value>casePanelBox</value>
-  </data>
-  <data name="&gt;&gt;casePanelFileListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;reloadCaseFilesButton.Name" xml:space="preserve">
-    <value>reloadCaseFilesButton</value>
-  </data>
-  <data name="&gt;&gt;reloadCaseFilesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;reloadCaseFilesButton.Parent" xml:space="preserve">
-    <value>casePanelBox</value>
-  </data>
-  <data name="&gt;&gt;reloadCaseFilesButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="casePanelBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="casePanelBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="casePanelBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="casePanelBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="casePanelBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>187, 487</value>
-  </data>
-  <data name="casePanelBox.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="casePanelBox.Text" xml:space="preserve">
-    <value>Case Panel</value>
-  </data>
-  <data name="&gt;&gt;casePanelBox.Name" xml:space="preserve">
-    <value>casePanelBox</value>
-  </data>
-  <data name="&gt;&gt;casePanelBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;casePanelBox.Parent" xml:space="preserve">
-    <value>splitContainer1.Panel2</value>
-  </data>
-  <data name="&gt;&gt;casePanelBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
-    <value>splitContainer1.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainer1.Panel2MinSize" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>920, 487</value>
-  </data>
-  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>730</value>
-  </data>
-  <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;networkHostTreeView.Name" xml:space="preserve">
-    <value>networkHostTreeView</value>
-  </data>
-  <data name="&gt;&gt;networkHostTreeView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;networkHostTreeView.Parent" xml:space="preserve">
-    <value>tabPageDetectedHosts</value>
-  </data>
-  <data name="&gt;&gt;networkHostTreeView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tabPageDetectedHosts</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageDetectedHosts.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 40</value>
-  </data>
-  <data name="tabPageDetectedHosts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageDetectedHosts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageDetectedHosts.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 443</value>
-  </data>
-  <data name="tabPageDetectedHosts.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="tabPageDetectedHosts.Text" xml:space="preserve">
-    <value>Hosts</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Name" xml:space="preserve">
-    <value>tabPageDetectedHosts</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageDetectedHosts.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <metadata name="hostMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>642, 56</value>
   </metadata>
+  <data name="expandAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="expandAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Expand All</value>
+  </data>
+  <data name="collapseAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="collapseAllToolStripMenuItem.Text" xml:space="preserve">
+    <value>Collapse All</value>
+  </data>
+  <data name="copyTextToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="copyTextToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy Text</value>
+  </data>
+  <data name="selectHostColorMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="selectHostColorMenuItem.Text" xml:space="preserve">
+    <value>Set Host Color</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="removeHostColorToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="removeHostColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="removeHostColorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove Host Color</value>
+  </data>
   <data name="hostMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 124</value>
   </data>
@@ -530,102 +200,6 @@
   </data>
   <data name="&gt;&gt;networkHostTreeView.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="expandAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 24</value>
-  </data>
-  <data name="expandAllToolStripMenuItem.Text" xml:space="preserve">
-    <value>Expand All</value>
-  </data>
-  <data name="collapseAllToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 24</value>
-  </data>
-  <data name="collapseAllToolStripMenuItem.Text" xml:space="preserve">
-    <value>Collapse All</value>
-  </data>
-  <data name="copyTextToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 24</value>
-  </data>
-  <data name="copyTextToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy Text</value>
-  </data>
-  <data name="selectHostColorMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 24</value>
-  </data>
-  <data name="selectHostColorMenuItem.Text" xml:space="preserve">
-    <value>Set Host Color</value>
-  </data>
-  <data name="removeHostColorToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="removeHostColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 24</value>
-  </data>
-  <data name="removeHostColorToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remove Host Color</value>
-  </data>
-  <data name="&gt;&gt;hostSortingLabel.Name" xml:space="preserve">
-    <value>hostSortingLabel</value>
-  </data>
-  <data name="&gt;&gt;hostSortingLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hostSortingLabel.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;hostSortingLabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;hostSortOrderComboBox.Name" xml:space="preserve">
-    <value>hostSortOrderComboBox</value>
-  </data>
-  <data name="&gt;&gt;hostSortOrderComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hostSortOrderComboBox.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;hostSortOrderComboBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;detectedHostsTreeRebuildButton.Name" xml:space="preserve">
-    <value>detectedHostsTreeRebuildButton</value>
-  </data>
-  <data name="&gt;&gt;detectedHostsTreeRebuildButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;detectedHostsTreeRebuildButton.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;detectedHostsTreeRebuildButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 33</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>tabPageDetectedHosts</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="hostSortingLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -750,59 +324,62 @@
   <data name="&gt;&gt;detectedHostsTreeRebuildButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;browsersSplitContainer.Name" xml:space="preserve">
-    <value>browsersSplitContainer</value>
+  <data name="panel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;browsersSplitContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
   </data>
-  <data name="&gt;&gt;browsersSplitContainer.Parent" xml:space="preserve">
-    <value>tabPageBrowsers</value>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;browsersSplitContainer.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 33</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
-    <value>tabPageBrowsers</value>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>tabPageDetectedHosts</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPageBrowsers.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="tabPageDetectedHosts.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
   </data>
-  <data name="tabPageBrowsers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageDetectedHosts.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageBrowsers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageDetectedHosts.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageBrowsers.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="tabPageDetectedHosts.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
   </data>
-  <data name="tabPageBrowsers.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+  <data name="tabPageDetectedHosts.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="tabPageBrowsers.Text" xml:space="preserve">
-    <value>Browsers</value>
+  <data name="tabPageDetectedHosts.Text" xml:space="preserve">
+    <value>Hosts</value>
   </data>
-  <data name="&gt;&gt;tabPageBrowsers.Name" xml:space="preserve">
-    <value>tabPageBrowsers</value>
+  <data name="&gt;&gt;tabPageDetectedHosts.Name" xml:space="preserve">
+    <value>tabPageDetectedHosts</value>
   </data>
-  <data name="&gt;&gt;tabPageBrowsers.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageDetectedHosts.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageBrowsers.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageDetectedHosts.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageBrowsers.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;tabPageDetectedHosts.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="browsersSplitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -816,128 +393,6 @@
   <metadata name="browsersMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
   </metadata>
-  <data name="browsersMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 178</value>
-  </data>
-  <data name="&gt;&gt;browsersMenuStrip.Name" xml:space="preserve">
-    <value>browsersMenuStrip</value>
-  </data>
-  <data name="&gt;&gt;browsersMenuStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="httpTransactionTreeView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="httpTransactionTreeView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="httpTransactionTreeView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="httpTransactionTreeView.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
-        ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
-        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYDAAAARVdlYiBicm93c2luZyB0cmVlIHZpZXcgaXMgb25s
-        eSBhdmFpbGFibGUgaW4gTmV0d29ya01pbmVyIFByb2Zlc3Npb25hbAYEAAAAAAYFAAAABU5vZGUwAP//
-        //8JBAAAAP////8JBAAAAAAAAAAL
-</value>
-  </data>
-  <data name="httpTransactionTreeView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>511, 426</value>
-  </data>
-  <data name="httpTransactionTreeView.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionTreeView.Name" xml:space="preserve">
-    <value>httpTransactionTreeView</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionTreeView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionTreeView.Parent" xml:space="preserve">
-    <value>browsersSplitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionTreeView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel1.Name" xml:space="preserve">
-    <value>browsersSplitContainer.Panel1</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel1.Parent" xml:space="preserve">
-    <value>browsersSplitContainer</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="httpTransactionPropertyGrid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="httpTransactionPropertyGrid.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="httpTransactionPropertyGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="httpTransactionPropertyGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 426</value>
-  </data>
-  <data name="httpTransactionPropertyGrid.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionPropertyGrid.Name" xml:space="preserve">
-    <value>httpTransactionPropertyGrid</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionPropertyGrid.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionPropertyGrid.Parent" xml:space="preserve">
-    <value>browsersSplitContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;httpTransactionPropertyGrid.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel2.Name" xml:space="preserve">
-    <value>browsersSplitContainer.Panel2</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel2.Parent" xml:space="preserve">
-    <value>browsersSplitContainer</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="browsersSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 426</value>
-  </data>
-  <data name="browsersSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
-    <value>511</value>
-  </data>
-  <data name="browsersSplitContainer.SplitterWidth" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="browsersSplitContainer.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Name" xml:space="preserve">
-    <value>browsersSplitContainer</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.Parent" xml:space="preserve">
-    <value>tabPageBrowsers</value>
-  </data>
-  <data name="&gt;&gt;browsersSplitContainer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="setAdvertismentColorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>266, 24</value>
   </data>
@@ -989,80 +444,127 @@
   <data name="selectParentNodeToolStripMenuItem.Text" xml:space="preserve">
     <value>Select Parent Node</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionTextBox.Name" xml:space="preserve">
-    <value>findHttpTransactionTextBox</value>
+  <data name="browsersMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 178</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;browsersMenuStrip.Name" xml:space="preserve">
+    <value>browsersMenuStrip</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionTextBox.Parent" xml:space="preserve">
-    <value>panel4</value>
+  <data name="&gt;&gt;browsersMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="httpTransactionTreeView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionCaseSensitiveCheckBox.Name" xml:space="preserve">
-    <value>findHttpTransactionCaseSensitiveCheckBox</value>
+  <data name="httpTransactionTreeView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;findHttpTransactionCaseSensitiveCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionCaseSensitiveCheckBox.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionCaseSensitiveCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionButton.Name" xml:space="preserve">
-    <value>findHttpTransactionButton</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionButton.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionLabel.Name" xml:space="preserve">
-    <value>findHttpTransactionLabel</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionLabel.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;findHttpTransactionLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="httpTransactionTreeView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 27</value>
+  <data name="httpTransactionTreeView.Nodes" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAAB1TeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5UcmVlTm9kZQkAAAAEVGV4dAtUb29sVGlwVGV4dAROYW1lCUlzQ2hlY2tl
+        ZApJbWFnZUluZGV4CEltYWdlS2V5ElNlbGVjdGVkSW1hZ2VJbmRleBBTZWxlY3RlZEltYWdlS2V5CkNo
+        aWxkQ291bnQBAQEAAAEAAQABCAgIAgAAAAYDAAAARVdlYiBicm93c2luZyB0cmVlIHZpZXcgaXMgb25s
+        eSBhdmFpbGFibGUgaW4gTmV0d29ya01pbmVyIFByb2Zlc3Npb25hbAYEAAAAAAYFAAAABU5vZGUwAP//
+        //8JBAAAAP////8JBAAAAAAAAAAL
+</value>
   </data>
-  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+  <data name="httpTransactionTreeView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 408</value>
+  </data>
+  <data name="httpTransactionTreeView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionTreeView.Name" xml:space="preserve">
+    <value>httpTransactionTreeView</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionTreeView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionTreeView.Parent" xml:space="preserve">
+    <value>browsersSplitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionTreeView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel1.Name" xml:space="preserve">
+    <value>browsersSplitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel1.Parent" xml:space="preserve">
+    <value>browsersSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="httpTransactionPropertyGrid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="httpTransactionPropertyGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="httpTransactionPropertyGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="httpTransactionPropertyGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 408</value>
+  </data>
+  <data name="httpTransactionPropertyGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionPropertyGrid.Name" xml:space="preserve">
+    <value>httpTransactionPropertyGrid</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionPropertyGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PropertyGrid, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionPropertyGrid.Parent" xml:space="preserve">
+    <value>browsersSplitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;httpTransactionPropertyGrid.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel2.Name" xml:space="preserve">
+    <value>browsersSplitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel2.Parent" xml:space="preserve">
+    <value>browsersSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
-    <value>panel4</value>
+  <data name="browsersSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 408</value>
   </data>
-  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="browsersSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>511</value>
   </data>
-  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+  <data name="browsersSplitContainer.SplitterWidth" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="browsersSplitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Name" xml:space="preserve">
+    <value>browsersSplitContainer</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;browsersSplitContainer.Parent" xml:space="preserve">
     <value>tabPageBrowsers</value>
   </data>
-  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;browsersSplitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="findHttpTransactionTextBox.AccessibleDescription" xml:space="preserve">
     <value>Search form</value>
@@ -1202,86 +704,62 @@
   <data name="&gt;&gt;findHttpTransactionLabel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;filesListView.Name" xml:space="preserve">
-    <value>filesListView</value>
+  <data name="panel4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;filesListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
   </data>
-  <data name="&gt;&gt;filesListView.Parent" xml:space="preserve">
-    <value>tabPageFiles</value>
-  </data>
-  <data name="&gt;&gt;filesListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Name" xml:space="preserve">
-    <value>filesKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageFiles</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageFiles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageFiles.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageFiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 4, 0, 0</value>
+  <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 27</value>
   </data>
-  <data name="tabPageFiles.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="panel4.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabPageFiles.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;panel4.Name" xml:space="preserve">
+    <value>panel4</value>
   </data>
-  <data name="tabPageFiles.Text" xml:space="preserve">
-    <value>Files</value>
+  <data name="&gt;&gt;panel4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageFiles.Name" xml:space="preserve">
-    <value>tabPageFiles</value>
+  <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
+    <value>tabPageBrowsers</value>
   </data>
-  <data name="&gt;&gt;tabPageFiles.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel4.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageBrowsers.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageBrowsers.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageBrowsers.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageBrowsers.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageBrowsers.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="tabPageBrowsers.Text" xml:space="preserve">
+    <value>Browsers</value>
+  </data>
+  <data name="&gt;&gt;tabPageBrowsers.Name" xml:space="preserve">
+    <value>tabPageBrowsers</value>
+  </data>
+  <data name="&gt;&gt;tabPageBrowsers.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageFiles.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageBrowsers.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageFiles.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="filesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="filesListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="filesListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="filesListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 435</value>
-  </data>
-  <data name="filesListView.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;tabPageBrowsers.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;filesListView.Name" xml:space="preserve">
-    <value>filesListView</value>
-  </data>
-  <data name="&gt;&gt;filesListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;filesListView.Parent" xml:space="preserve">
-    <value>tabPageFiles</value>
-  </data>
-  <data name="&gt;&gt;filesListView.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="reconstructedFileInitialFrameNumber.Text" xml:space="preserve">
     <value>Frame nr.</value>
@@ -1322,6 +800,105 @@
   <data name="detailsHeader.Text" xml:space="preserve">
     <value>Details</value>
   </data>
+  <data name="filesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="filesListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="filesListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="filesListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 417</value>
+  </data>
+  <data name="filesListView.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;filesListView.Name" xml:space="preserve">
+    <value>filesListView</value>
+  </data>
+  <data name="&gt;&gt;filesListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;filesListView.Parent" xml:space="preserve">
+    <value>tabPageFiles</value>
+  </data>
+  <data name="&gt;&gt;filesListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="filesKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="filesKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 4</value>
+  </data>
+  <data name="filesKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="filesKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 22</value>
+  </data>
+  <data name="filesKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;filesKeywordFilterControl.Name" xml:space="preserve">
+    <value>filesKeywordFilterControl</value>
+  </data>
+  <data name="&gt;&gt;filesKeywordFilterControl.Type" xml:space="preserve">
+    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;filesKeywordFilterControl.Parent" xml:space="preserve">
+    <value>tabPageFiles</value>
+  </data>
+  <data name="&gt;&gt;filesKeywordFilterControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageFiles.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageFiles.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageFiles.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 4, 0, 0</value>
+  </data>
+  <data name="tabPageFiles.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageFiles.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabPageFiles.Text" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="&gt;&gt;tabPageFiles.Name" xml:space="preserve">
+    <value>tabPageFiles</value>
+  </data>
+  <data name="&gt;&gt;tabPageFiles.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageFiles.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageFiles.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="imagesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="imagesListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="imagesListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="imagesListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="imagesListView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;imagesListView.Name" xml:space="preserve">
     <value>imagesListView</value>
   </data>
@@ -1335,13 +912,13 @@
     <value>0</value>
   </data>
   <data name="tabPageImages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+    <value>4, 40</value>
   </data>
   <data name="tabPageImages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="tabPageImages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+    <value>722, 443</value>
   </data>
   <data name="tabPageImages.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1361,75 +938,6 @@
   <data name="&gt;&gt;tabPageImages.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="imagesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="imagesListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="imagesListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="imagesListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
-  </data>
-  <data name="imagesListView.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;imagesListView.Name" xml:space="preserve">
-    <value>imagesListView</value>
-  </data>
-  <data name="&gt;&gt;imagesListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;imagesListView.Parent" xml:space="preserve">
-    <value>tabPageImages</value>
-  </data>
-  <data name="&gt;&gt;imagesListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;messagesSplitContainer.Name" xml:space="preserve">
-    <value>messagesSplitContainer</value>
-  </data>
-  <data name="&gt;&gt;messagesSplitContainer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;messagesSplitContainer.Parent" xml:space="preserve">
-    <value>tabPageMessages</value>
-  </data>
-  <data name="&gt;&gt;messagesSplitContainer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPageMessages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageMessages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageMessages.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageMessages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
-  </data>
-  <data name="tabPageMessages.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="tabPageMessages.Text" xml:space="preserve">
-    <value>Messages</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Name" xml:space="preserve">
-    <value>tabPageMessages</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageMessages.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="messagesSplitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1438,6 +946,33 @@
   </data>
   <data name="messagesSplitContainer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="messageFrameColumnHeader.Text" xml:space="preserve">
+    <value>Frame nr.</value>
+  </data>
+  <data name="messageSourceHostColumnHeader.Text" xml:space="preserve">
+    <value>Source host</value>
+  </data>
+  <data name="messageDestinationHostColumnHeader.Text" xml:space="preserve">
+    <value>Destination host</value>
+  </data>
+  <data name="messageFromColumnHeader.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="messageToColumnHeader.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="messageSubjectColumnHeader.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="messageSubjectColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="messageProtocolColumnHeader.Text" xml:space="preserve">
+    <value>Protocol</value>
+  </data>
+  <data name="messageTimestampColumnHeader.Text" xml:space="preserve">
+    <value>Timestamp</value>
   </data>
   <data name="messagesListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1449,7 +984,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="messagesListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>545, 431</value>
+    <value>545, 413</value>
   </data>
   <data name="messagesListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1517,6 +1052,18 @@
   <data name="splitContainer3.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
     <value>Horizontal</value>
   </data>
+  <data name="attributeNameColumnHeader.Text" xml:space="preserve">
+    <value>Attribute</value>
+  </data>
+  <data name="attributeNameColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="attributeValueColumnHeader.Text" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="attributeValueColumnHeader.Width" type="System.Int32, mscorlib">
+    <value>300</value>
+  </data>
   <data name="messageAttributeListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1527,7 +1074,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="messageAttributeListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 98</value>
+    <value>164, 94</value>
   </data>
   <data name="messageAttributeListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1584,7 +1131,7 @@
     <value>Vertical</value>
   </data>
   <data name="messageTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 217</value>
+    <value>164, 207</value>
   </data>
   <data name="messageTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -1613,6 +1160,21 @@
   <data name="&gt;&gt;splitContainer4.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="columnHeader1.Text" xml:space="preserve">
+    <value>Attachement</value>
+  </data>
+  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="columnHeader2.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="columnHeader2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
   <data name="messageAttachmentListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -1623,7 +1185,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="messageAttachmentListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 110</value>
+    <value>164, 106</value>
   </data>
   <data name="messageAttachmentListView.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1653,10 +1215,10 @@
     <value>1</value>
   </data>
   <data name="splitContainer4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 329</value>
+    <value>164, 315</value>
   </data>
   <data name="splitContainer4.SplitterDistance" type="System.Int32, mscorlib">
-    <value>217</value>
+    <value>207</value>
   </data>
   <data name="splitContainer4.SplitterWidth" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1716,10 +1278,10 @@
     <value>1</value>
   </data>
   <data name="splitContainer3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>164, 453</value>
+    <value>164, 435</value>
   </data>
   <data name="splitContainer3.SplitterDistance" type="System.Int32, mscorlib">
-    <value>98</value>
+    <value>94</value>
   </data>
   <data name="splitContainer3.SplitterWidth" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1752,7 +1314,7 @@
     <value>1</value>
   </data>
   <data name="messagesSplitContainer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 453</value>
+    <value>714, 435</value>
   </data>
   <data name="messagesSplitContainer.SplitterDistance" type="System.Int32, mscorlib">
     <value>545</value>
@@ -1775,137 +1337,35 @@
   <data name="&gt;&gt;messagesSplitContainer.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="messageFrameColumnHeader.Text" xml:space="preserve">
-    <value>Frame nr.</value>
+  <data name="tabPageMessages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
   </data>
-  <data name="messageSourceHostColumnHeader.Text" xml:space="preserve">
-    <value>Source host</value>
-  </data>
-  <data name="messageDestinationHostColumnHeader.Text" xml:space="preserve">
-    <value>Destination host</value>
-  </data>
-  <data name="messageFromColumnHeader.Text" xml:space="preserve">
-    <value>From</value>
-  </data>
-  <data name="messageToColumnHeader.Text" xml:space="preserve">
-    <value>To</value>
-  </data>
-  <data name="messageSubjectColumnHeader.Text" xml:space="preserve">
-    <value>Subject</value>
-  </data>
-  <data name="messageSubjectColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>120</value>
-  </data>
-  <data name="messageProtocolColumnHeader.Text" xml:space="preserve">
-    <value>Protocol</value>
-  </data>
-  <data name="messageTimestampColumnHeader.Text" xml:space="preserve">
-    <value>Timestamp</value>
-  </data>
-  <data name="attributeNameColumnHeader.Text" xml:space="preserve">
-    <value>Attribute</value>
-  </data>
-  <data name="attributeNameColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="attributeValueColumnHeader.Text" xml:space="preserve">
-    <value>Value</value>
-  </data>
-  <data name="attributeValueColumnHeader.Width" type="System.Int32, mscorlib">
-    <value>300</value>
-  </data>
-  <data name="columnHeader1.Text" xml:space="preserve">
-    <value>Attachement</value>
-  </data>
-  <data name="columnHeader1.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="columnHeader2.Text" xml:space="preserve">
-    <value>Size</value>
-  </data>
-  <data name="columnHeader2.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="columnHeader2.Width" type="System.Int32, mscorlib">
-    <value>100</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Name" xml:space="preserve">
-    <value>credentialsListView</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Parent" xml:space="preserve">
-    <value>tabPageCredentials</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tabPageCredentials</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageCredentials.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageCredentials.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageMessages.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageCredentials.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="tabPageMessages.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageCredentials.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="tabPageMessages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
   </data>
-  <data name="tabPageCredentials.Text" xml:space="preserve">
-    <value>Credentials</value>
+  <data name="tabPageMessages.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;tabPageCredentials.Name" xml:space="preserve">
-    <value>tabPageCredentials</value>
+  <data name="tabPageMessages.Text" xml:space="preserve">
+    <value>Messages</value>
   </data>
-  <data name="&gt;&gt;tabPageCredentials.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageMessages.Name" xml:space="preserve">
+    <value>tabPageMessages</value>
+  </data>
+  <data name="&gt;&gt;tabPageMessages.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageCredentials.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageMessages.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageCredentials.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="credentialsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="credentialsListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 28</value>
-  </data>
-  <data name="credentialsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="credentialsListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 433</value>
-  </data>
-  <data name="credentialsListView.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Name" xml:space="preserve">
-    <value>credentialsListView</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.Parent" xml:space="preserve">
-    <value>tabPageCredentials</value>
-  </data>
-  <data name="&gt;&gt;credentialsListView.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPageMessages.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="loggedInClientHeader.Text" xml:space="preserve">
     <value>Client</value>
@@ -1928,68 +1388,32 @@
   <data name="loginTimestamp.Text" xml:space="preserve">
     <value>Login timestamp</value>
   </data>
-  <data name="&gt;&gt;showCookiesCheckBox.Name" xml:space="preserve">
-    <value>showCookiesCheckBox</value>
+  <data name="credentialsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;showCookiesCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="credentialsListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 28</value>
   </data>
-  <data name="&gt;&gt;showCookiesCheckBox.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;showCookiesCheckBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;maskPasswordsCheckBox.Name" xml:space="preserve">
-    <value>maskPasswordsCheckBox</value>
-  </data>
-  <data name="&gt;&gt;maskPasswordsCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskPasswordsCheckBox.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;maskPasswordsCheckBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;showNtlmSspCheckBox.Name" xml:space="preserve">
-    <value>showNtlmSspCheckBox</value>
-  </data>
-  <data name="&gt;&gt;showNtlmSspCheckBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;showNtlmSspCheckBox.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;showNtlmSspCheckBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="credentialsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 28</value>
+  <data name="credentialsListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 415</value>
   </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="credentialsListView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
+  <data name="&gt;&gt;credentialsListView.Name" xml:space="preserve">
+    <value>credentialsListView</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;credentialsListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;credentialsListView.Parent" xml:space="preserve">
     <value>tabPageCredentials</value>
   </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;credentialsListView.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="showCookiesCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2090,89 +1514,59 @@
   <data name="&gt;&gt;showNtlmSspCheckBox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.Name" xml:space="preserve">
-    <value>voipDataGridView</value>
+  <data name="panel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;voipDataGridView.Parent" xml:space="preserve">
-    <value>tabPageVoIP</value>
-  </data>
-  <data name="&gt;&gt;voipDataGridView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="tabPageVoIP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageVoIP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageVoIP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
-  </data>
-  <data name="tabPageVoIP.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="tabPageVoIP.Text" xml:space="preserve">
-    <value>VoIP</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Name" xml:space="preserve">
-    <value>tabPageVoIP</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageVoIP.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <metadata name="VoipFromColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VoipToColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VoipStartColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VoipDurationColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VoipCallIDColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="VoipSaveWavColumn.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="voipDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="voipDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="voipDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="voipDataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 28</value>
   </data>
-  <data name="voipDataGridView.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.Name" xml:space="preserve">
-    <value>voipDataGridView</value>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.Parent" xml:space="preserve">
-    <value>tabPageVoIP</value>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tabPageCredentials</value>
   </data>
-  <data name="&gt;&gt;voipDataGridView.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageCredentials.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageCredentials.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageCredentials.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageCredentials.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="tabPageCredentials.Text" xml:space="preserve">
+    <value>Credentials</value>
+  </data>
+  <data name="&gt;&gt;tabPageCredentials.Name" xml:space="preserve">
+    <value>tabPageCredentials</value>
+  </data>
+  <data name="&gt;&gt;tabPageCredentials.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageCredentials.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageCredentials.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="VoipPlayColumn.HeaderText" xml:space="preserve">
     <value>Play</value>
@@ -2258,83 +1652,59 @@
   <data name="VoipSaveWavColumn.Width" type="System.Int32, mscorlib">
     <value>54</value>
   </data>
-  <data name="&gt;&gt;sessionsListView.Name" xml:space="preserve">
-    <value>sessionsListView</value>
-  </data>
-  <data name="&gt;&gt;sessionsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sessionsListView.Parent" xml:space="preserve">
-    <value>tabPageSessions</value>
-  </data>
-  <data name="&gt;&gt;sessionsListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Name" xml:space="preserve">
-    <value>sessionsKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageSessions</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageSessions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageSessions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageSessions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
-  </data>
-  <data name="tabPageSessions.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="tabPageSessions.Text" xml:space="preserve">
-    <value>Sessions</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Name" xml:space="preserve">
-    <value>tabPageSessions</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageSessions.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="sessionsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="voipDataGridView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="sessionsListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 22</value>
+  <data name="voipDataGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="sessionsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="voipDataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="sessionsListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 439</value>
+  <data name="voipDataGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
   </data>
-  <data name="sessionsListView.TabIndex" type="System.Int32, mscorlib">
+  <data name="voipDataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;sessionsListView.Name" xml:space="preserve">
-    <value>sessionsListView</value>
+  <data name="&gt;&gt;voipDataGridView.Name" xml:space="preserve">
+    <value>voipDataGridView</value>
   </data>
-  <data name="&gt;&gt;sessionsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;voipDataGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;sessionsListView.Parent" xml:space="preserve">
-    <value>tabPageSessions</value>
+  <data name="&gt;&gt;voipDataGridView.Parent" xml:space="preserve">
+    <value>tabPageVoIP</value>
   </data>
-  <data name="&gt;&gt;sessionsListView.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;voipDataGridView.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="tabPageVoIP.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageVoIP.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageVoIP.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageVoIP.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="tabPageVoIP.Text" xml:space="preserve">
+    <value>VoIP</value>
+  </data>
+  <data name="&gt;&gt;tabPageVoIP.Name" xml:space="preserve">
+    <value>tabPageVoIP</value>
+  </data>
+  <data name="&gt;&gt;tabPageVoIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageVoIP.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageVoIP.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="sessionFrameNrColumnHeader.Text" xml:space="preserve">
     <value>Frame nr.</value>
@@ -2357,86 +1727,86 @@
   <data name="sessionStartTimeColumnHeader.Text" xml:space="preserve">
     <value>Start time</value>
   </data>
-  <data name="&gt;&gt;dnsListView.Name" xml:space="preserve">
-    <value>dnsListView</value>
-  </data>
-  <data name="&gt;&gt;dnsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dnsListView.Parent" xml:space="preserve">
-    <value>tabPageDns</value>
-  </data>
-  <data name="&gt;&gt;dnsListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Name" xml:space="preserve">
-    <value>dnsKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageDns</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageDns.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageDns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="tabPageDns.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 4, 0, 0</value>
-  </data>
-  <data name="tabPageDns.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
-  </data>
-  <data name="tabPageDns.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="tabPageDns.Text" xml:space="preserve">
-    <value>DNS</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Name" xml:space="preserve">
-    <value>tabPageDns</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.Parent" xml:space="preserve">
-    <value>tabControl</value>
-  </data>
-  <data name="&gt;&gt;tabPageDns.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="dnsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="sessionsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="dnsListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
+  <data name="sessionsListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 22</value>
   </data>
-  <data name="dnsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="sessionsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="dnsListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 435</value>
+  <data name="sessionsListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 421</value>
   </data>
-  <data name="dnsListView.TabIndex" type="System.Int32, mscorlib">
+  <data name="sessionsListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;dnsListView.Name" xml:space="preserve">
-    <value>dnsListView</value>
+  <data name="&gt;&gt;sessionsListView.Name" xml:space="preserve">
+    <value>sessionsListView</value>
   </data>
-  <data name="&gt;&gt;dnsListView.Type" xml:space="preserve">
+  <data name="&gt;&gt;sessionsListView.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dnsListView.Parent" xml:space="preserve">
-    <value>tabPageDns</value>
+  <data name="&gt;&gt;sessionsListView.Parent" xml:space="preserve">
+    <value>tabPageSessions</value>
   </data>
-  <data name="&gt;&gt;dnsListView.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;sessionsListView.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="sessionsKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="sessionsKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="sessionsKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="sessionsKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 22</value>
+  </data>
+  <data name="sessionsKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;sessionsKeywordFilterControl.Name" xml:space="preserve">
+    <value>sessionsKeywordFilterControl</value>
+  </data>
+  <data name="&gt;&gt;sessionsKeywordFilterControl.Type" xml:space="preserve">
+    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sessionsKeywordFilterControl.Parent" xml:space="preserve">
+    <value>tabPageSessions</value>
+  </data>
+  <data name="&gt;&gt;sessionsKeywordFilterControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageSessions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageSessions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageSessions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageSessions.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="tabPageSessions.Text" xml:space="preserve">
+    <value>Sessions</value>
+  </data>
+  <data name="&gt;&gt;tabPageSessions.Name" xml:space="preserve">
+    <value>tabPageSessions</value>
+  </data>
+  <data name="&gt;&gt;tabPageSessions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageSessions.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageSessions.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="columnHeaderDnsFrameNumber.Text" xml:space="preserve">
     <value>Frame nr.</value>
@@ -2513,59 +1883,89 @@
   <data name="columnHeaderAlexaTop1M.Text" xml:space="preserve">
     <value>Alexa Top 1M</value>
   </data>
-  <data name="&gt;&gt;parametersListView.Name" xml:space="preserve">
-    <value>parametersListView</value>
+  <data name="dnsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;parametersListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="dnsListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
   </data>
-  <data name="&gt;&gt;parametersListView.Parent" xml:space="preserve">
-    <value>tabPageParameters</value>
-  </data>
-  <data name="&gt;&gt;parametersListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Name" xml:space="preserve">
-    <value>parametersKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageParameters</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageParameters.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageParameters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="dnsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageParameters.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="dnsListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 417</value>
+  </data>
+  <data name="dnsListView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dnsListView.Name" xml:space="preserve">
+    <value>dnsListView</value>
+  </data>
+  <data name="&gt;&gt;dnsListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dnsListView.Parent" xml:space="preserve">
+    <value>tabPageDns</value>
+  </data>
+  <data name="&gt;&gt;dnsListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dnsKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="dnsKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 4</value>
+  </data>
+  <data name="dnsKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
+  </data>
+  <data name="dnsKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 22</value>
+  </data>
+  <data name="dnsKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dnsKeywordFilterControl.Name" xml:space="preserve">
+    <value>dnsKeywordFilterControl</value>
+  </data>
+  <data name="&gt;&gt;dnsKeywordFilterControl.Type" xml:space="preserve">
+    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dnsKeywordFilterControl.Parent" xml:space="preserve">
+    <value>tabPageDns</value>
+  </data>
+  <data name="&gt;&gt;dnsKeywordFilterControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tabPageDns.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageDns.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageDns.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 4, 0, 0</value>
   </data>
-  <data name="tabPageParameters.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="tabPageDns.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
   </data>
-  <data name="tabPageParameters.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="tabPageDns.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="tabPageParameters.Text" xml:space="preserve">
-    <value>Parameters</value>
+  <data name="tabPageDns.Text" xml:space="preserve">
+    <value>DNS</value>
   </data>
-  <data name="&gt;&gt;tabPageParameters.Name" xml:space="preserve">
-    <value>tabPageParameters</value>
+  <data name="&gt;&gt;tabPageDns.Name" xml:space="preserve">
+    <value>tabPageDns</value>
   </data>
-  <data name="&gt;&gt;tabPageParameters.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageDns.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageParameters.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageDns.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageParameters.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;tabPageDns.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="parameterName.Text" xml:space="preserve">
     <value>Parameter name</value>
@@ -2597,6 +1997,18 @@
   <metadata name="parametersContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>430, 56</value>
   </metadata>
+  <data name="copyParameterNameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 24</value>
+  </data>
+  <data name="copyParameterNameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy parameter name</value>
+  </data>
+  <data name="copyParameterValueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 24</value>
+  </data>
+  <data name="copyParameterValueToolStripMenuItem.Text" xml:space="preserve">
+    <value>Copy parameter value</value>
+  </data>
   <data name="parametersContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 52</value>
   </data>
@@ -2616,7 +2028,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="parametersListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 435</value>
+    <value>722, 417</value>
   </data>
   <data name="parametersListView.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -2633,59 +2045,62 @@
   <data name="&gt;&gt;parametersListView.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="copyParameterNameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 24</value>
+  <data name="parametersKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
   </data>
-  <data name="copyParameterNameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy parameter name</value>
+  <data name="parametersKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 4</value>
   </data>
-  <data name="copyParameterValueToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>226, 24</value>
+  <data name="parametersKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 5, 5, 5</value>
   </data>
-  <data name="copyParameterValueToolStripMenuItem.Text" xml:space="preserve">
-    <value>Copy parameter value</value>
+  <data name="parametersKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 22</value>
   </data>
-  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
-    <value>splitContainer2</value>
+  <data name="parametersKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;parametersKeywordFilterControl.Name" xml:space="preserve">
+    <value>parametersKeywordFilterControl</value>
   </data>
-  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
-    <value>tabPageKeywords</value>
+  <data name="&gt;&gt;parametersKeywordFilterControl.Type" xml:space="preserve">
+    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;parametersKeywordFilterControl.Parent" xml:space="preserve">
+    <value>tabPageParameters</value>
   </data>
-  <data name="tabPageKeywords.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
+  <data name="&gt;&gt;parametersKeywordFilterControl.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="tabPageKeywords.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageParameters.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageParameters.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageKeywords.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="tabPageParameters.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 4, 0, 0</value>
   </data>
-  <data name="tabPageKeywords.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 461</value>
+  <data name="tabPageParameters.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
   </data>
-  <data name="tabPageKeywords.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="tabPageParameters.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="tabPageKeywords.Text" xml:space="preserve">
-    <value>Keywords</value>
+  <data name="tabPageParameters.Text" xml:space="preserve">
+    <value>Parameters</value>
   </data>
-  <data name="&gt;&gt;tabPageKeywords.Name" xml:space="preserve">
-    <value>tabPageKeywords</value>
+  <data name="&gt;&gt;tabPageParameters.Name" xml:space="preserve">
+    <value>tabPageParameters</value>
   </data>
-  <data name="&gt;&gt;tabPageKeywords.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageParameters.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageKeywords.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageParameters.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageKeywords.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;tabPageParameters.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="splitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -2709,7 +2124,7 @@
     <value>4, 4, 4, 4</value>
   </data>
   <data name="keywordListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 327</value>
+    <value>229, 309</value>
   </data>
   <data name="keywordListBox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -2724,189 +2139,6 @@
     <value>splitContainer2.Panel1</value>
   </data>
   <data name="&gt;&gt;keywordListBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;addKeywordsFromFileButton.Name" xml:space="preserve">
-    <value>addKeywordsFromFileButton</value>
-  </data>
-  <data name="&gt;&gt;addKeywordsFromFileButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addKeywordsFromFileButton.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;addKeywordsFromFileButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;addKeywordButton.Name" xml:space="preserve">
-    <value>addKeywordButton</value>
-  </data>
-  <data name="&gt;&gt;addKeywordButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;addKeywordButton.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;addKeywordButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;keywordTextBox.Name" xml:space="preserve">
-    <value>keywordTextBox</value>
-  </data>
-  <data name="&gt;&gt;keywordTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;keywordTextBox.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;keywordTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 98</value>
-  </data>
-  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
-    <value>panel5</value>
-  </data>
-  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>splitContainer2.Panel1</value>
-  </data>
-  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="removeKeywordButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="removeKeywordButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="removeKeywordButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 425</value>
-  </data>
-  <data name="removeKeywordButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="removeKeywordButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>229, 28</value>
-  </data>
-  <data name="removeKeywordButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="removeKeywordButton.Text" xml:space="preserve">
-    <value>Remove</value>
-  </data>
-  <data name="&gt;&gt;removeKeywordButton.Name" xml:space="preserve">
-    <value>removeKeywordButton</value>
-  </data>
-  <data name="&gt;&gt;removeKeywordButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;removeKeywordButton.Parent" xml:space="preserve">
-    <value>splitContainer2.Panel1</value>
-  </data>
-  <data name="&gt;&gt;removeKeywordButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
-    <value>splitContainer2.Panel1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
-    <value>splitContainer2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="detectedKeywordsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="detectedKeywordsListView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="detectedKeywordsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="detectedKeywordsListView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 453</value>
-  </data>
-  <data name="detectedKeywordsListView.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;detectedKeywordsListView.Name" xml:space="preserve">
-    <value>detectedKeywordsListView</value>
-  </data>
-  <data name="&gt;&gt;detectedKeywordsListView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;detectedKeywordsListView.Parent" xml:space="preserve">
-    <value>splitContainer2.Panel2</value>
-  </data>
-  <data name="&gt;&gt;detectedKeywordsListView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
-    <value>splitContainer2.Panel2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
-    <value>splitContainer2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 453</value>
-  </data>
-  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
-    <value>229</value>
-  </data>
-  <data name="splitContainer2.SplitterWidth" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
-    <value>splitContainer2</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
-    <value>tabPageKeywords</value>
-  </data>
-  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="addKeywordsFromFileButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
@@ -3041,6 +2273,78 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="panel5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 98</value>
+  </data>
+  <data name="panel5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;panel5.Name" xml:space="preserve">
+    <value>panel5</value>
+  </data>
+  <data name="&gt;&gt;panel5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;panel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="removeKeywordButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="removeKeywordButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="removeKeywordButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 407</value>
+  </data>
+  <data name="removeKeywordButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="removeKeywordButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>229, 28</value>
+  </data>
+  <data name="removeKeywordButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="removeKeywordButton.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="&gt;&gt;removeKeywordButton.Name" xml:space="preserve">
+    <value>removeKeywordButton</value>
+  </data>
+  <data name="&gt;&gt;removeKeywordButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removeKeywordButton.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;removeKeywordButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Name" xml:space="preserve">
+    <value>splitContainer2.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="columnHeaderFrameNr.Text" xml:space="preserve">
     <value>Frame number</value>
   </data>
@@ -3089,71 +2393,98 @@
   <data name="columnHeaderDestinationPort.Width" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="&gt;&gt;cleartextTextBox.Name" xml:space="preserve">
-    <value>cleartextTextBox</value>
+  <data name="detectedKeywordsListView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;cleartextTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="detectedKeywordsListView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;cleartextTextBox.Parent" xml:space="preserve">
-    <value>tabPageCleartext</value>
+  <data name="detectedKeywordsListView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;cleartextTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="detectedKeywordsListView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>480, 435</value>
   </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tabPageCleartext</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>tabPageCleartext</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+  <data name="detectedKeywordsListView.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="tabPageCleartext.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="&gt;&gt;detectedKeywordsListView.Name" xml:space="preserve">
+    <value>detectedKeywordsListView</value>
+  </data>
+  <data name="&gt;&gt;detectedKeywordsListView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;detectedKeywordsListView.Parent" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;detectedKeywordsListView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Name" xml:space="preserve">
+    <value>splitContainer2.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 435</value>
+  </data>
+  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>229</value>
+  </data>
+  <data name="splitContainer2.SplitterWidth" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="splitContainer2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Name" xml:space="preserve">
+    <value>splitContainer2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.Parent" xml:space="preserve">
+    <value>tabPageKeywords</value>
+  </data>
+  <data name="&gt;&gt;splitContainer2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tabPageKeywords.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 40</value>
   </data>
-  <data name="tabPageCleartext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageKeywords.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageCleartext.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageKeywords.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageCleartext.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPageKeywords.Size" type="System.Drawing.Size, System.Drawing">
     <value>722, 443</value>
   </data>
-  <data name="tabPageCleartext.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="tabPageKeywords.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="tabPageCleartext.Text" xml:space="preserve">
-    <value>Cleartext</value>
+  <data name="tabPageKeywords.Text" xml:space="preserve">
+    <value>Keywords</value>
   </data>
-  <data name="&gt;&gt;tabPageCleartext.Name" xml:space="preserve">
-    <value>tabPageCleartext</value>
+  <data name="&gt;&gt;tabPageKeywords.Name" xml:space="preserve">
+    <value>tabPageKeywords</value>
   </data>
-  <data name="&gt;&gt;tabPageCleartext.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageKeywords.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageCleartext.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageKeywords.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageCleartext.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;tabPageKeywords.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="cleartextTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3187,93 +2518,6 @@
   </data>
   <data name="&gt;&gt;cleartextTextBox.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;changeCleartextDictionaryButton.Name" xml:space="preserve">
-    <value>changeCleartextDictionaryButton</value>
-  </data>
-  <data name="&gt;&gt;changeCleartextDictionaryButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;changeCleartextDictionaryButton.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;changeCleartextDictionaryButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cleartextSearchModeComboBox.Name" xml:space="preserve">
-    <value>cleartextSearchModeComboBox</value>
-  </data>
-  <data name="&gt;&gt;cleartextSearchModeComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cleartextSearchModeComboBox.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;cleartextSearchModeComboBox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dictionaryNameLabel.Name" xml:space="preserve">
-    <value>dictionaryNameLabel</value>
-  </data>
-  <data name="&gt;&gt;dictionaryNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dictionaryNameLabel.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;dictionaryNameLabel.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 4</value>
-  </data>
-  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>714, 68</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tabPageCleartext</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="changeCleartextDictionaryButton.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -3449,6 +2693,33 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 4</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>714, 68</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPageCleartext</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="button1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -3482,59 +2753,35 @@
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;framesTreeView.Name" xml:space="preserve">
-    <value>framesTreeView</value>
-  </data>
-  <data name="&gt;&gt;framesTreeView.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;framesTreeView.Parent" xml:space="preserve">
-    <value>tabPageReceivedFrames</value>
-  </data>
-  <data name="&gt;&gt;framesTreeView.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ReceivedFramesClearButton.Name" xml:space="preserve">
-    <value>ReceivedFramesClearButton</value>
-  </data>
-  <data name="&gt;&gt;ReceivedFramesClearButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ReceivedFramesClearButton.Parent" xml:space="preserve">
-    <value>tabPageReceivedFrames</value>
-  </data>
-  <data name="&gt;&gt;ReceivedFramesClearButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageReceivedFrames.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageCleartext.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 40</value>
   </data>
-  <data name="tabPageReceivedFrames.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageCleartext.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageReceivedFrames.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageCleartext.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageReceivedFrames.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPageCleartext.Size" type="System.Drawing.Size, System.Drawing">
     <value>722, 443</value>
   </data>
-  <data name="tabPageReceivedFrames.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="tabPageCleartext.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tabPageReceivedFrames.Text" xml:space="preserve">
-    <value>Frames</value>
+  <data name="tabPageCleartext.Text" xml:space="preserve">
+    <value>Cleartext</value>
   </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Name" xml:space="preserve">
-    <value>tabPageReceivedFrames</value>
+  <data name="&gt;&gt;tabPageCleartext.Name" xml:space="preserve">
+    <value>tabPageCleartext</value>
   </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageCleartext.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageCleartext.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageReceivedFrames.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="&gt;&gt;tabPageCleartext.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="framesTreeView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3596,59 +2843,35 @@
   <data name="&gt;&gt;ReceivedFramesClearButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;anomalyLog.Name" xml:space="preserve">
-    <value>anomalyLog</value>
-  </data>
-  <data name="&gt;&gt;anomalyLog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;anomalyLog.Parent" xml:space="preserve">
-    <value>tabPageAnomalyLog</value>
-  </data>
-  <data name="&gt;&gt;anomalyLog.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;clearAnomaliesButton.Name" xml:space="preserve">
-    <value>clearAnomaliesButton</value>
-  </data>
-  <data name="&gt;&gt;clearAnomaliesButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;clearAnomaliesButton.Parent" xml:space="preserve">
-    <value>tabPageAnomalyLog</value>
-  </data>
-  <data name="&gt;&gt;clearAnomaliesButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tabPageAnomalyLog.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPageReceivedFrames.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 40</value>
   </data>
-  <data name="tabPageAnomalyLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageReceivedFrames.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageAnomalyLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPageReceivedFrames.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="tabPageAnomalyLog.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="tabPageReceivedFrames.Size" type="System.Drawing.Size, System.Drawing">
     <value>722, 443</value>
   </data>
-  <data name="tabPageAnomalyLog.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPageReceivedFrames.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabPageAnomalyLog.Text" xml:space="preserve">
-    <value>Anomalies</value>
+  <data name="tabPageReceivedFrames.Text" xml:space="preserve">
+    <value>Frames</value>
   </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Name" xml:space="preserve">
-    <value>tabPageAnomalyLog</value>
+  <data name="&gt;&gt;tabPageReceivedFrames.Name" xml:space="preserve">
+    <value>tabPageReceivedFrames</value>
   </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPageReceivedFrames.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPageReceivedFrames.Parent" xml:space="preserve">
     <value>tabControl</value>
   </data>
-  <data name="&gt;&gt;tabPageAnomalyLog.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="&gt;&gt;tabPageReceivedFrames.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="anomalyLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -3719,6 +2942,81 @@
   <data name="&gt;&gt;clearAnomaliesButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="tabPageAnomalyLog.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 40</value>
+  </data>
+  <data name="tabPageAnomalyLog.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageAnomalyLog.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabPageAnomalyLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>722, 443</value>
+  </data>
+  <data name="tabPageAnomalyLog.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tabPageAnomalyLog.Text" xml:space="preserve">
+    <value>Anomalies</value>
+  </data>
+  <data name="&gt;&gt;tabPageAnomalyLog.Name" xml:space="preserve">
+    <value>tabPageAnomalyLog</value>
+  </data>
+  <data name="&gt;&gt;tabPageAnomalyLog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPageAnomalyLog.Parent" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabPageAnomalyLog.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="tabControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>16, 18</value>
+  </data>
+  <data name="tabControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="tabControl.Padding" type="System.Drawing.Point, System.Drawing">
+    <value>5, 3</value>
+  </data>
+  <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>730, 487</value>
+  </data>
+  <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Name" xml:space="preserve">
+    <value>tabControl</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;tabControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Name" xml:space="preserve">
+    <value>splitContainer1.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="caseFilenameColumn.Text" xml:space="preserve">
     <value>Filename</value>
   </data>
@@ -3728,6 +3026,30 @@
   <metadata name="caseFileContextMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>116, 56</value>
   </metadata>
+  <data name="showMetadataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 24</value>
+  </data>
+  <data name="showMetadataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show Metadata</value>
+  </data>
+  <data name="openParentFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 24</value>
+  </data>
+  <data name="openParentFolderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Open parent folder</value>
+  </data>
+  <data name="removeCaseFileMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 24</value>
+  </data>
+  <data name="removeCaseFileMenuItem.Text" xml:space="preserve">
+    <value>Remove selected files from Case</value>
+  </data>
+  <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 24</value>
+  </data>
+  <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Remove selected files and Reload Case Files</value>
+  </data>
   <data name="caseFileContextMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>371, 100</value>
   </data>
@@ -3764,30 +3086,6 @@
   <data name="&gt;&gt;casePanelFileListView.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="showMetadataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 24</value>
-  </data>
-  <data name="showMetadataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show Metadata</value>
-  </data>
-  <data name="openParentFolderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 24</value>
-  </data>
-  <data name="openParentFolderToolStripMenuItem.Text" xml:space="preserve">
-    <value>Open parent folder</value>
-  </data>
-  <data name="removeCaseFileMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 24</value>
-  </data>
-  <data name="removeCaseFileMenuItem.Text" xml:space="preserve">
-    <value>Remove selected files from Case</value>
-  </data>
-  <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 24</value>
-  </data>
-  <data name="removeSelectedFilesAndReloadCaseFilesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Remove selected files and Reload Case Files</value>
-  </data>
   <data name="reloadCaseFilesButton.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -3821,9 +3119,90 @@
   <data name="&gt;&gt;reloadCaseFilesButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="casePanelBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="casePanelBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="casePanelBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="casePanelBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="casePanelBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 487</value>
+  </data>
+  <data name="casePanelBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="casePanelBox.Text" xml:space="preserve">
+    <value>Case Panel</value>
+  </data>
+  <data name="&gt;&gt;casePanelBox.Name" xml:space="preserve">
+    <value>casePanelBox</value>
+  </data>
+  <data name="&gt;&gt;casePanelBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;casePanelBox.Parent" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;casePanelBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
+    <value>splitContainer1.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer1.Panel2MinSize" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 487</value>
+  </data>
+  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
+    <value>730</value>
+  </data>
+  <data name="splitContainer1.SplitterWidth" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
+    <value>splitContainer1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>513, 17</value>
   </metadata>
+  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 21</value>
+  </data>
+  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
+    <value>Buffered Frames to Parse:</value>
+  </data>
+  <data name="snifferBufferToolStripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 20</value>
+  </data>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 524</value>
   </data>
@@ -3851,20 +3230,107 @@
   <data name="&gt;&gt;statusStrip1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="toolStripStatusLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
-  </data>
-  <data name="toolStripStatusLabel1.Text" xml:space="preserve">
-    <value>Buffered Frames to Parse:</value>
-  </data>
-  <data name="snifferBufferToolStripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>267, 20</value>
-  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>629, 17</value>
   </metadata>
   <data name="menuStrip1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="openToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+O</value>
+  </data>
+  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="openToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Open</value>
+  </data>
+  <data name="readFromPacketCacheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="readFromPacketCacheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Read from Packet&amp;Cache</value>
+  </data>
+  <data name="receivePcapOverIPToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Ctrl+R</value>
+  </data>
+  <data name="receivePcapOverIPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="receivePcapOverIPToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Receive Pcap over IP</value>
+  </data>
+  <data name="credentialsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="credentialsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Credentials</value>
+  </data>
+  <data name="dnsRecordsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="dnsRecordsToolStripMenuItem.Text" xml:space="preserve">
+    <value>DNS</value>
+  </data>
+  <data name="fileInfosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="fileInfosToolStripMenuItem.Text" xml:space="preserve">
+    <value>File MetaData</value>
+  </data>
+  <data name="hostsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="hostsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hosts</value>
+  </data>
+  <data name="messagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="messagesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="parametersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="parametersToolStripMenuItem.Text" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="sessionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 26</value>
+  </data>
+  <data name="sessionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sessions</value>
+  </data>
+  <data name="exportToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="exportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="exportToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Export to File</value>
+  </data>
+  <data name="exportToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="printReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="printReportToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Print Report</value>
+  </data>
+  <data name="printReportToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="exitToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
+    <value>Alt+F4</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>271, 26</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;xit</value>
   </data>
   <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 24</value>
@@ -4222,141 +3688,6 @@
   <data name="toolsToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Tools</value>
   </data>
-  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 24</value>
-  </data>
-  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Help</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 24</value>
-  </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>language</value>
-  </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>8, 2, 0, 2</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>920, 28</value>
-  </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="openToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+O</value>
-  </data>
-  <data name="openToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="openToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Open</value>
-  </data>
-  <data name="readFromPacketCacheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="readFromPacketCacheToolStripMenuItem.Text" xml:space="preserve">
-    <value>Read from Packet&amp;Cache</value>
-  </data>
-  <data name="receivePcapOverIPToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Ctrl+R</value>
-  </data>
-  <data name="receivePcapOverIPToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="receivePcapOverIPToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Receive Pcap over IP</value>
-  </data>
-  <data name="exportToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="exportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="exportToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Export to File</value>
-  </data>
-  <data name="exportToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="credentialsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="credentialsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Credentials</value>
-  </data>
-  <data name="dnsRecordsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="dnsRecordsToolStripMenuItem.Text" xml:space="preserve">
-    <value>DNS</value>
-  </data>
-  <data name="fileInfosToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="fileInfosToolStripMenuItem.Text" xml:space="preserve">
-    <value>File MetaData</value>
-  </data>
-  <data name="hostsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="hostsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Hosts</value>
-  </data>
-  <data name="messagesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="messagesToolStripMenuItem.Text" xml:space="preserve">
-    <value>Messages</value>
-  </data>
-  <data name="parametersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="parametersToolStripMenuItem.Text" xml:space="preserve">
-    <value>Parameters</value>
-  </data>
-  <data name="sessionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 26</value>
-  </data>
-  <data name="sessionsToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sessions</value>
-  </data>
-  <data name="printReportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="printReportToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Print Report</value>
-  </data>
-  <data name="printReportToolStripMenuItem.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="exitToolStripMenuItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
-    <value>Alt+F4</value>
-  </data>
-  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>271, 26</value>
-  </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>E&amp;xit</value>
-  </data>
   <data name="getUpgradeCodeToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -4402,6 +3733,12 @@
   <data name="aboutNetworkMinerToolStripMenuItem.Text" xml:space="preserve">
     <value>About &amp;NetworkMiner</value>
   </data>
+  <data name="helpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 24</value>
+  </data>
+  <data name="helpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
   <data name="vietnameseToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 26</value>
   </data>
@@ -4413,6 +3750,39 @@
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>english</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 24</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>language</value>
+  </data>
+  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="menuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 2, 0, 2</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>920, 28</value>
+  </data>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="menuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="networkAdaptersComboBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -4590,114 +3960,6 @@
   </data>
   <data name="&gt;&gt;startButton.ZOrder" xml:space="preserve">
     <value>10</value>
-  </data>
-  <data name="filesKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="filesKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 4</value>
-  </data>
-  <data name="filesKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="filesKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 22</value>
-  </data>
-  <data name="filesKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Name" xml:space="preserve">
-    <value>filesKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageFiles</value>
-  </data>
-  <data name="&gt;&gt;filesKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="sessionsKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="sessionsKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="sessionsKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="sessionsKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 22</value>
-  </data>
-  <data name="sessionsKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Name" xml:space="preserve">
-    <value>sessionsKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageSessions</value>
-  </data>
-  <data name="&gt;&gt;sessionsKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="dnsKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="dnsKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 4</value>
-  </data>
-  <data name="dnsKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="dnsKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 22</value>
-  </data>
-  <data name="dnsKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Name" xml:space="preserve">
-    <value>dnsKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageDns</value>
-  </data>
-  <data name="&gt;&gt;dnsKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="parametersKeywordFilterControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="parametersKeywordFilterControl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 4</value>
-  </data>
-  <data name="parametersKeywordFilterControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>5, 5, 5, 5</value>
-  </data>
-  <data name="parametersKeywordFilterControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>722, 22</value>
-  </data>
-  <data name="parametersKeywordFilterControl.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Name" xml:space="preserve">
-    <value>parametersKeywordFilterControl</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Type" xml:space="preserve">
-    <value>NetworkMiner.KeywordFilterControlForListViewItems, NetworkMiner, Version=2.3.1.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.Parent" xml:space="preserve">
-    <value>tabPageParameters</value>
-  </data>
-  <data name="&gt;&gt;parametersKeywordFilterControl.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -4909,6 +4171,9 @@
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>NetworkMiner 2.3.1</value>
@@ -5669,6 +4934,36 @@
   <data name="&gt;&gt;toolStripSeparatorVoIP.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;analyseVoIPAudioToolStripMenuItem.Name" xml:space="preserve">
+    <value>analyseVoIPAudioToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;analyseVoIPAudioToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fromCurrentPcapFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fromCurrentPcapFileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fromCurrentPcapFileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fromOtherPcapFileToolStripMenuItem.Name" xml:space="preserve">
+    <value>fromOtherPcapFileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;fromOtherPcapFileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparatorSubVoIP.Name" xml:space="preserve">
+    <value>toolStripSeparatorSubVoIP</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparatorSubVoIP.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openPlayerToolStripMenuItem.Name" xml:space="preserve">
+    <value>openPlayerToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;openPlayerToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;helpToolStripMenuItem.Name" xml:space="preserve">
     <value>helpToolStripMenuItem</value>
   </data>
@@ -5758,36 +5053,6 @@
   </data>
   <data name="&gt;&gt;openTextFileDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;analyseVoIPAudioToolStripMenuItem.Name" xml:space="preserve">
-    <value>analyseVoIPAudioToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;analyseVoIPAudioToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fromCurrentPcapFileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fromCurrentPcapFileToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;fromCurrentPcapFileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;fromOtherPcapFileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fromOtherPcapFileToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;fromOtherPcapFileToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;openPlayerToolStripMenuItem.Name" xml:space="preserve">
-    <value>openPlayerToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;openPlayerToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparatorSubVoIP.Name" xml:space="preserve">
-    <value>toolStripSeparatorSubVoIP</value>
-  </data>
-  <data name="&gt;&gt;toolStripSeparatorSubVoIP.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>NetworkMinerForm</value>

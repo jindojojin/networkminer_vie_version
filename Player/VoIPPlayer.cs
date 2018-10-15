@@ -40,7 +40,7 @@ namespace Player
             this.addToLists();
         }
 
-        private void OpenFile_Click(object sender, EventArgs e)
+        public void OpenFile_Click(object sender, EventArgs e)
         {
             this.core.OpenFile(ref this.processor, ref this.err); //giaodien.analyse.open
             this.addToLists();
@@ -66,7 +66,7 @@ namespace Player
         }
        
 
-        private void OpenFolder_Click(object sender, EventArgs e)
+        public void OpenFolder_Click(object sender, EventArgs e)
         {
             this.core.OpenFolder(ref this.processor, ref this.err); //giaodien.analyse.open
         }
@@ -108,9 +108,18 @@ namespace Player
 
         private void scan_Click(object sender, EventArgs e)
         {
-            if (this.CurrentFileList.Count > 0) this.core.Scan(processor, err);
-            else Interaction.MsgBox("Nothing to scan\n" +
-                "Do you want to open a pcap file ?", MsgBoxStyle.OkCancel, "Scan VoIP stream failed");
+            if (this.CurrentFileList.Count > 0)
+            {
+                this.core.Scan(processor, err);
+                //Interaction.MsgBox("Scan completed\n" )
+            }
+            else
+            {
+                string message1 = "Nothing to scan";
+                string message2 = "Do you want to open a pcap file ?";
+                chooseFileOrFolderToScan msgbox = new chooseFileOrFolderToScan(message1, message2, this);
+                msgbox.ShowDialog();
+            }
         }
     }
 }

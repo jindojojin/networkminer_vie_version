@@ -11,3 +11,4 @@ T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.pdb
 T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\pcapdatacopy.dll
 T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\pcapdatacopy.pdb
 T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.csproj.CopyComplete
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.chooseFileOrFolderToScan.resources

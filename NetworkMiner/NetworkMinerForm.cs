@@ -338,7 +338,7 @@ namespace NetworkMiner {
             this.processor = new Form1();  //khoi tao processor la 1 form cua pcapdatacopy
             this.err = new EventArgs();
             this.core = new Analyse(ref processor, ref err);
-            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders);
+            
             PacketParser.Utils.Logger.Log("Initializing Component", System.Diagnostics.EventLogEntryType.Information);
             InitializeComponent();
 
@@ -1924,6 +1924,7 @@ namespace NetworkMiner {
                 if (!this.pcapFiles.Contains(this.openPcapFileDialog.FileName)){
                     this.pcapFiles.Add(this.openPcapFileDialog.FileName);
                     this.pcapFolders.Add(Path.GetDirectoryName(this.openPcapFileDialog.FileName));
+                    this.updateCurrentFileVoipFromCurrent(Path.GetFileName(this.openPcapFileDialog.FileName));
                 }
             }
         }
@@ -2033,6 +2034,16 @@ namespace NetworkMiner {
             return null;
         }
 
+        private void updateCurrentFileVoipFromCurrent( string FileName)
+        {
+            System.Windows.Forms.ToolStripItem newCurrentFile = new System.Windows.Forms.ToolStripMenuItem();
+            newCurrentFile.Name = "newCurrentFile";
+            newCurrentFile.Text = FileName;
+            this.resources.ApplyResources(newCurrentFile, "newCurrentFile");
+            newCurrentFile.Click += new System.EventHandler(this.analyseCurrentFile_Click);
+            this.fromCurrentPcapFileToolStripMenuItem.DropDownItems.Add(newCurrentFile);
+        }
+
         void fileWorker_DoWork(object sender, DoWorkEventArgs e) {
             //extract the argument (LoadingProcess)
             LoadingProcess lp = (LoadingProcess)e.Argument;
@@ -2117,6 +2128,8 @@ namespace NetworkMiner {
         }
 
         private void ResetCapturedData(bool removeCapturedFiles, bool clearIpColorHandler) {
+            this.fromCurrentPcapFileToolStripMenuItem.DropDownItems.Clear();
+
             this.networkHostTreeView.Nodes.Clear();
             this.framesTreeView.Nodes.Clear();
             this.imagesListView.Items.Clear();
@@ -3335,7 +3348,8 @@ finally {
         private VoipPlayer playerDialog;
         private void openPlayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            playerDialog.Show();
+            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders);
+            this.playerDialog.Show();
         }
         public Analyse core;
         public Form1 processor;
@@ -3350,7 +3364,10 @@ finally {
             this.core.OpenFile(ref processor, ref err);
         }
 
-        
+        private void analyseCurrentFile_Click(object sender, EventArgs e)
+        {
+            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err);
+        }
 
         private void filesListView_SelectedIndexChanged(object sender, EventArgs e) {
             lock (filesListView.ContextMenuStrip) {

@@ -245,7 +245,7 @@
             this.Controls.Add(this.PlayerGroup);
             this.Controls.Add(this.dataGridView);
             this.Name = "VoipPlayer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Network Miner - VoIP Player";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.PlayerGroup.ResumeLayout(false);
