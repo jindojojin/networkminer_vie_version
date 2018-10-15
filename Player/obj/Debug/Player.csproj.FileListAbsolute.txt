@@ -1,0 +1,13 @@
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\Player.exe.config
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\Player.exe
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\Player.pdb
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.csprojAssemblyReference.cache
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.VoIPPlayer.resources
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.Properties.Resources.resources
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.csproj.GenerateResource.cache
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.csproj.CoreCompileInputs.cache
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.exe
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.pdb
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\pcapdatacopy.dll
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\bin\Debug\pcapdatacopy.pdb
+T:\Dev\voip_wireshark\networkminer_vie_version\Player\obj\Debug\Player.csproj.CopyComplete

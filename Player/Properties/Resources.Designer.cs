@@ -63,6 +63,16 @@ namespace Player.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap File_icon {
+            get {
+                object obj = ResourceManager.GetObject("File-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Media_Controls_End_icon {
             get {
                 object obj = ResourceManager.GetObject("Media-Controls-End-icon", resourceCulture);
@@ -133,9 +143,29 @@ namespace Player.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap User_Interface_Fingerprint_Scan_icon {
+            get {
+                object obj = ResourceManager.GetObject("User-Interface-Fingerprint-Scan-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Very_Basic_Folder_icon {
             get {
                 object obj = ResourceManager.GetObject("Very-Basic-Folder-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Very_Basic_Update_icon {
+            get {
+                object obj = ResourceManager.GetObject("Very-Basic-Update-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

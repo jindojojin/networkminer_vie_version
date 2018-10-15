@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacketParser", "PacketParse
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "NetresecShared", "NetresecShared\NetresecShared.shproj", "{C11C6BA2-4AE3-4F40-85A0-D998957FA9F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Player", "Player\Player.csproj", "{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pcapdatacopy", "pcapdatacopy\pcapdatacopy.csproj", "{0A623EB5-F630-4CE2-9324-A70C40F6FD27}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		NetresecShared\NetresecShared.projitems*{6076f9f3-f975-469e-9e0c-cacccff9629f}*SharedItemsImports = 4
@@ -46,6 +50,22 @@ Global
 		{6076F9F3-F975-469E-9E0C-CACCCFF9629F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6076F9F3-F975-469E-9E0C-CACCCFF9629F}.Release|x86.ActiveCfg = Release|x86
 		{6076F9F3-F975-469E-9E0C-CACCCFF9629F}.Release|x86.Build.0 = Release|x86
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Debug|x86.Build.0 = Debug|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Release|x86.ActiveCfg = Release|Any CPU
+		{1DA43515-1FA7-4B77-9A69-9EEAD264CFB4}.Release|x86.Build.0 = Release|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Debug|x86.Build.0 = Debug|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Release|x86.ActiveCfg = Release|Any CPU
+		{0A623EB5-F630-4CE2-9324-A70C40F6FD27}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

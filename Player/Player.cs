@@ -6,17 +6,22 @@ using System.Windows.Forms;
 
 namespace Player
 {
-    static class Program
+    public static class Datashare
     {
-        /// <summary>
+        public static string currentFile;
+    }
+
+    static class Player
+    {
+        // <summary>
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VoIPPlayer());
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new VoipPlayer());
         }
     }
 }

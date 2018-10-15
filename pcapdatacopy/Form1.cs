@@ -383,7 +383,7 @@ namespace pcapdatacopy
 		// Token: 0x17000018 RID: 24
 		// (get) Token: 0x06000042 RID: 66 RVA: 0x00004BB0 File Offset: 0x00002FB0
 		// (set) Token: 0x06000043 RID: 67 RVA: 0x00004BC8 File Offset: 0x00002FC8
-		internal virtual TextBox folder_selected_textbox
+		public virtual TextBox folder_selected_textbox
 		{
 			[DebuggerNonUserCode]
 			get
@@ -1521,9 +1521,12 @@ namespace pcapdatacopy
 								});
 								num++;
 								this.rtp_stream_name = text;
+                                
 								this.rtp_filename = text.Replace(".", "-");
 								this.rtp_filename = this.rtp_filename.Replace(",", "_");
-								flag = MyProject.Computer.FileSystem.FileExists(this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename + ".bin");
+                                Console.WriteLine(this.rtp_stream_name + " -> " + this.rtp_filename);
+
+                                flag = MyProject.Computer.FileSystem.FileExists(this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename + ".bin");
 								if (flag)
 								{
 									MyProject.Computer.FileSystem.DeleteFile(this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename + ".bin");

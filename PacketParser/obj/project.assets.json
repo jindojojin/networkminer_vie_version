@@ -64,11 +64,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "projectUniqueName": "T:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
       "projectName": "PacketParser",
-      "projectPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "projectPath": "T:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
       "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
-      "outputPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\PacketParser\\obj\\",
+      "outputPath": "T:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -85,8 +85,8 @@
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "T:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "T:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }

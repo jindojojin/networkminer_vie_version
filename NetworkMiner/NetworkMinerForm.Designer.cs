@@ -228,6 +228,7 @@ namespace NetworkMiner {
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.clearGUIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetCapturedDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparatorVoIP = new System.Windows.Forms.ToolStripSeparator();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.getUpgradeCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.signWithLicenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,6 +248,11 @@ namespace NetworkMiner {
             this.button2 = new System.Windows.Forms.Button();
             this.stopButton = new System.Windows.Forms.Button();
             this.startButton = new System.Windows.Forms.Button();
+            this.analyseVoIPAudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromCurrentPcapFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fromOtherPcapFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openPlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparatorSubVoIP = new System.Windows.Forms.ToolStripSeparator();
             this.filesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.messagesKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
             this.sessionsKeywordFilterControl = new NetworkMiner.KeywordFilterControlForListViewItems();
@@ -1712,7 +1718,9 @@ namespace NetworkMiner {
             this.stopCapturingToolStripMenuItem,
             this.toolStripSeparator3,
             this.clearGUIToolStripMenuItem,
-            this.resetCapturedDataToolStripMenuItem});
+            this.resetCapturedDataToolStripMenuItem,
+            this.toolStripSeparatorVoIP,
+            this.analyseVoIPAudioToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
             // 
@@ -1762,6 +1770,11 @@ namespace NetworkMiner {
             this.resetCapturedDataToolStripMenuItem.Name = "resetCapturedDataToolStripMenuItem";
             resources.ApplyResources(this.resetCapturedDataToolStripMenuItem, "resetCapturedDataToolStripMenuItem");
             this.resetCapturedDataToolStripMenuItem.Click += new System.EventHandler(this.resetCapturedDataToolStripMenuItem_Click);
+            // 
+            // toolStripSeparatorVoIP
+            // 
+            this.toolStripSeparatorVoIP.Name = "toolStripSeparatorVoIP";
+            resources.ApplyResources(this.toolStripSeparatorVoIP, "toolStripSeparatorVoIP");
             // 
             // helpToolStripMenuItem
             // 
@@ -1879,6 +1892,39 @@ namespace NetworkMiner {
             this.startButton.Name = "startButton";
             this.startButton.UseVisualStyleBackColor = true;
             this.startButton.Click += new System.EventHandler(this.startButton_Click);
+            // 
+            // analyseVoIPAudioToolStripMenuItem
+            // 
+            this.analyseVoIPAudioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fromCurrentPcapFileToolStripMenuItem,
+            this.fromOtherPcapFileToolStripMenuItem,
+            this.toolStripSeparatorSubVoIP,
+            this.openPlayerToolStripMenuItem});
+            this.analyseVoIPAudioToolStripMenuItem.Name = "analyseVoIPAudioToolStripMenuItem";
+            resources.ApplyResources(this.analyseVoIPAudioToolStripMenuItem, "analyseVoIPAudioToolStripMenuItem");
+            // 
+            // fromCurrentPcapFileToolStripMenuItem
+            // 
+            this.fromCurrentPcapFileToolStripMenuItem.Name = "fromCurrentPcapFileToolStripMenuItem";
+            resources.ApplyResources(this.fromCurrentPcapFileToolStripMenuItem, "fromCurrentPcapFileToolStripMenuItem");
+            this.fromCurrentPcapFileToolStripMenuItem.Click += new System.EventHandler(this.fromCurrentPcapFileToolStripMenuItem_Click);
+            // 
+            // fromOtherPcapFileToolStripMenuItem
+            // 
+            this.fromOtherPcapFileToolStripMenuItem.Name = "fromOtherPcapFileToolStripMenuItem";
+            resources.ApplyResources(this.fromOtherPcapFileToolStripMenuItem, "fromOtherPcapFileToolStripMenuItem");
+            this.fromOtherPcapFileToolStripMenuItem.Click += new System.EventHandler(this.fromOtherPcapFileToolStripMenuItem_Click);
+            // 
+            // openPlayerToolStripMenuItem
+            // 
+            this.openPlayerToolStripMenuItem.Name = "openPlayerToolStripMenuItem";
+            resources.ApplyResources(this.openPlayerToolStripMenuItem, "openPlayerToolStripMenuItem");
+            this.openPlayerToolStripMenuItem.Click += new System.EventHandler(this.openPlayerToolStripMenuItem_Click);
+            // 
+            // toolStripSeparatorSubVoIP
+            // 
+            this.toolStripSeparatorSubVoIP.Name = "toolStripSeparatorSubVoIP";
+            resources.ApplyResources(this.toolStripSeparatorSubVoIP, "toolStripSeparatorSubVoIP");
             // 
             // filesKeywordFilterControl
             // 
@@ -2222,6 +2268,12 @@ namespace NetworkMiner {
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vietnameseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparatorVoIP;
+        private System.Windows.Forms.ToolStripMenuItem analyseVoIPAudioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fromCurrentPcapFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fromOtherPcapFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparatorSubVoIP;
+        private System.Windows.Forms.ToolStripMenuItem openPlayerToolStripMenuItem;
     }
 }
 
