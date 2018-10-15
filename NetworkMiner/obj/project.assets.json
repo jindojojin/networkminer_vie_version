@@ -117,35 +117,37 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\linhtq\\.nuget\\packages\\": {}
+    "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "projectUniqueName": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
       "projectName": "NetworkMiner",
-      "projectPath": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
-      "packagesPath": "C:\\Users\\linhtq\\.nuget\\packages\\",
-      "outputPath": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\obj\\",
+      "projectPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
+      "outputPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\NetworkMiner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\linhtq\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Win 8.1 VS8 X64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net45"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
-              "projectPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
+            "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
+              "projectPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
             },
-            "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "T:\\Dev\\voip_wireshark\\try\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }
