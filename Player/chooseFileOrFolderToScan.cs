@@ -22,12 +22,14 @@ namespace Player
         }
         private void OpenFolder_Click(object sender, EventArgs e)
         {
-            this.player.OpenFile_Click(sender, e);
+            this.player.OpenFolder_Click(sender, e);
+            this.Close();
         }
 
         private void OpenFile_Click(object sender, EventArgs e)
         {
-            this.player.OpenFolder_Click(sender, e);
+            this.player.OpenFile_Click(sender, e);
+            this.Close();
         }
 
         private void Cancel_Click(object sender, EventArgs e)

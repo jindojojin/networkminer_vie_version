@@ -328,6 +328,7 @@ namespace NetworkMiner {
             this.keywordQueue = new ConcurrentQueue<PacketParser.Events.KeywordEventArgs>();
             this.pcapFiles = new List<string>();
             this.pcapFolders = new List<string>();
+            this.audioList = new List<string>();
             //this.AudioStreamQueue = new ConcurrentQueue<PacketParser.AudioStream>();
             //this.VoipCallQueue = new ConcurrentQueue<Tuple<System.Net.IPAddress, ushort, System.Net.IPAddress, ushort, string, string, string>>();
 
@@ -337,7 +338,7 @@ namespace NetworkMiner {
             this.guiUpdateTimer.Tick += this.GuiUpdateTimer_Tick;
             this.processor = new Form1();  //khoi tao processor la 1 form cua pcapdatacopy
             this.err = new EventArgs();
-            this.core = new Analyse(ref processor, ref err);
+            this.core = new Analyse(ref processor, ref err, ref this.audioList);
             
             PacketParser.Utils.Logger.Log("Initializing Component", System.Diagnostics.EventLogEntryType.Information);
             InitializeComponent();
@@ -1918,13 +1919,17 @@ namespace NetworkMiner {
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e) {
             //this.openFileDialog1.ShowDialog();
-
             if (this.openPcapFileDialog.ShowDialog() == DialogResult.OK) {
-                this.LoadPcapFile(this.openPcapFileDialog.FileName);
-                if (!this.pcapFiles.Contains(this.openPcapFileDialog.FileName)){
-                    this.pcapFiles.Add(this.openPcapFileDialog.FileName);
-                    this.pcapFolders.Add(Path.GetDirectoryName(this.openPcapFileDialog.FileName));
-                    this.updateCurrentFileVoipFromCurrent(Path.GetFileName(this.openPcapFileDialog.FileName));
+                string filepath = this.openPcapFileDialog.FileName;
+                string filedir = Path.GetDirectoryName(filepath);
+                string filename = Path.GetFileName(filepath);
+                this.LoadPcapFile(filepath);
+                if (!this.pcapFiles.Contains(filepath)){
+                    this.pcapFiles.Add(filepath);
+                    if (!this.pcapFolders.Contains(filedir))
+                        this.pcapFolders.Add(filedir);
+                    this.updateCurrentFileVoipFromCurrent(filename);
+                    Console.WriteLine(this.pcapFiles.Count + " / " + this.pcapFolders.Count);
                 }
             }
         }
@@ -2808,6 +2813,7 @@ namespace NetworkMiner {
             this.ResetCapturedData(false, true);
             this.pcapFiles.Clear();
             this.pcapFolders.Clear();
+            this.audioList.Clear();
         }
 
         private void keywordTextBox_KeyDown(object sender, KeyEventArgs e) {
@@ -3348,7 +3354,7 @@ finally {
         private VoipPlayer playerDialog;
         private void openPlayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders);
+            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders, ref this.audioList);
             this.playerDialog.Show();
         }
         public Analyse core;
@@ -3356,17 +3362,17 @@ finally {
         public EventArgs err;
         private void fromCurrentPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err);
+            this.core.UseFile(ref this.processor, this.openPcapFileDialog.FileName, ref err, ref this.audioList);
         }
 
         private void fromOtherPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.core.OpenFile(ref processor, ref err);
+            this.core.OpenFile(ref processor, ref err, ref this.audioList);
         }
 
         private void analyseCurrentFile_Click(object sender, EventArgs e)
         {
-            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err);
+            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err, ref this.audioList);
         }
 
         private void filesListView_SelectedIndexChanged(object sender, EventArgs e) {
@@ -3396,6 +3402,7 @@ finally {
         }
 
         public List<string> pcapFiles;
+        public List<string> audioList;
         public List<string> pcapFolders;
     }
 }

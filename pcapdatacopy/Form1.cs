@@ -46,6 +46,7 @@ namespace pcapdatacopy
 			this.init_wireshark_header = 24;
 			this.normal_wireshark_header = 16;
 			this.InitializeComponent();
+            this.rtp_list_processed = new List<string>();
 		}
 
 		// Token: 0x17000008 RID: 8
@@ -1074,7 +1075,7 @@ namespace pcapdatacopy
 				this.OpenFileDialog1.Filter = "Wireshark .pcap files|*.pcap";
 				this.OpenFileDialog1.FileName = string.Empty;
 				bool flag = this.OpenFileDialog1.ShowDialog() > DialogResult.None;
-				if (/*true)/*/flag)
+				if (flag)
 				{
 					bool flag2 = Operators.CompareString(this.OpenFileDialog1.FileName, string.Empty, false) != 0;
 					if (flag2)
@@ -1234,8 +1235,63 @@ namespace pcapdatacopy
 			}
 		}
 
-		// Token: 0x06000085 RID: 133 RVA: 0x00005968 File Offset: 0x00003D68
-		public void create_raw_file_Click(object sender, EventArgs e)
+        public void use_folder(string folderToScan, EventArgs e)
+        {
+            this.disable_buttons();
+            this.source_ip1.Enabled = false;
+            this.destination_ip1.Enabled = false;
+            this.source_ip2.Enabled = false;
+            this.destination_ip2.Enabled = false;
+            //this.file_selected_textbox.Text = "";
+            this.raw_output_file_textbox.Text = "";
+            this.raw_rtp_output_folder.Text = "";
+            this.rtp_status.Text = "";
+            this.source_ip1.Items.Clear();
+            this.source_ip1.Items.Add("All Addresses");
+            this.destination_ip1.Items.Clear();
+            this.destination_ip1.Items.Add("All Addresses");
+            this.source_ip1.SelectedIndex = 0;
+            this.destination_ip1.SelectedIndex = 0;
+            this.packet_type.SelectedIndex = 0;
+            try
+            {
+                bool flag = folderToScan.Length > 0;
+                if (flag)
+                {
+                    this.folder_selected_textbox.Text = folderToScan;
+                    
+                    string[] files = Directory.GetFiles(this.folder_selected_textbox.Text, "*.pcap", SearchOption.TopDirectoryOnly);
+                    flag = (files.Length > 0);
+                    if (flag)
+                    {
+                        this.raw_output_file_textbox.Text = this.folder_selected_textbox.Text + "\\output.bin";
+                        this.create_raw_file_button.Enabled = true;
+                        this.merged_output_file_textbox.Text = this.folder_selected_textbox.Text + "\\merged.pcap";
+                        this.create_merged_file_button.Enabled = true;
+                        this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "rtp";
+                        this.analyse_file.Enabled = true;
+                        this.detect_rtp.Enabled = true;
+                        this.update_status("Folder Selected");
+                    }
+                    else
+                    {
+                        Interaction.MsgBox("No .pcap files in selected folder", MsgBoxStyle.Critical, "Warning");
+                        this.create_raw_file_button.Enabled = false;
+                        this.dummy_button.Focus();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Interaction.MsgBox(ex.Message, MsgBoxStyle.Exclamation, "Warning");
+                this.create_raw_file_button.Enabled = false;
+                this.selectfile_button.Enabled = true;
+                this.selectfolder_button.Enabled = true;
+            }
+        }
+
+        // Token: 0x06000085 RID: 133 RVA: 0x00005968 File Offset: 0x00003D68
+        public void create_raw_file_Click(object sender, EventArgs e)
 		{
 			checked
 			{
@@ -1649,6 +1705,14 @@ namespace pcapdatacopy
 				this.update_status("Wav Files Creation Error! (" + ex.Message + ")");
 			}
 		}
+        private List<string> rtp_list_processed;
+        public List<string> popAllRtp_list_processed()
+        {
+            List<string> ret = new List<string>();
+            for (int i = 0; i < this.rtp_list_processed.Count; i++)
+                ret.Add(this.rtp_list_processed[i].Replace(',', '_').Replace('.', '_') + ".wav");
+            return ret;
+        }
 
 		// Token: 0x06000089 RID: 137 RVA: 0x0000672C File Offset: 0x00004B2C
 		private void loadpackets(string filename)
@@ -1681,6 +1745,7 @@ namespace pcapdatacopy
 						if (flag)
 						{
 							path = this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename + ".bin";
+                            this.rtp_list_processed.Add(this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename);
 						}
 						else
 						{

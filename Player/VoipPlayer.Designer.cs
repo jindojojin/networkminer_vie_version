@@ -43,7 +43,6 @@
             this.OpenFolder = new System.Windows.Forms.PictureBox();
             this.OpenFile = new System.Windows.Forms.PictureBox();
             this.scan = new System.Windows.Forms.PictureBox();
-            this.Refresh = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.PlayerGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nextTrack)).BeginInit();
@@ -57,7 +56,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OpenFolder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenFile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.scan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Refresh)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView
@@ -80,9 +78,9 @@
             this.PlayerGroup.Controls.Add(this.play);
             this.PlayerGroup.Controls.Add(this.back);
             this.PlayerGroup.Controls.Add(this.prevTrack);
-            this.PlayerGroup.Location = new System.Drawing.Point(169, 12);
+            this.PlayerGroup.Location = new System.Drawing.Point(134, 12);
             this.PlayerGroup.Name = "PlayerGroup";
-            this.PlayerGroup.Size = new System.Drawing.Size(687, 58);
+            this.PlayerGroup.Size = new System.Drawing.Size(722, 58);
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
@@ -184,10 +182,9 @@
             this.AnalyseGroup.Controls.Add(this.OpenFolder);
             this.AnalyseGroup.Controls.Add(this.OpenFile);
             this.AnalyseGroup.Controls.Add(this.scan);
-            this.AnalyseGroup.Controls.Add(this.Refresh);
             this.AnalyseGroup.Location = new System.Drawing.Point(12, 12);
             this.AnalyseGroup.Name = "AnalyseGroup";
-            this.AnalyseGroup.Size = new System.Drawing.Size(151, 58);
+            this.AnalyseGroup.Size = new System.Drawing.Size(116, 58);
             this.AnalyseGroup.TabIndex = 14;
             this.AnalyseGroup.TabStop = false;
             this.AnalyseGroup.Text = "Analyse";
@@ -217,24 +214,13 @@
             // scan
             // 
             this.scan.Image = global::Player.Properties.Resources.User_Interface_Fingerprint_Scan_icon;
-            this.scan.Location = new System.Drawing.Point(114, 20);
+            this.scan.Location = new System.Drawing.Point(78, 20);
             this.scan.Name = "scan";
             this.scan.Size = new System.Drawing.Size(30, 30);
             this.scan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.scan.TabIndex = 13;
             this.scan.TabStop = false;
             this.scan.Click += new System.EventHandler(this.scan_Click);
-            // 
-            // Refresh
-            // 
-            this.Refresh.Image = global::Player.Properties.Resources.Very_Basic_Update_icon;
-            this.Refresh.Location = new System.Drawing.Point(78, 20);
-            this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(30, 30);
-            this.Refresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Refresh.TabIndex = 12;
-            this.Refresh.TabStop = false;
-            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
             // 
             // VoipPlayer
             // 
@@ -261,7 +247,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OpenFolder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenFile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Refresh)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -280,7 +265,6 @@
         private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.PictureBox OpenFile;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox Refresh;
         private System.Windows.Forms.PictureBox scan;
         private System.Windows.Forms.GroupBox AnalyseGroup;
         private System.Windows.Forms.PictureBox OpenFolder;

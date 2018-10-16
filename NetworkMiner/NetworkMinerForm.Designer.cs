@@ -17,7 +17,7 @@ namespace NetworkMiner {
         }
 
         #region Windows Form Designer generated code
-        private System.ComponentModel.ComponentResourceManager resources;
+        private System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NetworkMinerForm));  //cai nay la them vao
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
