@@ -329,6 +329,7 @@ namespace NetworkMiner {
             this.pcapFiles = new List<string>();
             this.pcapFolders = new List<string>();
             this.audioList = new List<string>();
+            
             //this.AudioStreamQueue = new ConcurrentQueue<PacketParser.AudioStream>();
             //this.VoipCallQueue = new ConcurrentQueue<Tuple<System.Net.IPAddress, ushort, System.Net.IPAddress, ushort, string, string, string>>();
 
@@ -339,7 +340,8 @@ namespace NetworkMiner {
             this.processor = new Form1();  //khoi tao processor la 1 form cua pcapdatacopy
             this.err = new EventArgs();
             this.core = new Analyse(ref processor, ref err, ref this.audioList);
-            
+            this.listView = new ListView();
+            this.playerDialog = new VoipPlayer(ref processor,ref err,ref core,ref pcapFiles,ref pcapFolders,ref audioList, ref listView);
             PacketParser.Utils.Logger.Log("Initializing Component", System.Diagnostics.EventLogEntryType.Information);
             InitializeComponent();
 
@@ -1926,6 +1928,7 @@ namespace NetworkMiner {
                 this.LoadPcapFile(filepath);
                 if (!this.pcapFiles.Contains(filepath)){
                     this.pcapFiles.Add(filepath);
+                    this.listView.Items.Add(filepath);
                     //if (!this.pcapFolders.Contains(filedir))
                     //    this.pcapFolders.Add(filedir);
                     this.updateCurrentFileVoipFromCurrent(filename);
@@ -3354,7 +3357,7 @@ finally {
         private VoipPlayer playerDialog;
         private void openPlayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders, ref this.audioList);
+            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders, ref this.audioList, ref this.listView);
             this.playerDialog.Show();
         }
         public Analyse core;
@@ -3404,5 +3407,6 @@ finally {
         public List<string> pcapFiles;
         public List<string> audioList;
         public List<string> pcapFolders;
+        private ListView listView;
     }
 }

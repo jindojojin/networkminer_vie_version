@@ -43,6 +43,7 @@
             this.OpenFolder = new System.Windows.Forms.PictureBox();
             this.OpenFile = new System.Windows.Forms.PictureBox();
             this.scan = new System.Windows.Forms.PictureBox();
+            this.currentListView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.voipDataGridView)).BeginInit();
             this.PlayerGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nextTrack)).BeginInit();
@@ -61,10 +62,10 @@
             // voipDataGridView
             // 
             this.voipDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.voipDataGridView.Location = new System.Drawing.Point(12, 79);
+            this.voipDataGridView.Location = new System.Drawing.Point(182, 79);
             this.voipDataGridView.Name = "voipDataGridView";
             this.voipDataGridView.RowTemplate.Height = 24;
-            this.voipDataGridView.Size = new System.Drawing.Size(844, 359);
+            this.voipDataGridView.Size = new System.Drawing.Size(674, 359);
             this.voipDataGridView.TabIndex = 0;
             // 
             // PlayerGroup
@@ -222,11 +223,21 @@
             this.scan.TabStop = false;
             this.scan.Click += new System.EventHandler(this.scan_Click);
             // 
+            // currentListView
+            // 
+            this.currentListView.Location = new System.Drawing.Point(12, 79);
+            this.currentListView.Name = "currentListView";
+            this.currentListView.Size = new System.Drawing.Size(164, 359);
+            this.currentListView.TabIndex = 15;
+            this.currentListView.UseCompatibleStateImageBehavior = false;
+            this.currentListView.View = System.Windows.Forms.View.List;
+            // 
             // VoipPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(868, 450);
+            this.Controls.Add(this.currentListView);
             this.Controls.Add(this.AnalyseGroup);
             this.Controls.Add(this.PlayerGroup);
             this.Controls.Add(this.voipDataGridView);
@@ -268,6 +279,7 @@
         private System.Windows.Forms.PictureBox scan;
         private System.Windows.Forms.GroupBox AnalyseGroup;
         private System.Windows.Forms.PictureBox OpenFolder;
+        public System.Windows.Forms.ListView currentListView;
     }
 }
 

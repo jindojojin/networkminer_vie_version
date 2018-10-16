@@ -23,8 +23,9 @@ namespace Player
         private Form1 processor;
         private EventArgs err;
         private Analyse core;
+
         
-        public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
+        public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList, ref ListView listView)
         {
             this.CurrentFileList = new List<string>();
             this.processor = processor;
@@ -35,7 +36,7 @@ namespace Player
             InitializeComponent();
             this.voiptable = new DataTable();
             this.initdatagrid();
-            
+            this.currentListView = listView;
         }
 
         
@@ -77,6 +78,7 @@ namespace Player
        
         private void findPcapFile()
         {
+            
             string[] files = Directory.GetFiles(this.processor.folder_selected_textbox.Text, "*.pcap", SearchOption.TopDirectoryOnly);
             this.CurrentFileList.AddRange(files);
         }
@@ -84,16 +86,23 @@ namespace Player
         public void OpenFolder_Click(object sender, EventArgs e)
         {
             this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            this.addToListView(this.processor.folder_selected_textbox.Text);
             this.findPcapFile();
             this.addToLists();
             Console.WriteLine(this.CurrentFileList.Count + " / " + this.CurrentFolderList.Count);
         }
 
+        public void addToListView(string path)
+        {
+            this.currentListView.Items.Add(path);
+        }
+
         public void OpenFile_Click(object sender, EventArgs e)
         {
             this.core.OpenFile(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            this.addToListView(this.processor.file_selected_textbox.Text);
             this.addToLists();
-            Console.WriteLine(this.CurrentFileList.Count + " / " + this.CurrentFolderList.Count);
+           
         }
 
         private void Refresh_Click(object sender, EventArgs e)//update current file list to Form1 processor
