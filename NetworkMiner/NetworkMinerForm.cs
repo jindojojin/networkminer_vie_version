@@ -1926,8 +1926,8 @@ namespace NetworkMiner {
                 this.LoadPcapFile(filepath);
                 if (!this.pcapFiles.Contains(filepath)){
                     this.pcapFiles.Add(filepath);
-                    if (!this.pcapFolders.Contains(filedir))
-                        this.pcapFolders.Add(filedir);
+                    //if (!this.pcapFolders.Contains(filedir))
+                    //    this.pcapFolders.Add(filedir);
                     this.updateCurrentFileVoipFromCurrent(filename);
                     Console.WriteLine(this.pcapFiles.Count + " / " + this.pcapFolders.Count);
                 }

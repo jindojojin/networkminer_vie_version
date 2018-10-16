@@ -49,39 +49,45 @@ namespace Player
                 this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
             }
         }
-        public void OpenFolder(ref Form1 processor,ref EventArgs err, ref List<string> audioList)
+        public void SetFolder(ref Form1 processor,ref EventArgs err, ref List<string> audioList)
         {
             processor.selectfolder_button_Click(processor.selectfile_button, err);
-            if (processor.folder_selected_textbox.Text.Length > 0)
-            {
-                processor.create_raw_file_Click(processor.detect_rtp, err);
-                this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
-            }
+            //if (processor.folder_selected_textbox.Text.Length > 0)
+            //{
+            //    processor.create_raw_file_Click(processor.detect_rtp, err);
+            //    this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
+            //}
         }
-        public void UseFile(ref Form1 processor, string currentFile, ref EventArgs err, ref List<string> audioList)
+        public List<string> UseFile(ref Form1 processor, string currentFile, ref EventArgs err, ref List<string> audioList)
         {
             processor.use_current_file(currentFile, err);
             processor.create_raw_file_Click(processor.detect_rtp, err);
-            this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
+            Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.usefile");
+            return new List<string>(this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList));
         }
-        
-        public int ScanFile(ref Form1 processor, ref EventArgs err, string fileToScan, ref List<string> audioList)//scan on demand
+        /*
+        public List<string> ScanFile(ref Form1 processor, ref EventArgs err, string fileToScan, ref List<string> audioList)//scan on demand
         {
-            processor.selectfile_Click(processor.selectfile_button, err);
+            //processor.selectfile_Click(processor.selectfile_button, err);
+            processor.use_file(fileToScan, err);
             processor.create_raw_file_Click(processor.detect_rtp, err);
-            this.GenerateAudio(ref processor, ref err, DISABLE_NOTI, ref audioList);
-            return this.processor.rtp_list.Count;
+            Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.scanfile");
+            return this.GenerateAudio(ref processor, ref err,ENABLE_NOTI, ref audioList);
+            //return this.processor.rtp_list.Count;
         }
-        public int ScanFolder(ref Form1 processor, ref EventArgs err, string folderToScan, ref List<string> audioList)
+        */
+        public List<string> ScanFolder(ref Form1 processor, ref EventArgs err, string folderToScan, ref List<string> audioList)
         {
             //processor.selectfolder_button_Click(processor.selectfile_button, err);
             processor.use_folder(folderToScan, err);
             processor.create_raw_file_Click(processor.detect_rtp, err);
-            this.GenerateAudio(ref processor, ref err,DISABLE_NOTI, ref audioList);
-            return this.processor.rtp_list.Count;
+            Interaction.MsgBox("scanned folders list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.scanfolder");
+            return new List<string>(this.GenerateAudio(ref processor, ref err,ENABLE_NOTI, ref audioList));
+            //return this.processor.rtp_list.Count;
         }
 
-        public void GenerateAudio(ref Form1 processor, ref EventArgs err, bool noti, ref List<string> audioList) {
+        public List<string> GenerateAudio(ref Form1 processor, ref EventArgs err, bool noti, ref List<string> audioList) {
+            List<string> audio_list = new List<string>();
             if (processor.file_selected_textbox.Text.Length > 0 || processor.folder_selected_textbox.Text.Length > 0)
             {
                 int stream_detected = processor.rtp_list.Count;
@@ -90,8 +96,9 @@ namespace Player
                     //add audio path to list
 
                     processor.create_raw_file_Click(processor.create_audio_rtp_files_button, err);
-                    List<string> oldname_audio_list = processor.popAllRtp_list_processed();
-                    foreach (string filename in oldname_audio_list)
+                    audio_list = processor.popAllRtp_list_processed();
+                    Interaction.MsgBox("audio list ben trong generate audio = "+ audio_list.Count, MsgBoxStyle.OkOnly, "neu co gia tri thi return false");
+                    foreach (string filename in audio_list)
                     {
                         try
                         {
@@ -103,7 +110,11 @@ namespace Player
                         }
 
                         if (!this.audioList.Contains(filename))
+                        {
+                            
                             this.audioList.Add(filename);
+                        }
+
                     }
 
                     this.audioList = this.audioList.Distinct().ToList();
@@ -120,6 +131,7 @@ namespace Player
             }
             
             else if(noti) Interaction.MsgBox("Choose a pcap file or a folder contains pcap files to use this function.", MsgBoxStyle.OkOnly, "No file selected");
+            return new List<string>(audio_list);
         }
         /*
         public Analyse(TYPE_OF_SOURCE type_of_source, string source)

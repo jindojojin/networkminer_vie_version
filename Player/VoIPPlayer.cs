@@ -33,6 +33,8 @@ namespace Player
             this.CurrentFolderList = pcapFolders;
             this.audioList = audioList;
             InitializeComponent();
+            this.voiptable = new DataTable();
+            this.initdatagrid();
             
         }
 
@@ -73,10 +75,16 @@ namespace Player
             return result;
         }
        
+        private void findPcapFile()
+        {
+            string[] files = Directory.GetFiles(this.processor.folder_selected_textbox.Text, "*.pcap", SearchOption.TopDirectoryOnly);
+            this.CurrentFileList.AddRange(files);
+        }
 
         public void OpenFolder_Click(object sender, EventArgs e)
         {
-            this.core.OpenFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            this.findPcapFile();
             this.addToLists();
             Console.WriteLine(this.CurrentFileList.Count + " / " + this.CurrentFolderList.Count);
         }
@@ -99,6 +107,7 @@ namespace Player
 
         private void scan_Click(object sender, EventArgs e)
         {
+            List<string> streamdata = new List<string>();
             bool hasFile = this.CurrentFileList.Count > 0;
             bool hasFolder = this.CurrentFolderList.Count > 0;
             if (hasFile || hasFolder)
@@ -106,11 +115,23 @@ namespace Player
                 int sum_result = 0;
                 if (hasFolder)
                 {
+                    Interaction.MsgBox("start scanning folder list", MsgBoxStyle.OkOnly, "scan clicked");
                     foreach (string folder in this.CurrentFolderList)
                     {
-                        sum_result += this.core.ScanFolder(ref processor, ref err, folder, ref this.audioList);
+                        streamdata.AddRange(this.core.ScanFolder(ref processor, ref err, folder, ref this.audioList));
                     }
                 }
+                if (hasFile)
+                {
+                    
+                    Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
+                    foreach (string file in this.CurrentFileList)
+                    {
+                        streamdata.AddRange(this.core.UseFile(ref processor,  file, ref err, ref this.audioList));
+                        //Interaction.MsgBox("tra ve "+ this.core.UseFile(ref processor, file, ref err, ref this.audioList).Count , MsgBoxStyle.OkOnly, " test return 2 cap");
+                    }
+                }
+                sum_result += streamdata.Count;
                 string listFileScanned = "";
                 string listFolderScanned = "";
                 int i = 0;
@@ -130,13 +151,18 @@ namespace Player
                     "Found " + sum_result + " streams in folders:" +
                     listFolderScanned + "\nAnd files:" +
                     listFileScanned
-                    ,MsgBoxStyle.OkOnly, "Scan result");
+                    ,MsgBoxStyle.OkOnly, "Scan sum_result (after word found)");
                 string audio = "";
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
-                ///string str = fileInfo.Name.Replace(".bin", ".wav");
                 audio += this.audioList.Count.ToString();
                 Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
-                if(sum_result == 0) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result");
+                if(sum_result == 0) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result fail");
+                foreach (string data in streamdata)
+                {
+                    //insert bao datagrid
+                    rowObject dataOfAudioFromName = new rowObject(data);
+                    this.addtodatagrid(dataOfAudioFromName);
+                }
             }
 
             else
@@ -182,16 +208,25 @@ namespace Player
         {
 
         }
-
+        private DataTable voiptable;
         private void initdatagrid()
         {
-            DataTable voiptable = new DataTable();
-            voiptable.Columns.Add("#");
-            voiptable.Columns.Add("From");
-            voiptable.Columns.Add("To");
-            voiptable.Columns.Add("Location");
-            this.voipDataGridView.DataSource = voiptable;
-        }    
+            this.voiptable = new DataTable();
+            this.voiptable.Columns.Add("#");
+            this.voiptable.Columns.Add("From");
+            this.voiptable.Columns.Add("To");
+            this.voiptable.Columns.Add("Duration");
+            this.voiptable.Columns.Add("Location");
+            this.voipDataGridView.DataSource = this.voiptable;
+        }
+
+        
+
+        public void addtodatagrid(rowObject data)
+        {
+            this.voiptable.Rows.Add(this.voiptable.Rows.Count, data.from, data.to, data.duration, data.location);
+            this.voipDataGridView.DataSource = this.voiptable;
+        }
     }
 
     class Addcount {
@@ -209,6 +244,37 @@ namespace Player
         public int numberOfFolder()
         {
             return this.folderadded;
+        }
+    }
+    public class rowObject
+    {
+        //public string id;
+        public string from;
+        public string to;
+        public string duration;
+        public string location;
+
+
+        public rowObject(string filename) : this(Path.GetFileNameWithoutExtension(filename), Path.GetDirectoryName(filename)) { }
+        public rowObject(string filenamewithoutext , string dir) : this(
+            filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3], 
+            filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],
+            filenamewithoutext.Split('_')[2], dir) // so 2 ko co y nghia
+        {
+            // vd 10-1-3-143_10-1-6-18_222-224-238-143_5000_2006.wav
+            
+            // 1:ip1 2:ip2 3:so 4:port1 5:port2
+            
+            
+            
+        }
+        public rowObject(/*string id,*/ string from, string to, string duration, string location)
+        {
+            //this.id = id;
+            this.from = from;
+            this.to = to;
+            this.duration = duration;
+            this.location = location;
         }
     }
 }

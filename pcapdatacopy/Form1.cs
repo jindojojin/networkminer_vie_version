@@ -1750,8 +1750,10 @@ namespace pcapdatacopy
 						flag = this.rtp_write_raw;
 						if (flag)
 						{
-							path = this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename + ".bin";
-                            this.rtp_list_processed.Add(this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename);
+                            string pathwithoutext = this.raw_rtp_output_folder.Text + "\\" + this.rtp_filename;
+                            path = pathwithoutext + ".bin";
+                            if(!this.rtp_list_processed.Contains(pathwithoutext))
+                                this.rtp_list_processed.Add(pathwithoutext);
 						}
 						else
 						{
