@@ -183,7 +183,15 @@ namespace Player
 
         }
 
-        
+        private void initdatagrid()
+        {
+            DataTable voiptable = new DataTable();
+            voiptable.Columns.Add("#");
+            voiptable.Columns.Add("From");
+            voiptable.Columns.Add("To");
+            voiptable.Columns.Add("Location");
+            this.voipDataGridView.DataSource = voiptable;
+        }    
     }
 
     class Addcount {
