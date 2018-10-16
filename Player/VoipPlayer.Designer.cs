@@ -61,15 +61,25 @@
             // 
             // voipDataGridView
             // 
+            this.voipDataGridView.AllowUserToAddRows = false;
+            this.voipDataGridView.AllowUserToDeleteRows = false;
+            this.voipDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.voipDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.voipDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.voipDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.voipDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.voipDataGridView.Location = new System.Drawing.Point(182, 79);
             this.voipDataGridView.Name = "voipDataGridView";
             this.voipDataGridView.RowTemplate.Height = 24;
-            this.voipDataGridView.Size = new System.Drawing.Size(674, 359);
+            this.voipDataGridView.Size = new System.Drawing.Size(939, 339);
             this.voipDataGridView.TabIndex = 0;
             // 
             // PlayerGroup
             // 
+            this.PlayerGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PlayerGroup.Controls.Add(this.textBox1);
             this.PlayerGroup.Controls.Add(this.progressBar);
             this.PlayerGroup.Controls.Add(this.nextTrack);
@@ -81,24 +91,27 @@
             this.PlayerGroup.Controls.Add(this.prevTrack);
             this.PlayerGroup.Location = new System.Drawing.Point(134, 12);
             this.PlayerGroup.Name = "PlayerGroup";
-            this.PlayerGroup.Size = new System.Drawing.Size(722, 58);
+            this.PlayerGroup.Size = new System.Drawing.Size(987, 58);
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
             // 
             // textBox1
             // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.BackColor = System.Drawing.SystemColors.Control;
             this.textBox1.Location = new System.Drawing.Point(276, 13);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(405, 22);
+            this.textBox1.Size = new System.Drawing.Size(705, 22);
             this.textBox1.TabIndex = 11;
             // 
             // progressBar
             // 
+            this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar.Location = new System.Drawing.Point(276, 41);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(334, 10);
+            this.progressBar.Size = new System.Drawing.Size(609, 10);
             this.progressBar.TabIndex = 9;
             // 
             // nextTrack
@@ -225,9 +238,11 @@
             // 
             // currentListView
             // 
+            this.currentListView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.currentListView.Location = new System.Drawing.Point(12, 79);
             this.currentListView.Name = "currentListView";
-            this.currentListView.Size = new System.Drawing.Size(164, 359);
+            this.currentListView.Size = new System.Drawing.Size(164, 339);
             this.currentListView.TabIndex = 15;
             this.currentListView.UseCompatibleStateImageBehavior = false;
             this.currentListView.View = System.Windows.Forms.View.List;
@@ -236,7 +251,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.ClientSize = new System.Drawing.Size(1133, 425);
             this.Controls.Add(this.currentListView);
             this.Controls.Add(this.AnalyseGroup);
             this.Controls.Add(this.PlayerGroup);
@@ -279,7 +294,7 @@
         private System.Windows.Forms.PictureBox scan;
         private System.Windows.Forms.GroupBox AnalyseGroup;
         private System.Windows.Forms.PictureBox OpenFolder;
-        public System.Windows.Forms.ListView currentListView;
+        
     }
 }
 

@@ -23,9 +23,10 @@ namespace Player
         private Form1 processor;
         private EventArgs err;
         private Analyse core;
+        public System.Windows.Forms.ListView currentListView;
 
         
-        public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList, ref ListView listView)
+        public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
         {
             this.CurrentFileList = new List<string>();
             this.processor = processor;
@@ -36,7 +37,10 @@ namespace Player
             InitializeComponent();
             this.voiptable = new DataTable();
             this.initdatagrid();
-            this.currentListView = listView;
+            if(pcapFiles.Count > 0)
+                foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
+            if(pcapFolders.Count > 0)
+                foreach( string folder in pcapFolders ) this.currentListView.Items.Add(folder);
         }
 
         
@@ -86,10 +90,14 @@ namespace Player
         public void OpenFolder_Click(object sender, EventArgs e)
         {
             this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
-            this.addToListView(this.processor.folder_selected_textbox.Text);
-            this.findPcapFile();
-            this.addToLists();
-            Console.WriteLine(this.CurrentFileList.Count + " / " + this.CurrentFolderList.Count);
+            if (this.processor.folder_selected_textbox.Text.Length > 0 && !this.CurrentFolderList.Contains(this.processor.folder_selected_textbox.Text))
+            {
+                Interaction.MsgBox("Opened " + this.processor.folder_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfolder_click");
+                this.addToListView(this.processor.folder_selected_textbox.Text);
+                this.findPcapFile();
+                this.addToLists();
+            }
+            
         }
 
         public void addToListView(string path)
@@ -100,6 +108,7 @@ namespace Player
         public void OpenFile_Click(object sender, EventArgs e)
         {
             this.core.OpenFile(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            Interaction.MsgBox("Opened " + this.processor.file_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfile_click");
             this.addToListView(this.processor.file_selected_textbox.Text);
             this.addToLists();
            
@@ -122,14 +131,14 @@ namespace Player
             if (hasFile || hasFolder)
             {
                 int sum_result = 0;
-                if (hasFolder)
-                {
-                    Interaction.MsgBox("start scanning folder list", MsgBoxStyle.OkOnly, "scan clicked");
-                    foreach (string folder in this.CurrentFolderList)
-                    {
-                        streamdata.AddRange(this.core.ScanFolder(ref processor, ref err, folder, ref this.audioList));
-                    }
-                }
+                //if (hasFolder)
+                //{
+                //    Interaction.MsgBox("start scanning folder list", MsgBoxStyle.OkOnly, "scan clicked");
+                //    foreach (string folder in this.CurrentFolderList)
+                //    {
+                //        streamdata.AddRange(this.core.ScanFolder(ref processor, ref err, folder, ref this.audioList));
+                //    }
+                //}
                 if (hasFile)
                 {
                     

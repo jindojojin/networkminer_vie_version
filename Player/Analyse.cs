@@ -43,12 +43,9 @@ namespace Player
         public void OpenFile(ref Form1 processor, ref EventArgs err, ref List<string> audioList)
         {
             processor.selectfile_Click(processor.selectfile_button, err);
-            if (processor.file_selected_textbox.Text.Length > 0)
-            {
-                processor.create_raw_file_Click(processor.detect_rtp, err);
-                this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
-            }
+            
         }
+
         public void SetFolder(ref Form1 processor,ref EventArgs err, ref List<string> audioList)
         {
             processor.selectfolder_button_Click(processor.selectfile_button, err);
