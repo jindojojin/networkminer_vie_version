@@ -135,7 +135,7 @@ namespace Player
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
                 ///string str = fileInfo.Name.Replace(".bin", ".wav");
                 audio += this.audioList.Count.ToString();
-                Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list");
+                Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
                 if(sum_result == 0) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result");
             }
 

@@ -1212,8 +1212,11 @@ namespace pcapdatacopy
 							this.create_raw_file_button.Enabled = true;
 							this.merged_output_file_textbox.Text = this.folder_selected_textbox.Text + "\\merged.pcap";
 							this.create_merged_file_button.Enabled = true;
-							this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "rtp";
-							this.analyse_file.Enabled = true;
+                            if (this.folder_selected_textbox.Text.Length == 3) //neu no = 3 thi la root disk ~ D:/ co 3 ky tu, va co dau / roi
+                                this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "rtp";
+                            else
+                                this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "\\rtp";
+                            this.analyse_file.Enabled = true;
 							this.detect_rtp.Enabled = true;
 							this.update_status("Folder Selected");
 						}
@@ -1268,7 +1271,10 @@ namespace pcapdatacopy
                         this.create_raw_file_button.Enabled = true;
                         this.merged_output_file_textbox.Text = this.folder_selected_textbox.Text + "\\merged.pcap";
                         this.create_merged_file_button.Enabled = true;
-                        this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "rtp";
+                        if(this.folder_selected_textbox.Text.Length == 3) //neu no = 3 thi la root disk ~ D:/ co 3 ky tu, va co dau / roi
+                            this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "rtp";
+                        else
+                            this.raw_rtp_output_folder.Text = this.folder_selected_textbox.Text + "\\rtp";
                         this.analyse_file.Enabled = true;
                         this.detect_rtp.Enabled = true;
                         this.update_status("Folder Selected");

@@ -98,7 +98,7 @@ namespace Player
                     foreach (string audiofile in this.audioList) audio += audiofile + "\n";
                     ///string str = fileInfo.Name.Replace(".bin", ".wav");
                     audio += this.audioList.Count.ToString();
-                    Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list");
+                    Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from generate audio");
                     Interaction.MsgBox("audio list co " + this.audioList.Count + ":\n"+audio, MsgBoxStyle.OkOnly, "debug");
                     if(noti) Interaction.MsgBox(stream_detected + " stream detected\n" +
                         "Audio created at " + processor.raw_rtp_output_folder.Text, MsgBoxStyle.OkOnly, "VoIP Service");
