@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -89,10 +90,22 @@ namespace Player
                     //add audio path to list
 
                     processor.create_raw_file_Click(processor.create_audio_rtp_files_button, err);
-                    List<string> audio_list = processor.popAllRtp_list_processed();
-                    foreach (string audiofilename in audio_list)
-                        if (!this.audioList.Contains(audiofilename))
-                            this.audioList.Add(audiofilename);
+                    List<string> oldname_audio_list = processor.popAllRtp_list_processed();
+                    foreach (string filename in oldname_audio_list)
+                    {
+                        try
+                        {
+                            File.Delete(filename + ".bin");
+                        }
+                        catch (IOException e)
+                        {
+                            Interaction.MsgBox(e.Message, MsgBoxStyle.OkOnly, "Delete false");
+                        }
+
+                        if (!this.audioList.Contains(filename))
+                            this.audioList.Add(filename);
+                    }
+
                     this.audioList = this.audioList.Distinct().ToList();
                     string audio = "";
                     foreach (string audiofile in this.audioList) audio += audiofile + "\n";

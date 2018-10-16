@@ -1716,7 +1716,7 @@ namespace pcapdatacopy
         {
             List<string> ret = new List<string>();
             for (int i = 0; i < this.rtp_list_processed.Count; i++)
-                ret.Add(this.rtp_list_processed[i].Replace(',', '_').Replace('.', '_') + ".wav");
+                ret.Add(this.rtp_list_processed[i].Replace(',', '_').Replace('.', '_'));
             return ret;
         }
 
