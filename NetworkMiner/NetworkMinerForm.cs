@@ -3358,6 +3358,7 @@ finally {
         private void openPlayerToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders, ref this.audioList);
+            this.playerDialog.scan_Click(new object(), err, MODE.QUIET);
             this.playerDialog.Show();
         }
         public Analyse core;
@@ -3375,7 +3376,8 @@ finally {
 
         private void analyseCurrentFile_Click(object sender, EventArgs e)
         {
-            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err, ref this.audioList);
+            //this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err, ref this.audioList);
+            this.playerDialog.scan_Click(sender, e);
         }
 
         private void filesListView_SelectedIndexChanged(object sender, EventArgs e) {

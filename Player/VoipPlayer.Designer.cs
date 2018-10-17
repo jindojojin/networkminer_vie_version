@@ -30,7 +30,7 @@
         {
             this.voipDataGridView = new System.Windows.Forms.DataGridView();
             this.PlayerGroup = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.fileNameTextbox = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.nextTrack = new System.Windows.Forms.PictureBox();
             this.skip = new System.Windows.Forms.PictureBox();
@@ -66,21 +66,23 @@
             this.voipDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.voipDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
+            this.voipDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.voipDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.voipDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.voipDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.voipDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.voipDataGridView.Location = new System.Drawing.Point(182, 79);
             this.voipDataGridView.Name = "voipDataGridView";
             this.voipDataGridView.RowTemplate.Height = 24;
             this.voipDataGridView.Size = new System.Drawing.Size(939, 339);
             this.voipDataGridView.TabIndex = 0;
+            this.voipDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.voipDataGridView_CellContentClick);
             // 
             // PlayerGroup
             // 
             this.PlayerGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerGroup.Controls.Add(this.textBox1);
+            this.PlayerGroup.Controls.Add(this.fileNameTextbox);
             this.PlayerGroup.Controls.Add(this.progressBar);
             this.PlayerGroup.Controls.Add(this.nextTrack);
             this.PlayerGroup.Controls.Add(this.skip);
@@ -96,15 +98,15 @@
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
             // 
-            // textBox1
+            // fileNameTextbox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.fileNameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.Location = new System.Drawing.Point(276, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(705, 22);
-            this.textBox1.TabIndex = 11;
+            this.fileNameTextbox.BackColor = System.Drawing.SystemColors.Control;
+            this.fileNameTextbox.Location = new System.Drawing.Point(276, 13);
+            this.fileNameTextbox.Name = "fileNameTextbox";
+            this.fileNameTextbox.Size = new System.Drawing.Size(705, 22);
+            this.fileNameTextbox.TabIndex = 11;
             // 
             // progressBar
             // 
@@ -290,7 +292,7 @@
         private System.Windows.Forms.PictureBox play;
         private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.PictureBox OpenFile;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox fileNameTextbox;
         private System.Windows.Forms.PictureBox scan;
         private System.Windows.Forms.GroupBox AnalyseGroup;
         private System.Windows.Forms.PictureBox OpenFolder;

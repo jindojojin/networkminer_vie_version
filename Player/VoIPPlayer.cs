@@ -15,7 +15,13 @@ using Microsoft.VisualBasic;
 
 namespace Player
 {
-    public partial class VoipPlayer : Form
+    public enum MODE
+    {
+        QUIET = 0,
+        NORMAL = 1
+
+    }
+    public partial class VoipPlayer : Form 
     {
         private List<string> CurrentFileList;
         private List<string> CurrentFolderList;
@@ -41,6 +47,7 @@ namespace Player
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
                 foreach( string folder in pcapFolders ) this.currentListView.Items.Add(folder);
+            
         }
 
         
@@ -102,7 +109,16 @@ namespace Player
 
         public void addToListView(string path)
         {
-            this.currentListView.Items.Add(path);
+            ListViewItem newitem = new ListViewItem();
+            newitem.Text = path;
+            bool is_duplicate = false;
+            foreach(ListViewItem item in currentListView.Items)
+            if (item.Text == path)
+                {
+                    is_duplicate = true;
+                    break;
+                }
+            if(!is_duplicate) this.currentListView.Items.Add(path);
         }
 
         public void OpenFile_Click(object sender, EventArgs e)
@@ -123,7 +139,8 @@ namespace Player
             //dang co exception
         }
 
-        private void scan_Click(object sender, EventArgs e)
+        public void scan_Click(object sender, EventArgs e) { scan_Click(sender, e, MODE.NORMAL); }
+        public void scan_Click(object sender, EventArgs e, MODE _MODE)
         {
             List<string> streamdata = new List<string>();
             bool hasFile = this.CurrentFileList.Count > 0;
@@ -142,7 +159,7 @@ namespace Player
                 if (hasFile)
                 {
                     
-                    Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
+                    if(_MODE == MODE.NORMAL) Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
                     foreach (string file in this.CurrentFileList)
                     {
                         streamdata.AddRange(this.core.UseFile(ref processor,  file, ref err, ref this.audioList));
@@ -165,7 +182,7 @@ namespace Player
                     listFolderScanned += "\n"+ CurrentFolderList[i]  ;
                 }
                 if (noFolder > 5) listFolderScanned += "\n...";
-                if (sum_result > 0) Interaction.MsgBox("Scan completed\n" + 
+                if (sum_result > 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("Scan completed\n" + 
                     "Found " + sum_result + " streams in folders:" +
                     listFolderScanned + "\nAnd files:" +
                     listFileScanned
@@ -173,8 +190,10 @@ namespace Player
                 string audio = "";
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
                 audio += this.audioList.Count.ToString();
-                Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
-                if(sum_result == 0) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result fail");
+                if (_MODE == MODE.NORMAL) Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
+                if(sum_result == 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result fail");
+              
+                
                 foreach (string data in streamdata)
                 {
                     //insert bao datagrid
@@ -183,7 +202,7 @@ namespace Player
                 }
             }
 
-            else
+            else if (_MODE == MODE.NORMAL)
             {
                 string message1 = "Nothing to scan";
                 string message2 = "Do you want to open a pcap file ?";
@@ -238,12 +257,47 @@ namespace Player
             this.voipDataGridView.DataSource = this.voiptable;
         }
 
-        
+
 
         public void addtodatagrid(rowObject data)
         {
-            this.voiptable.Rows.Add(this.voiptable.Rows.Count, data.from, data.to, data.duration, data.location);
-            this.voipDataGridView.DataSource = this.voiptable;
+            if (this.voipDataGridView.Rows.Count == 0)
+            {
+                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.from, data.to, data.duration, data.location);
+                this.voipDataGridView.DataSource = this.voiptable;
+            }
+            else
+            {
+                bool is_duplicate = false;
+                foreach (DataGridViewRow row in this.voipDataGridView.Rows)
+                {
+                    if (row.Cells[1].Value.ToString().Equals(data.from) &&
+                        row.Cells[2].Value.ToString().Equals(data.to) &&
+                        row.Cells[3].Value.ToString().Equals(data.duration) &&
+                        row.Cells[4].Value.ToString().Equals(data.location)
+                        )
+                    {
+                        is_duplicate = true;
+                        break;
+                    }
+                }
+                if (!is_duplicate)
+                {
+                    this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.from, data.to, data.duration, data.location);
+                    this.voipDataGridView.DataSource = this.voiptable;
+                }
+
+            }
+        }
+
+        private void updateAudioNameTextbox(string path)
+        {
+            this.fileNameTextbox.Text = path;
+        }
+        private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
+            this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
         }
     }
 
@@ -273,17 +327,15 @@ namespace Player
         public string location;
 
 
-        public rowObject(string filename) : this(Path.GetFileNameWithoutExtension(filename), Path.GetDirectoryName(filename)) { }
-        public rowObject(string filenamewithoutext , string dir) : this(
+        public rowObject(string filename) : this(Path.GetFileNameWithoutExtension(filename), filename+".wav") { }
+        public rowObject(string filenamewithoutext , string path) : this(
             filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3], 
             filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],
-            filenamewithoutext.Split('_')[2], dir) // so 2 ko co y nghia
+            filenamewithoutext.Split('_')[2], path) // so 2 ko co y nghia
         {
             // vd 10-1-3-143_10-1-6-18_222-224-238-143_5000_2006.wav
             
             // 1:ip1 2:ip2 3:so 4:port1 5:port2
-            
-            
             
         }
         public rowObject(/*string id,*/ string from, string to, string duration, string location)
