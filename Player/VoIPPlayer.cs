@@ -9,7 +9,7 @@ using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using WMPLib;
 using pcapdatacopy;
 using Microsoft.VisualBasic;
 
@@ -30,9 +30,9 @@ namespace Player
         private EventArgs err;
         private Analyse core;
         public System.Windows.Forms.ListView currentListView;
-
-        
-        public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
+        private WindowsMediaPlayer WMPlayer;
+    
+    public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
         {
             this.CurrentFileList = new List<string>();
             this.processor = processor;
@@ -40,6 +40,7 @@ namespace Player
             this.CurrentFileList = pcapFiles;
             this.CurrentFolderList = pcapFolders;
             this.audioList = audioList;
+            this.WMPlayer = new WindowsMediaPlayer();
             InitializeComponent();
             this.voiptable = new DataTable();
             this.initdatagrid();
@@ -47,10 +48,15 @@ namespace Player
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
                 foreach( string folder in pcapFolders ) this.currentListView.Items.Add(folder);
-            
+
         }
 
-        
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            if (WMPlayer.playState == WMPPlayState.wmppsPlaying) WMPlayer.controls.stop();
+            base.OnFormClosing(e);
+        }
+
         private Addcount addToLists()
         {
             int nofile = 0;
@@ -130,14 +136,7 @@ namespace Player
            
         }
 
-        private void Refresh_Click(object sender, EventArgs e)//update current file list to Form1 processor
-        {
-            //this.CurrentFileList = pcapFiles;
-            //this.CurrentFolderList = pcapFolders;
-            Addcount result = this.addToLists();
-            Console.WriteLine(this.CurrentFileList.Count + " / " + this.CurrentFolderList.Count + " vs " + result.numberOfFile() + " / " + result.numberOfFolder());
-            //dang co exception
-        }
+        
 
         public void scan_Click(object sender, EventArgs e) { scan_Click(sender, e, MODE.NORMAL); }
         public void scan_Click(object sender, EventArgs e, MODE _MODE)
@@ -222,18 +221,18 @@ namespace Player
 
         private void play_Click(object sender, EventArgs e)
         {
-            SoundPlayer selectedCallWAV = new SoundPlayer(@"");
-            selectedCallWAV.Play();
+            WMPlayer.URL = this.voipDataGridView.CurrentCell.OwningRow.Cells[4].Value.ToString();
+            WMPlayer.controls.play();
         }
 
         private void pause_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.pause();
         }
 
         private void stop_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.stop();
         }
 
         private void skip_Click(object sender, EventArgs e)
@@ -297,7 +296,7 @@ namespace Player
         private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
-            this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
+            if(WMPlayer.playState != WMPPlayState.wmppsPlaying) this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
         }
     }
 
