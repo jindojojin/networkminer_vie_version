@@ -55,11 +55,21 @@ namespace Player
             //    this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
             //}
         }
+        public List<string> UseFile(ref Form1 processor, string currentFile, ref EventArgs err, ref List<string> audioList, MODE _MODE)
+        {
+            processor.use_current_file(currentFile, err);
+            processor.create_raw_file_Click(processor.detect_rtp, err);
+            //Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.usefile");
+            if(_MODE == MODE.QUIET)
+                return new List<string>(this.GenerateAudio(ref processor, ref err, false, ref audioList));
+            else
+                return new List<string>(this.GenerateAudio(ref processor, ref err, true, ref audioList));
+        }
         public List<string> UseFile(ref Form1 processor, string currentFile, ref EventArgs err, ref List<string> audioList)
         {
             processor.use_current_file(currentFile, err);
             processor.create_raw_file_Click(processor.detect_rtp, err);
-            Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.usefile");
+            //Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.usefile");
             return new List<string>(this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList));
         }
         /*
@@ -94,7 +104,7 @@ namespace Player
 
                     processor.create_raw_file_Click(processor.create_audio_rtp_files_button, err);
                     audio_list = processor.popAllRtp_list_processed();
-                    Interaction.MsgBox("audio list ben trong generate audio = "+ audio_list.Count, MsgBoxStyle.OkOnly, "neu co gia tri thi return false");
+                    //Interaction.MsgBox("audio list ben trong generate audio = "+ audio_list.Count, MsgBoxStyle.OkOnly, "neu co gia tri thi return false");
                     foreach (string filename in audio_list)
                     {
                         try
@@ -119,12 +129,12 @@ namespace Player
                     foreach (string audiofile in this.audioList) audio += audiofile + "\n";
                     ///string str = fileInfo.Name.Replace(".bin", ".wav");
                     audio += this.audioList.Count.ToString();
-                    Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from generate audio");
-                    Interaction.MsgBox("audio list co " + this.audioList.Count + ":\n"+audio, MsgBoxStyle.OkOnly, "debug");
+                    //Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from generate audio");
+                    //Interaction.MsgBox("audio list co " + this.audioList.Count + ":\n"+audio, MsgBoxStyle.OkOnly, "debug");
                     if(noti) Interaction.MsgBox(stream_detected + " stream detected\n" +
-                        "Audio created at " + processor.raw_rtp_output_folder.Text, MsgBoxStyle.OkOnly, "VoIP Service");
+                        "Audio created at " + processor.raw_rtp_output_folder.Text, MsgBoxStyle.OkOnly, "Scan one pcap file");
                 }
-                else if(noti) Interaction.MsgBox("No RTP audio stream found", MsgBoxStyle.OkOnly, "VoIP Service");
+                else if(noti) Interaction.MsgBox("No RTP audio stream found", MsgBoxStyle.OkOnly, "Scan one pcap file");
             }
             
             else if(noti) Interaction.MsgBox("Choose a pcap file or a folder contains pcap files to use this function.", MsgBoxStyle.OkOnly, "No file selected");

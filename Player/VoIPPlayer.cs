@@ -44,6 +44,7 @@ namespace Player
             this.WMPlayer = new WindowsMediaPlayer();
             InitializeComponent();
             this.voiptable = new DataTable();
+            this.voipDataGridView.DataSource = this.voiptable;
             this.initdatagrid();
             this.currentDuration.Text = "";
             if(pcapFiles.Count > 0)
@@ -107,7 +108,7 @@ namespace Player
             this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
             if (this.processor.folder_selected_textbox.Text.Length > 0 && !this.CurrentFolderList.Contains(this.processor.folder_selected_textbox.Text))
             {
-                Interaction.MsgBox("Opened " + this.processor.folder_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfolder_click");
+                //Interaction.MsgBox("Opened " + this.processor.folder_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfolder_click");
                 this.addToListView(this.processor.folder_selected_textbox.Text);
                 this.findPcapFile();
                 this.addToLists();
@@ -132,7 +133,7 @@ namespace Player
         public void OpenFile_Click(object sender, EventArgs e)
         {
             this.core.OpenFile(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
-            Interaction.MsgBox("Opened " + this.processor.file_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfile_click");
+            //Interaction.MsgBox("Opened " + this.processor.file_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfile_click");
             this.addToListView(this.processor.file_selected_textbox.Text);
             this.addToLists();
            
@@ -140,7 +141,7 @@ namespace Player
 
         
 
-        public void scan_Click(object sender, EventArgs e) { scan_Click(sender, e, MODE.NORMAL); }
+        public void scan_Click(object sender, EventArgs e) { this.scan_Click(sender, e, MODE.NORMAL); }
         public void scan_Click(object sender, EventArgs e, MODE _MODE)
         {
             List<string> streamdata = new List<string>();
@@ -160,10 +161,11 @@ namespace Player
                 if (hasFile)
                 {
                     
-                    if(_MODE == MODE.NORMAL) Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
+                    //if(_MODE == MODE.NORMAL) Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
                     foreach (string file in this.CurrentFileList)
                     {
-                        streamdata.AddRange(this.core.UseFile(ref processor,  file, ref err, ref this.audioList));
+                        if(_MODE == MODE.QUIET) streamdata.AddRange(this.core.UseFile(ref processor,  file, ref err, ref this.audioList, MODE.QUIET));
+                        if(_MODE == MODE.NORMAL) streamdata.AddRange(this.core.UseFile(ref processor,  file, ref err, ref this.audioList, MODE.NORMAL));
                         //Interaction.MsgBox("tra ve "+ this.core.UseFile(ref processor, file, ref err, ref this.audioList).Count , MsgBoxStyle.OkOnly, " test return 2 cap");
                     }
                 }
@@ -183,15 +185,15 @@ namespace Player
                     listFolderScanned += "\n"+ CurrentFolderList[i]  ;
                 }
                 if (noFolder > 5) listFolderScanned += "\n...";
-                if (sum_result > 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("Scan completed\n" + 
+                /*if (sum_result > 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("Scan completed\n" + 
                     "Found " + sum_result + " streams in folders:" +
                     listFolderScanned + "\nAnd files:" +
                     listFileScanned
-                    ,MsgBoxStyle.OkOnly, "Scan sum_result (after word found)");
+                    ,MsgBoxStyle.OkOnly, "Scan sum_result (after word found)"); */
                 string audio = "";
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
                 audio += this.audioList.Count.ToString();
-                if (_MODE == MODE.NORMAL) Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
+                //if (_MODE == MODE.NORMAL) Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
                 if(sum_result == 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result fail");
               
                 
@@ -213,7 +215,7 @@ namespace Player
         }
         private void prevTrack_Click(object sender, EventArgs e)
         {
-            this.WMPlayer.controls.previous();
+            this.WMPlayer.controls.previous();// dang co exception
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -256,12 +258,18 @@ namespace Player
             this.voiptable.Columns.Add("To");
             this.voiptable.Columns.Add("Code");
             this.voiptable.Columns.Add("Location");
+            //this.voipDataGridView.Columns[0].Width = 30;
+            //this.voipDataGridView.Columns[1].Width = 60;
+            //this.voipDataGridView.Columns[2].Width = 70;
+            //this.voipDataGridView.Columns[3].Width = 70;
+            ////this.voipDataGridView.Columns[4].Width = ;
             this.voipDataGridView.DataSource = this.voiptable;
+
         }
 
         private void updateposission()
         {
-            this.progressBar.Value = (int)((((double)this.WMPlayer.controls.currentPosition / (double)this.progressBar.Maximum))*100);
+            this.progressBar.Value = (int)Math.Round(((double)this.WMPlayer.controls.currentPosition / (double)this.progressBar.Maximum)*100, 0);
         }
 
         public void addtodatagrid(rowObject data)
@@ -276,10 +284,11 @@ namespace Player
                 bool is_duplicate = false;
                 foreach (DataGridViewRow row in this.voipDataGridView.Rows)
                 {
-                    if (row.Cells[1].Value.ToString().Equals(data.from) &&
-                        row.Cells[2].Value.ToString().Equals(data.to) &&
-                        row.Cells[3].Value.ToString().Equals(data.duration) &&
-                        row.Cells[4].Value.ToString().Equals(data.location)
+                    if (row.Cells[1].Value.ToString().Equals(data.duration) &&
+                        row.Cells[2].Value.ToString().Equals(data.from) &&
+                        row.Cells[3].Value.ToString().Equals(data.to) &&
+                        row.Cells[4].Value.ToString().Equals(data.code) &&
+                        row.Cells[5].Value.ToString().Equals(data.location)
                         )
                     {
                         is_duplicate = true;

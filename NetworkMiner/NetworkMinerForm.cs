@@ -3366,12 +3366,17 @@ finally {
         public EventArgs err;
         private void fromCurrentPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.core.UseFile(ref this.processor, this.openPcapFileDialog.FileName, ref err, ref this.audioList);
+            if (this.openPcapFileDialog.FileName.Length > 0)
+                this.core.UseFile(ref this.processor, this.openPcapFileDialog.FileName, ref err, ref this.audioList);
+            else Interaction.MsgBox("Please open at least 1 pcap file to use this function.", MsgBoxStyle.OkOnly, "Warning");
         }
 
         private void fromOtherPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.core.OpenFile(ref processor, ref err, ref this.audioList);
+            this.core.UseFile(ref processor, this.processor.file_selected_textbox.Text, ref err, ref this.audioList);
+            if (!this.pcapFiles.Contains(this.processor.file_selected_textbox.Text))
+                this.pcapFiles.Add(this.processor.file_selected_textbox.Text);
         }
 
         private void analyseCurrentFile_Click(object sender, EventArgs e)
