@@ -31,6 +31,7 @@ namespace Player
         private Analyse core;
         public System.Windows.Forms.ListView currentListView;
         private WindowsMediaPlayer WMPlayer;
+        
     
     public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
         {
@@ -44,6 +45,7 @@ namespace Player
             InitializeComponent();
             this.voiptable = new DataTable();
             this.initdatagrid();
+            this.currentDuration.Text = "";
             if(pcapFiles.Count > 0)
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
@@ -53,7 +55,7 @@ namespace Player
 
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
-            if (WMPlayer.playState == WMPPlayState.wmppsPlaying) WMPlayer.controls.stop();
+            if (this.WMPlayer.playState == WMPPlayState.wmppsPlaying) this.WMPlayer.controls.stop();
             base.OnFormClosing(e);
         }
 
@@ -211,59 +213,63 @@ namespace Player
         }
         private void prevTrack_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.previous();
+            this.WMPlayer.controls.previous();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.fastReverse();
+            this.WMPlayer.controls.fastReverse();
         }
 
         private void play_Click(object sender, EventArgs e)
         {
-            
-            WMPlayer.controls.play();
+            this.updateposission();
+            this.WMPlayer.controls.play();
         }
 
         private void pause_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.pause();
+            this.WMPlayer.controls.pause();
         }
 
         private void stop_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.stop();
+            this.WMPlayer.controls.stop();
         }
 
         private void skip_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.fastForward();
+            this.WMPlayer.controls.fastForward();
         }
 
         private void nextTrack_Click(object sender, EventArgs e)
         {
-            WMPlayer.controls.next();
+            this.WMPlayer.controls.next();
         }
         private DataTable voiptable;
         private void initdatagrid()
         {
             this.voiptable = new DataTable();
             this.voiptable.Columns.Add("#");
+            this.voiptable.Columns.Add("Duration");
             this.voiptable.Columns.Add("From");
             this.voiptable.Columns.Add("To");
-            this.voiptable.Columns.Add("Duration");
+            this.voiptable.Columns.Add("Code");
             this.voiptable.Columns.Add("Location");
             this.voipDataGridView.DataSource = this.voiptable;
         }
 
-
+        private void updateposission()
+        {
+            this.progressBar.Value = (int)((((double)this.WMPlayer.controls.currentPosition / (double)this.progressBar.Maximum))*100);
+        }
 
         public void addtodatagrid(rowObject data)
         {
+            bool can_i_add = false;
             if (this.voipDataGridView.Rows.Count == 0)
             {
-                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.from, data.to, data.duration, data.location);
-                this.voipDataGridView.DataSource = this.voiptable;
+                can_i_add = true;
             }
             else
             {
@@ -282,36 +288,61 @@ namespace Player
                 }
                 if (!is_duplicate)
                 {
-                    this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.from, data.to, data.duration, data.location);
-                    this.voipDataGridView.DataSource = this.voiptable;
+                    can_i_add = true;
                 }
 
             }
-        }
-
-        private void updateAudioNameTextbox(string path)
-        {
-            this.fileNameTextbox.Text = path;
-        }
-        private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
-            if (WMPlayer.playState != WMPPlayState.wmppsPlaying)
+            if (can_i_add)
             {
-                this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
-                if (WMPlayer.playState != WMPPlayState.wmppsPaused)
-                    WMPlayer.URL = this.voipDataGridView.CurrentCell.OwningRow.Cells[4].Value.ToString();
+                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.duration, data.from, data.to, data.code, data.location);
+                this.voipDataGridView.DataSource = this.voiptable;
             }
         }
+
+        private void updateAudioNameTextboxandDuration(string path)
+        {
+            this.fileNameTextbox.Text = path;
+            
+            this.updateDuration();
+            
+            
+            
+        }
+        //private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        //{
+        //    int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
+        //    if (this.WMPlayer.playState != WMPPlayState.wmppsPlaying)
+        //    {
+        //        this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
+        //        if (this.WMPlayer.playState != WMPPlayState.wmppsPaused)
+        //        {
+        //            this.WMPlayer.URL = this.voipDataGridView.CurrentCell.OwningRow.Cells[4].Value.ToString();
+                 
+        //        }
+        //    }
+            
+        //}
+
+        private void updateDuration()
+        {
+            
+            IWMPMedia mediainfo = WMPlayer.newMedia(this.WMPlayer.URL);
+            this.currentDuration.Text = mediainfo.durationString;
+            this.progressBar.Maximum = (int)mediainfo.duration;
+
+        }
+        
+
 
         private void voipDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
-            string file = voipDataGridView.Rows[thisRow].Cells[4].Value.ToString();
-            this.updateAudioNameTextbox(file);
+            string file = voipDataGridView.Rows[thisRow].Cells[5].Value.ToString();
+            Interaction.MsgBox("Opening audio " + file, MsgBoxStyle.OkOnly, "double_click cell");
+            this.updateAudioNameTextboxandDuration(file);
             this.WMPlayer.controls.stop();
             this.WMPlayer.URL = file;
-
+            
         }
     }
 
@@ -335,28 +366,37 @@ namespace Player
     public class rowObject
     {
         //public string id;
+        public string duration;
         public string from;
         public string to;
-        public string duration;
+        public string code;
         public string location;
 
 
-        public rowObject(string filename) : this(Path.GetFileNameWithoutExtension(filename), filename+".wav") { }
-        public rowObject(string filenamewithoutext , string path) : this(
-            filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3], 
-            filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],
-            filenamewithoutext.Split('_')[2], path) // so 2 ko co y nghia
-        {
+        public rowObject(string filename){
+            string filenamewithoutext = Path.GetFileNameWithoutExtension(filename);
+            string path = filename + ".wav";
+            IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(path);
+            this.initRowObject
+            (
+                mediainfo.durationString,                                                         //duration
+                filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3],  //from
+                filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],  //to
+                filenamewithoutext.Split('_')[2],                                           //code, so 2 chua ro y nghia
+                path
+            );
             // vd 10-1-3-143_10-1-6-18_222-224-238-143_5000_2006.wav
-            
+
             // 1:ip1 2:ip2 3:so 4:port1 5:port2
-            
+
         }
-        public rowObject(/*string id,*/ string from, string to, string duration, string location)
+
+        private void initRowObject(string duration , string from, string to, string code, string location)
         {
             //this.id = id;
             this.from = from;
             this.to = to;
+            this.code = code;
             this.duration = duration;
             this.location = location;
         }
