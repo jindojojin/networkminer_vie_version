@@ -211,17 +211,17 @@ namespace Player
         }
         private void prevTrack_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.previous();
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.fastReverse();
         }
 
         private void play_Click(object sender, EventArgs e)
         {
-            WMPlayer.URL = this.voipDataGridView.CurrentCell.OwningRow.Cells[4].Value.ToString();
+            
             WMPlayer.controls.play();
         }
 
@@ -237,12 +237,12 @@ namespace Player
 
         private void skip_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.fastForward();
         }
 
         private void nextTrack_Click(object sender, EventArgs e)
         {
-
+            WMPlayer.controls.next();
         }
         private DataTable voiptable;
         private void initdatagrid()
@@ -296,7 +296,22 @@ namespace Player
         private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
-            if(WMPlayer.playState != WMPPlayState.wmppsPlaying) this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
+            if (WMPlayer.playState != WMPPlayState.wmppsPlaying)
+            {
+                this.updateAudioNameTextbox(voipDataGridView.Rows[thisRow].Cells[4].Value.ToString());
+                if (WMPlayer.playState != WMPPlayState.wmppsPaused)
+                    WMPlayer.URL = this.voipDataGridView.CurrentCell.OwningRow.Cells[4].Value.ToString();
+            }
+        }
+
+        private void voipDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
+            string file = voipDataGridView.Rows[thisRow].Cells[4].Value.ToString();
+            this.updateAudioNameTextbox(file);
+            this.WMPlayer.controls.stop();
+            this.WMPlayer.URL = file;
+
         }
     }
 
