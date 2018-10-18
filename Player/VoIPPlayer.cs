@@ -47,7 +47,8 @@ namespace Player
             this.voipDataGridView.DataSource = this.voiptable;
             this.initdatagrid();
             this.currentDuration.Text = "";
-            if(pcapFiles.Count > 0)
+            this.baseclock.Start();
+            if (pcapFiles.Count > 0)
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
                 foreach( string folder in pcapFolders ) this.currentListView.Items.Add(folder);
@@ -227,7 +228,7 @@ namespace Player
 
         private void play_Click(object sender, EventArgs e)
         {
-            this.updateposission();
+            //this.updatepossision();
             this.WMPlayer.controls.play();
         }
 
@@ -269,10 +270,7 @@ namespace Player
 
         }
 
-        private void updateposission()
-        {
-            this.progressBar.Value = (int)Math.Round(((double)this.WMPlayer.controls.currentPosition / (double)this.progressBar.Maximum)*100, 0);
-        }
+        
 
         public void addtodatagrid(rowObject data)
         {
@@ -286,7 +284,7 @@ namespace Player
                 bool is_duplicate = false;
                 foreach (DataGridViewRow row in this.voipDataGridView.Rows)
                 {
-                    if (row.Cells[1].Value.ToString().Equals(data.duration) &&
+                    if (row.Cells[1].Value.ToString().Equals(data.durationString) &&
                         row.Cells[2].Value.ToString().Equals(data.from) &&
                         row.Cells[3].Value.ToString().Equals(data.to) &&
                         row.Cells[4].Value.ToString().Equals(data.code) &&
@@ -305,20 +303,17 @@ namespace Player
             }
             if (can_i_add)
             {
-                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.duration, data.from, data.to, data.code, data.location);
+                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.durationString, data.from, data.to, data.code, data.location);
                 this.voipDataGridView.DataSource = this.voiptable;
             }
         }
 
-        private void updateAudioNameTextboxandDuration(string path)
-        {
-            this.fileNameTextbox.Text = path;
-            
-            this.updateDuration();
+        
             
             
             
-        }
+            
+        
         //private void voipDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         //{
         //    int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
@@ -334,15 +329,26 @@ namespace Player
             
         //}
 
-        private void updateDuration()
+        private void updateDuration(string durationStr, double durationDou)
         {
-            
+            /*
             IWMPMedia mediainfo = WMPlayer.newMedia(this.WMPlayer.URL);
             this.currentDuration.Text = mediainfo.durationString;
-            this.progressBar.Maximum = (int)mediainfo.duration;
-
+            
+            */
+            this.currentDuration.Text = durationStr;
+            this.progressBar.Maximum = (int)Math.Round(durationDou, 0);
         }
-        
+
+        private void updatepossision()
+        {
+
+            this.progressBar.Value = (int)Math.Round((this.WMPlayer.controls.currentPosition) / (double)(this.progressBar.Maximum), 0);
+            //Interaction.MsgBox(this.WMPlayer.controls.currentPosition + " / " + this.progressBar.Maximum, MsgBoxStyle.OkOnly, "Player");
+            this.curr.Text = Math.Round(this.WMPlayer.controls.currentPosition, 2).ToString();
+            this.max.Text = this.progressBar.Maximum.ToString();
+        }
+
         public enum CELLMODE
         {
            CURRENT = 0,
@@ -361,9 +367,18 @@ namespace Player
             else thisRow = rowindex;
             string file = voipDataGridView.Rows[thisRow].Cells[5].Value.ToString();
             //Interaction.MsgBox("Opening audio " + file, MsgBoxStyle.OkOnly, "double_click cell");
-            this.updateAudioNameTextboxandDuration(file);
+            //this.updateAudioNameTextboxandDuration(file);
             this.WMPlayer.controls.stop();
             this.WMPlayer.URL = file;
+            this.fileNameTextbox.Text = file;
+            this.updateDuration(this.voipDataGridView.CurrentCell.OwningRow.Cells[1].Value.ToString(), 0.0);
+            
+            
+        }
+        
+        private void baseclock_Tick(object sender, EventArgs e)
+        {
+            this.updatepossision();
             
         }
     }
@@ -388,20 +403,22 @@ namespace Player
     public class rowObject
     {
         //public string id;
-        public string duration;
+        public double duration;
+        public string durationString;
         public string from;
         public string to;
         public string code;
         public string location;
 
-
+        
         public rowObject(string filename){
             string filenamewithoutext = Path.GetFileNameWithoutExtension(filename);
             string path = filename + ".wav";
             IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(path);
             this.initRowObject
             (
-                mediainfo.durationString,                                                         //duration
+                mediainfo.duration,                                                         //duration
+                mediainfo.durationString,
                 filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3],  //from
                 filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],  //to
                 filenamewithoutext.Split('_')[2],                                           //code, so 2 chua ro y nghia
@@ -413,12 +430,13 @@ namespace Player
 
         }
 
-        private void initRowObject(string duration , string from, string to, string code, string location)
+        private void initRowObject(double duration, string durationString, string from, string to, string code, string location)
         {
             //this.id = id;
             this.from = from;
             this.to = to;
             this.code = code;
+            this.durationString = durationString;
             this.duration = duration;
             this.location = location;
         }

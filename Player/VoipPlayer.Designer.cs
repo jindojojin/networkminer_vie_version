@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.voipDataGridView = new System.Windows.Forms.DataGridView();
             this.PlayerGroup = new System.Windows.Forms.GroupBox();
+            this.curr = new System.Windows.Forms.TextBox();
+            this.max = new System.Windows.Forms.TextBox();
             this.currentDuration = new System.Windows.Forms.TextBox();
             this.fileNameTextbox = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
@@ -45,6 +48,7 @@
             this.OpenFile = new System.Windows.Forms.PictureBox();
             this.scan = new System.Windows.Forms.PictureBox();
             this.currentListView = new System.Windows.Forms.ListView();
+            this.baseclock = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.voipDataGridView)).BeginInit();
             this.PlayerGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nextTrack)).BeginInit();
@@ -77,12 +81,14 @@
             this.voipDataGridView.RowTemplate.Height = 24;
             this.voipDataGridView.Size = new System.Drawing.Size(910, 339);
             this.voipDataGridView.TabIndex = 0;
-            this.voipDataGridView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.voipDataGridView_CellContentDoubleClick);
+            this.voipDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.voipDataGridView_CellContentDoubleClick);
             // 
             // PlayerGroup
             // 
             this.PlayerGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlayerGroup.Controls.Add(this.curr);
+            this.PlayerGroup.Controls.Add(this.max);
             this.PlayerGroup.Controls.Add(this.currentDuration);
             this.PlayerGroup.Controls.Add(this.fileNameTextbox);
             this.PlayerGroup.Controls.Add(this.progressBar);
@@ -99,6 +105,20 @@
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
+            // 
+            // curr
+            // 
+            this.curr.Location = new System.Drawing.Point(819, 36);
+            this.curr.Name = "curr";
+            this.curr.Size = new System.Drawing.Size(66, 22);
+            this.curr.TabIndex = 16;
+            // 
+            // max
+            // 
+            this.max.Location = new System.Drawing.Point(891, 36);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(61, 22);
+            this.max.TabIndex = 17;
             // 
             // currentDuration
             // 
@@ -261,6 +281,10 @@
             this.currentListView.UseCompatibleStateImageBehavior = false;
             this.currentListView.View = System.Windows.Forms.View.List;
             // 
+            // baseclock
+            // 
+            this.baseclock.Tick += new System.EventHandler(this.baseclock_Tick);
+            // 
             // VoipPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -309,6 +333,9 @@
         private System.Windows.Forms.GroupBox AnalyseGroup;
         private System.Windows.Forms.PictureBox OpenFolder;
         private System.Windows.Forms.TextBox currentDuration;
+        private System.Windows.Forms.Timer baseclock;
+        private System.Windows.Forms.TextBox curr;
+        private System.Windows.Forms.TextBox max;
     }
 }
 
