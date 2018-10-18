@@ -32,7 +32,6 @@
             this.voipDataGridView = new System.Windows.Forms.DataGridView();
             this.PlayerGroup = new System.Windows.Forms.GroupBox();
             this.curr = new System.Windows.Forms.TextBox();
-            this.max = new System.Windows.Forms.TextBox();
             this.currentDuration = new System.Windows.Forms.TextBox();
             this.fileNameTextbox = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
@@ -79,7 +78,7 @@
             this.voipDataGridView.Location = new System.Drawing.Point(182, 79);
             this.voipDataGridView.Name = "voipDataGridView";
             this.voipDataGridView.RowTemplate.Height = 24;
-            this.voipDataGridView.Size = new System.Drawing.Size(910, 339);
+            this.voipDataGridView.Size = new System.Drawing.Size(662, 384);
             this.voipDataGridView.TabIndex = 0;
             this.voipDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.voipDataGridView_CellContentDoubleClick);
             // 
@@ -88,7 +87,6 @@
             this.PlayerGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PlayerGroup.Controls.Add(this.curr);
-            this.PlayerGroup.Controls.Add(this.max);
             this.PlayerGroup.Controls.Add(this.currentDuration);
             this.PlayerGroup.Controls.Add(this.fileNameTextbox);
             this.PlayerGroup.Controls.Add(this.progressBar);
@@ -101,33 +99,31 @@
             this.PlayerGroup.Controls.Add(this.prevTrack);
             this.PlayerGroup.Location = new System.Drawing.Point(134, 12);
             this.PlayerGroup.Name = "PlayerGroup";
-            this.PlayerGroup.Size = new System.Drawing.Size(958, 58);
+            this.PlayerGroup.Size = new System.Drawing.Size(710, 58);
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Player";
             // 
             // curr
             // 
-            this.curr.Location = new System.Drawing.Point(819, 36);
+            this.curr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.curr.BackColor = System.Drawing.SystemColors.Control;
+            this.curr.Location = new System.Drawing.Point(506, 36);
             this.curr.Name = "curr";
-            this.curr.Size = new System.Drawing.Size(66, 22);
+            this.curr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.curr.Size = new System.Drawing.Size(101, 22);
             this.curr.TabIndex = 16;
-            // 
-            // max
-            // 
-            this.max.Location = new System.Drawing.Point(891, 36);
-            this.max.Name = "max";
-            this.max.Size = new System.Drawing.Size(61, 22);
-            this.max.TabIndex = 17;
             // 
             // currentDuration
             // 
             this.currentDuration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.currentDuration.BackColor = System.Drawing.SystemColors.Control;
-            this.currentDuration.Location = new System.Drawing.Point(724, 36);
+            this.currentDuration.Location = new System.Drawing.Point(606, 36);
             this.currentDuration.Name = "currentDuration";
-            this.currentDuration.Size = new System.Drawing.Size(228, 22);
+            this.currentDuration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.currentDuration.Size = new System.Drawing.Size(98, 22);
             this.currentDuration.TabIndex = 16;
             // 
             // fileNameTextbox
@@ -137,7 +133,7 @@
             this.fileNameTextbox.BackColor = System.Drawing.SystemColors.Control;
             this.fileNameTextbox.Location = new System.Drawing.Point(276, 13);
             this.fileNameTextbox.Name = "fileNameTextbox";
-            this.fileNameTextbox.Size = new System.Drawing.Size(676, 22);
+            this.fileNameTextbox.Size = new System.Drawing.Size(428, 22);
             this.fileNameTextbox.TabIndex = 11;
             // 
             // progressBar
@@ -145,8 +141,11 @@
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.progressBar.Location = new System.Drawing.Point(276, 41);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(442, 10);
+            this.progressBar.Size = new System.Drawing.Size(224, 10);
+            this.progressBar.Step = 1;
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar.TabIndex = 9;
+            this.progressBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar_MouseDown);
             // 
             // nextTrack
             // 
@@ -276,20 +275,21 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.currentListView.Location = new System.Drawing.Point(12, 79);
             this.currentListView.Name = "currentListView";
-            this.currentListView.Size = new System.Drawing.Size(164, 339);
+            this.currentListView.Size = new System.Drawing.Size(164, 384);
             this.currentListView.TabIndex = 15;
             this.currentListView.UseCompatibleStateImageBehavior = false;
             this.currentListView.View = System.Windows.Forms.View.List;
             // 
             // baseclock
             // 
+            this.baseclock.Interval = 1;
             this.baseclock.Tick += new System.EventHandler(this.baseclock_Tick);
             // 
             // VoipPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1104, 425);
+            this.ClientSize = new System.Drawing.Size(856, 470);
             this.Controls.Add(this.currentListView);
             this.Controls.Add(this.AnalyseGroup);
             this.Controls.Add(this.PlayerGroup);
@@ -335,7 +335,6 @@
         private System.Windows.Forms.TextBox currentDuration;
         private System.Windows.Forms.Timer baseclock;
         private System.Windows.Forms.TextBox curr;
-        private System.Windows.Forms.TextBox max;
     }
 }
 

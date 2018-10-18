@@ -47,7 +47,10 @@ namespace Player
             this.voipDataGridView.DataSource = this.voiptable;
             this.initdatagrid();
             this.currentDuration.Text = "";
-            this.baseclock.Start();
+            
+            this.progressBar.Minimum = 0;
+            this.progressBar.Maximum = 0;
+            
             if (pcapFiles.Count > 0)
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
@@ -195,7 +198,7 @@ namespace Player
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
                 audio += this.audioList.Count.ToString();
                 //if (_MODE == MODE.NORMAL) Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
-                if(sum_result == 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkCancel, "Scan result fail");
+                if(sum_result == 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkOnly, "Scan result fail");
               
                 
                 foreach (string data in streamdata)
@@ -212,6 +215,7 @@ namespace Player
                 string message2 = "Do you want to open a pcap file ?";
                 chooseFileOrFolderToScan msgbox = new chooseFileOrFolderToScan(message1, message2, this);
                 msgbox.ShowDialog();
+                this.scan_Click(sender, err, MODE.NORMAL);
             }
 
 
@@ -230,11 +234,14 @@ namespace Player
         {
             //this.updatepossision();
             this.WMPlayer.controls.play();
+            this.baseclock.Start();
         }
 
         private void pause_Click(object sender, EventArgs e)
         {
+            this.baseclock.Stop();
             this.WMPlayer.controls.pause();
+            
         }
 
         private void stop_Click(object sender, EventArgs e)
@@ -337,18 +344,18 @@ namespace Player
             
             */
             this.currentDuration.Text = durationStr;
-            this.progressBar.Maximum = (int)Math.Round(durationDou, 0);
+            this.progressBar.Maximum = (int)(Math.Round(durationDou, 3)*1000);
         }
-
+        
         private void updatepossision()
         {
-
-            this.progressBar.Value = (int)Math.Round((this.WMPlayer.controls.currentPosition) / (double)(this.progressBar.Maximum), 0);
+            int possision = (int)(Math.Floor((this.WMPlayer.controls.currentPosition * 1000)));
+            if(possision >= 0 && possision <= this.progressBar.Maximum) this.progressBar.Value = possision;
             //Interaction.MsgBox(this.WMPlayer.controls.currentPosition + " / " + this.progressBar.Maximum, MsgBoxStyle.OkOnly, "Player");
-            this.curr.Text = Math.Round(this.WMPlayer.controls.currentPosition, 2).ToString();
-            this.max.Text = this.progressBar.Maximum.ToString();
+            this.curr.Text = this.WMPlayer.controls.currentPositionString;
+            //this.max.Text = this.progressBar.Maximum.ToString();
         }
-
+        
         public enum CELLMODE
         {
            CURRENT = 0,
@@ -371,14 +378,28 @@ namespace Player
             this.WMPlayer.controls.stop();
             this.WMPlayer.URL = file;
             this.fileNameTextbox.Text = file;
-            this.updateDuration(this.voipDataGridView.CurrentCell.OwningRow.Cells[1].Value.ToString(), 0.0);
-            
-            
+            IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(file);
+            this.updateDuration(this.voipDataGridView.CurrentCell.OwningRow.Cells[1].Value.ToString(), mediainfo.duration);
+            this.baseclock.Start();
         }
+
+        
         
         private void baseclock_Tick(object sender, EventArgs e)
         {
-            this.updatepossision();
+            //if(this.WMPlayer.playState == WMPPlayState.wmppsPlaying)
+                this.updatepossision();
+            
+        }
+
+        private void progressBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.WMPlayer.controls.pause();
+            float percent = (float)e.X / (float)this.progressBar.Width;
+            this.progressBar.Value = (int)(percent * (float)this.progressBar.Maximum);
+            this.WMPlayer.controls.currentPosition = (double)this.progressBar.Value / 1000;
+            if (this.WMPlayer.URL.Length > 7) this.WMPlayer.controls.play();  //URL > D:/.wav
+            Interaction.MsgBox(this.progressBar.Maximum.ToString()+ ":"+e.X+"/"+ this.progressBar.Width+"="+ ((float)e.X / (float)this.progressBar.Width * (float)this.progressBar.Maximum).ToString(), MsgBoxStyle.OkOnly, "");
             
         }
     }
