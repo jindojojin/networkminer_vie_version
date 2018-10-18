@@ -1078,26 +1078,27 @@ namespace pcapdatacopy
 				if (flag)
 				{
 					bool flag2 = Operators.CompareString(this.OpenFileDialog1.FileName, string.Empty, false) != 0;
-					if (flag2)
-					{
-						this.file_selected_textbox.Text = this.OpenFileDialog1.FileName;
+                    if (flag2)
+                    {
+                        this.file_selected_textbox.Text = this.OpenFileDialog1.FileName;
                         //thay thế lệnh này = gán trực tiếp từ bên ngoài, các hoạt động config ko thay đổi, vẫn gọi
-						int num = Strings.InStr(this.file_selected_textbox.Text, ".", CompareMethod.Binary);
-						int length = this.file_selected_textbox.Text.Length;
-						string str = Strings.Left(this.file_selected_textbox.Text, num);
-						this.raw_output_file_textbox.Text = str + "bin";
-						this.create_raw_file_button.Enabled = true;
-						str = Strings.Left(this.file_selected_textbox.Text, checked(num - 1));
-						this.merged_output_file_textbox.Text = str + "_merged.pcap";
-						this.create_merged_file_button.Enabled = true;
-						num = Strings.InStrRev(this.file_selected_textbox.Text, "\\", -1, CompareMethod.Binary);
-						str = Strings.Left(this.file_selected_textbox.Text, num);
-						this.raw_rtp_output_folder.Text = str + "rtp";
-						this.analyse_file.Enabled = true;
-						this.detect_rtp.Enabled = true;
-						this.update_status("File Selected");
-						this.dummy_button.Focus();
-					}
+                        int num = Strings.InStr(this.file_selected_textbox.Text, ".", CompareMethod.Binary);
+                        int length = this.file_selected_textbox.Text.Length;
+                        string str = Strings.Left(this.file_selected_textbox.Text, num);
+                        this.raw_output_file_textbox.Text = str + "bin";
+                        this.create_raw_file_button.Enabled = true;
+                        str = Strings.Left(this.file_selected_textbox.Text, checked(num - 1));
+                        this.merged_output_file_textbox.Text = str + "_merged.pcap";
+                        this.create_merged_file_button.Enabled = true;
+                        num = Strings.InStrRev(this.file_selected_textbox.Text, "\\", -1, CompareMethod.Binary);
+                        str = Strings.Left(this.file_selected_textbox.Text, num);
+                        this.raw_rtp_output_folder.Text = str + "rtp";
+                        this.analyse_file.Enabled = true;
+                        this.detect_rtp.Enabled = true;
+                        this.update_status("File Selected");
+                        this.dummy_button.Focus();
+                    }
+                    else this.file_selected_textbox.Text = string.Empty;
 				}
 			}
 			catch (Exception ex)

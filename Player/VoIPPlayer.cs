@@ -122,16 +122,19 @@ namespace Player
 
         public void addToListView(string path)
         {
-            ListViewItem newitem = new ListViewItem();
-            newitem.Text = path;
-            bool is_duplicate = false;
-            foreach(ListViewItem item in currentListView.Items)
-            if (item.Text == path)
-                {
-                    is_duplicate = true;
-                    break;
-                }
-            if(!is_duplicate) this.currentListView.Items.Add(path);
+            if (path.Length >= 3) //min is C:/
+            {
+                ListViewItem newitem = new ListViewItem();
+                newitem.Text = path;
+                bool is_duplicate = false;
+                foreach (ListViewItem item in currentListView.Items)
+                    if (item.Text == path)
+                    {
+                        is_duplicate = true;
+                        break;
+                    }
+                if (!is_duplicate) this.currentListView.Items.Add(path);
+            }
         }
 
         public void OpenFile_Click(object sender, EventArgs e)
@@ -198,7 +201,7 @@ namespace Player
                 foreach (string audiofile in this.audioList) audio += audiofile+ "\n";
                 audio += this.audioList.Count.ToString();
                 //if (_MODE == MODE.NORMAL) Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from scan_click");
-                if(sum_result == 0) if (_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkOnly, "Scan result fail");
+                //if(sum_result == 0 &&_MODE == MODE.NORMAL) Interaction.MsgBox("No stream detected", MsgBoxStyle.OkOnly, "Scan result fail");
               
                 
                 foreach (string data in streamdata)
@@ -222,7 +225,14 @@ namespace Player
         }
         private void prevTrack_Click(object sender, EventArgs e)
         {
-            this.WMPlayer.controls.previous();// dang co exception
+            int curRow = this.voipDataGridView.CurrentCell.RowIndex;
+            int lastRowIndex = this.voipDataGridView.Rows.Count-1;
+            int curCol = this.voipDataGridView.CurrentCell.ColumnIndex;
+            int jumpto = 0;
+            if (curRow == 0) jumpto = lastRowIndex;
+            else jumpto = curRow - 1;
+            this.voipDataGridView.CurrentCell = this.voipDataGridView.Rows[jumpto].Cells[curCol];
+            this.voipDataGridView_CellContentDoubleClick(new object(), new DataGridViewCellEventArgs(curCol,jumpto), CELLMODE.NAVIGATE, jumpto);
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -256,9 +266,17 @@ namespace Player
 
         private void nextTrack_Click(object sender, EventArgs e)
         {
-            this.WMPlayer.controls.next();
+            this.WMPlayer.controls.stop();
+            int curRow = this.voipDataGridView.CurrentCell.RowIndex;
+            bool is_overlength = ((curRow+1) == this.voipDataGridView.Rows.Count);
+            int curCol = this.voipDataGridView.CurrentCell.ColumnIndex;
+            int jumpto = 0;
+            if (is_overlength) jumpto = 0;
+            else jumpto = curRow + 1;
+            this.voipDataGridView.CurrentCell = this.voipDataGridView.Rows[jumpto].Cells[curCol];
+            this.voipDataGridView_CellContentDoubleClick(new object(), new DataGridViewCellEventArgs(curCol, jumpto), CELLMODE.NAVIGATE, jumpto);
         }
-        private DataTable voiptable;
+        public DataTable voiptable;
         private void initdatagrid()
         {
             this.voiptable = new DataTable();
@@ -266,7 +284,7 @@ namespace Player
             this.voiptable.Columns.Add("Duration");
             this.voiptable.Columns.Add("From");
             this.voiptable.Columns.Add("To");
-            this.voiptable.Columns.Add("Code");
+            this.voiptable.Columns.Add("Call ID");
             this.voiptable.Columns.Add("Location");
             //this.voipDataGridView.Columns[0].Width = 30;
             //this.voipDataGridView.Columns[1].Width = 60;
@@ -381,6 +399,7 @@ namespace Player
             IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(file);
             this.updateDuration(this.voipDataGridView.CurrentCell.OwningRow.Cells[1].Value.ToString(), mediainfo.duration);
             this.baseclock.Start();
+            this.WMPlayer.controls.play();
         }
 
         

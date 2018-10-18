@@ -3196,6 +3196,8 @@ namespace NetworkMiner {
             this.pcapFiles.Clear();
             this.pcapFolders.Clear();
             this.audioList.Clear();
+            this.playerDialog.voiptable.Clear();
+            
         }
 
         private void keywordTextBox_KeyDown(object sender, KeyEventArgs e)
