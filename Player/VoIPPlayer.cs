@@ -215,7 +215,7 @@ namespace Player
                 string message2 = "Do you want to open a pcap file ?";
                 chooseFileOrFolderToScan msgbox = new chooseFileOrFolderToScan(message1, message2, this);
                 msgbox.ShowDialog();
-                this.scan_Click(sender, err, MODE.NORMAL);
+                //this.scan_Click(sender, err, MODE.NORMAL);
             }
 
 

@@ -25,7 +25,7 @@ namespace Player
             this.player.OpenFolder_Click(sender, e);
             this.Close();
         }
-
+        
         private void OpenFile_Click(object sender, EventArgs e)
         {
             this.player.OpenFile_Click(sender, e);
