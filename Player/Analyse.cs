@@ -132,9 +132,9 @@ namespace Player
                     //Interaction.MsgBox(audio, MsgBoxStyle.OkOnly, "Audio list from generate audio");
                     //Interaction.MsgBox("audio list co " + this.audioList.Count + ":\n"+audio, MsgBoxStyle.OkOnly, "debug");
                     if(noti) Interaction.MsgBox(stream_detected + " stream detected\n" +
-                        "Audio created at " + processor.raw_rtp_output_folder.Text, MsgBoxStyle.OkOnly, "Scan one pcap file");
+                        "Audio created at " + processor.raw_rtp_output_folder.Text, MsgBoxStyle.OkOnly, "Scan " + processor.file_selected_textbox.Text);
                 }
-                else if(noti) Interaction.MsgBox("No RTP audio stream found", MsgBoxStyle.OkOnly, "Scan one pcap file");
+                else if(noti) Interaction.MsgBox("No RTP audio stream found", MsgBoxStyle.OkOnly, "Scan "+ processor.file_selected_textbox.Text);
             }
             
             else if(noti) Interaction.MsgBox("Choose a pcap file or a folder contains pcap files to use this function.", MsgBoxStyle.OkOnly, "No file selected");

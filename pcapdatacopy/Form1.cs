@@ -1141,7 +1141,7 @@ namespace pcapdatacopy
                 //this.OpenFileDialog1.Filter = "Wireshark .pcap files|*.pcap";
                 //this.OpenFileDialog1.FileName = string.Empty;
                 int flag = current_file_path.Length; //this.OpenFileDialog1.ShowDialog() > DialogResult.None;
-				if (flag > 0)
+				if (flag > 3)
 				{
                     //bool flag2 = Operators.CompareString(this.OpenFileDialog1.FileName, string.Empty, false) != 0;
                     //if (flag2)

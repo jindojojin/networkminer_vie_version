@@ -212,6 +212,8 @@ namespace Player
                 chooseFileOrFolderToScan msgbox = new chooseFileOrFolderToScan(message1, message2, this);
                 msgbox.ShowDialog();
             }
+
+
         }
         private void prevTrack_Click(object sender, EventArgs e)
         {
@@ -341,13 +343,24 @@ namespace Player
 
         }
         
-
+        public enum CELLMODE
+        {
+           CURRENT = 0,
+           NAVIGATE = 1
+        }
 
         private void voipDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            int thisRow = this.voipDataGridView.CurrentCell.RowIndex;
+            this.voipDataGridView_CellContentDoubleClick(sender, e, CELLMODE.CURRENT, 0);
+        }
+
+        private void voipDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e, CELLMODE _MODE, int rowindex )
+        {
+            int thisRow = 0;
+            if (_MODE == CELLMODE.CURRENT) thisRow = this.voipDataGridView.CurrentCell.RowIndex;
+            else thisRow = rowindex;
             string file = voipDataGridView.Rows[thisRow].Cells[5].Value.ToString();
-            Interaction.MsgBox("Opening audio " + file, MsgBoxStyle.OkOnly, "double_click cell");
+            //Interaction.MsgBox("Opening audio " + file, MsgBoxStyle.OkOnly, "double_click cell");
             this.updateAudioNameTextboxandDuration(file);
             this.WMPlayer.controls.stop();
             this.WMPlayer.URL = file;
