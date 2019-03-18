@@ -13,8 +13,13 @@ using System.Text;
 using System.Windows.Forms;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.IO;
 
 using NetresecShared.Pcap;
+
+using Microsoft.VisualBasic;
+using Player;
+using pcapdatacopy;
 
 namespace NetworkMiner {
     public partial class NetworkMinerForm : Form {
@@ -321,6 +326,9 @@ namespace NetworkMiner {
             this.sessionQueue = new ConcurrentQueue<PacketParser.Events.SessionEventArgs>();
             this.messageQueue = new ConcurrentQueue<PacketParser.Events.MessageEventArgs>();
             this.keywordQueue = new ConcurrentQueue<PacketParser.Events.KeywordEventArgs>();
+            this.pcapFiles = new List<string>();
+            this.pcapFolders = new List<string>();
+            this.audioList = new List<string>();
             //this.AudioStreamQueue = new ConcurrentQueue<PacketParser.AudioStream>();
             //this.VoipCallQueue = new ConcurrentQueue<Tuple<System.Net.IPAddress, ushort, System.Net.IPAddress, ushort, string, string, string>>();
 
@@ -328,7 +336,10 @@ namespace NetworkMiner {
             this.guiUpdateTimer = new Timer();
             this.guiUpdateTimer.Interval = GUI_UPDATE_INTERVAL_MS;//40 ms interval => 25 GUI updates/s
             this.guiUpdateTimer.Tick += this.GuiUpdateTimer_Tick;
-
+            this.processor = new Form1();  //khoi tao processor la 1 form cua pcapdatacopy
+            this.err = new EventArgs();
+            this.core = new Analyse(ref processor, ref err, ref this.audioList);
+            
             PacketParser.Utils.Logger.Log("Initializing Component", System.Diagnostics.EventLogEntryType.Information);
             InitializeComponent();
 
@@ -1908,10 +1919,18 @@ namespace NetworkMiner {
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e) {
             //this.openFileDialog1.ShowDialog();
-
             if (this.openPcapFileDialog.ShowDialog() == DialogResult.OK) {
-                this.LoadPcapFile(this.openPcapFileDialog.FileName);
-
+                string filepath = this.openPcapFileDialog.FileName;
+                //string filedir = Path.GetDirectoryName(filepath);
+                string filename = Path.GetFileName(filepath);
+                this.LoadPcapFile(filepath);
+                if (!this.pcapFiles.Contains(filepath)){
+                    this.pcapFiles.Add(filepath);
+                    //if (!this.pcapFolders.Contains(filedir))
+                       // this.pcapFolders.Add(filedir);
+                    this.updateCurrentFileVoipFromCurrent(filename);
+                    Console.WriteLine(this.pcapFiles.Count + " / " + this.pcapFolders.Count);
+                }
             }
         }
 
@@ -2020,6 +2039,16 @@ namespace NetworkMiner {
             return null;
         }
 
+        private void updateCurrentFileVoipFromCurrent( string FileName)
+        {
+            System.Windows.Forms.ToolStripItem newCurrentFile = new System.Windows.Forms.ToolStripMenuItem();
+            newCurrentFile.Name = "newCurrentFile";
+            newCurrentFile.Text = FileName;
+            this.resources.ApplyResources(newCurrentFile, "newCurrentFile");
+            newCurrentFile.Click += new System.EventHandler(this.analyseCurrentFile_Click);
+            this.fromCurrentPcapFileToolStripMenuItem.DropDownItems.Add(newCurrentFile);
+        }
+
         void fileWorker_DoWork(object sender, DoWorkEventArgs e) {
             //extract the argument (LoadingProcess)
             LoadingProcess lp = (LoadingProcess)e.Argument;
@@ -2104,6 +2133,8 @@ namespace NetworkMiner {
         }
 
         private void ResetCapturedData(bool removeCapturedFiles, bool clearIpColorHandler) {
+            this.fromCurrentPcapFileToolStripMenuItem.DropDownItems.Clear();
+
             this.networkHostTreeView.Nodes.Clear();
             this.framesTreeView.Nodes.Clear();
             this.imagesListView.Items.Clear();
@@ -2249,7 +2280,7 @@ namespace NetworkMiner {
                     try {
                         PacketParser.Utils.ByteConverter.ToByteArrayFromHexString(keyword);//to force valid hex
                         this.keywordListBox.Items.Add(keyword);
-                        //Lägg till keywordet till PacketHandler.PacketHandler!!!
+                        //Lï¿½gg till keywordet till PacketHandler.PacketHandler!!!
                     }
                     catch (Exception ex) {
                         errorMessage = ex.Message;
@@ -2334,7 +2365,7 @@ namespace NetworkMiner {
 #endregion
 
         private void hostSortOrderComboBox_SelectedIndexChanged(object sender, EventArgs e) {
-            //HÄR SKA detailsHeader LIGGA Enabled MASSA OLIKA SORTERINGSORDNINGAR:
+            //Hï¿½R SKA detailsHeader LIGGA Enabled MASSA OLIKA SORTERINGSORDNINGAR:
             //IP, HOTSNAME, SENT PACKETS, RECEIVED PACKETS, MAC ADDRESS
             this.detectedHostsTreeRebuildButton_Click(sender, e);
         }
@@ -2780,6 +2811,9 @@ namespace NetworkMiner {
 
         private void clearGUIToolStripMenuItem_Click(object sender, EventArgs e) {
             this.ResetCapturedData(false, true);
+            this.pcapFiles.Clear();
+            this.pcapFolders.Clear();
+            this.audioList.Clear();
         }
 
         private void keywordTextBox_KeyDown(object sender, KeyEventArgs e) {
@@ -3317,6 +3351,29 @@ finally {
             this.InitializeComponent();
             this.networkAdaptersComboBox.DataSource = networkAdapters;
         }
+        private VoipPlayer playerDialog;
+        private void openPlayerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.playerDialog = new VoipPlayer(ref processor, ref err, ref core, ref pcapFiles, ref pcapFolders, ref this.audioList);
+            this.playerDialog.Show();
+        }
+        public Analyse core;
+        public Form1 processor;
+        public EventArgs err;
+        private void fromCurrentPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.core.UseFile(ref this.processor, this.openPcapFileDialog.FileName, ref err, ref this.audioList);
+        }
+
+        private void fromOtherPcapFileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.core.OpenFile(ref processor, ref err, ref this.audioList);
+        }
+
+        private void analyseCurrentFile_Click(object sender, EventArgs e)
+        {
+            this.core.UseFile(ref processor, openPcapFileDialog.FileName, ref err, ref this.audioList);
+        }
 
         private void filesListView_SelectedIndexChanged(object sender, EventArgs e) {
             lock (filesListView.ContextMenuStrip) {
@@ -3343,5 +3400,9 @@ finally {
                     this.hostMenuStrip.Items.Remove(item);
             }
         }
+
+        public List<string> pcapFiles;
+        public List<string> audioList;
+        public List<string> pcapFolders;
     }
 }

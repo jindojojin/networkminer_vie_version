@@ -23,6 +23,27 @@
         "runtime": {
           "bin/placeholder/PacketParser.dll": {}
         }
+      },
+      "pcapdatacopy/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        }
+      },
+      "Player/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "pcapdatacopy": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Player.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Player.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.5/win": {
@@ -46,6 +67,27 @@
         },
         "runtime": {
           "bin/placeholder/PacketParser.dll": {}
+        }
+      },
+      "pcapdatacopy/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        }
+      },
+      "Player/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "pcapdatacopy": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Player.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Player.dll": {}
         }
       }
     },
@@ -71,6 +113,27 @@
         "runtime": {
           "bin/placeholder/PacketParser.dll": {}
         }
+      },
+      "pcapdatacopy/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        }
+      },
+      "Player/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "pcapdatacopy": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Player.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Player.dll": {}
+        }
       }
     },
     ".NETFramework,Version=v4.5/win-x86": {
@@ -95,6 +158,27 @@
         "runtime": {
           "bin/placeholder/PacketParser.dll": {}
         }
+      },
+      "pcapdatacopy/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/pcapdatacopy.dll": {}
+        }
+      },
+      "Player/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "pcapdatacopy": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Player.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Player.dll": {}
+        }
       }
     }
   },
@@ -108,44 +192,64 @@
       "type": "project",
       "path": "../PacketParser/PacketParser.csproj",
       "msbuildProject": "../PacketParser/PacketParser.csproj"
+    },
+    "pcapdatacopy/1.0.0": {
+      "type": "project",
+      "path": "../pcapdatacopy/pcapdatacopy.csproj",
+      "msbuildProject": "../pcapdatacopy/pcapdatacopy.csproj"
+    },
+    "Player/1.0.0": {
+      "type": "project",
+      "path": "../Player/Player.csproj",
+      "msbuildProject": "../Player/Player.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.5": [
       "NetworkWrapper >= 1.0.0",
-      "PacketParser >= 1.0.0"
+      "PacketParser >= 1.0.0",
+      "Player >= 1.0.0",
+      "pcapdatacopy >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\linhtq\\.nuget\\packages\\": {}
+    "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "projectUniqueName": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
       "projectName": "NetworkMiner",
-      "projectPath": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
-      "packagesPath": "C:\\Users\\linhtq\\.nuget\\packages\\",
-      "outputPath": "E:\\NCKH\\networkminer_vie_version\\NetworkMiner\\obj\\",
+      "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
+      "outputPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\linhtq\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Win 8.1 VS8 X64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net45"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
-              "projectPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
+            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
+              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
             },
-            "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj": {
+              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj"
+            },
+            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\Player\\Player.csproj": {
+              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\Player\\Player.csproj"
+            },
+            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }

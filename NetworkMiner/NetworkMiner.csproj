@@ -56,6 +56,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -74,6 +75,7 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -258,6 +260,14 @@
     <ProjectReference Include="..\PacketParser\PacketParser.csproj">
       <Project>{6076F9F3-F975-469E-9E0C-CACCCFF9629F}</Project>
       <Name>PacketParser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\pcapdatacopy\pcapdatacopy.csproj">
+      <Project>{0a623eb5-f630-4ce2-9324-a70c40f6fd27}</Project>
+      <Name>pcapdatacopy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Player\Player.csproj">
+      <Project>{1da43515-1fa7-4b77-9a69-9eead264cfb4}</Project>
+      <Name>Player</Name>
     </ProjectReference>
     <ProjectReference Include="..\WinPCapWrapper\NetworkWrapper.csproj">
       <Project>{2E55D097-37D8-42C4-9BD4-664EA0CF9CF9}</Project>

@@ -8,6 +8,10 @@ namespace NetworkMiner {
     
     class KeywordFilterControlForListViewItems : KeywordFilterControl<ListViewItem>
     {
+        public KeywordFilterControlForListViewItems()
+        {
+            InitializeComponent();
+        }
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KeywordFilterControlForListViewItems));

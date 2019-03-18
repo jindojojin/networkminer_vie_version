@@ -59,32 +59,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\linhtq\\.nuget\\packages\\": {}
+    "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "projectUniqueName": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
       "projectName": "PacketParser",
-      "projectPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
-      "packagesPath": "C:\\Users\\linhtq\\.nuget\\packages\\",
-      "outputPath": "E:\\NCKH\\networkminer_vie_version\\PacketParser\\obj\\",
+      "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
+      "outputPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\linhtq\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Win 8.1 VS8 X64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net45"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "E:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }
