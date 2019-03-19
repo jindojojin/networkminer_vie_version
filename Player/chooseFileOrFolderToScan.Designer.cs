@@ -41,7 +41,7 @@
             this.OpenFile.Name = "OpenFile";
             this.OpenFile.Size = new System.Drawing.Size(97, 30);
             this.OpenFile.TabIndex = 0;
-            this.OpenFile.Text = "Open File";
+            this.OpenFile.Text = "Mở tệp";
             this.OpenFile.UseCompatibleTextRendering = true;
             this.OpenFile.UseVisualStyleBackColor = true;
             this.OpenFile.Click += new System.EventHandler(this.OpenFile_Click);
@@ -52,7 +52,7 @@
             this.OpenFolder.Name = "OpenFolder";
             this.OpenFolder.Size = new System.Drawing.Size(104, 31);
             this.OpenFolder.TabIndex = 1;
-            this.OpenFolder.Text = "Open Folder";
+            this.OpenFolder.Text = "Mở thư mục";
             this.OpenFolder.UseCompatibleTextRendering = true;
             this.OpenFolder.UseVisualStyleBackColor = true;
             this.OpenFolder.Click += new System.EventHandler(this.OpenFolder_Click);
@@ -63,7 +63,7 @@
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(87, 31);
             this.Cancel.TabIndex = 2;
-            this.Cancel.Text = "Cancel";
+            this.Cancel.Text = "Hủy";
             this.Cancel.UseCompatibleTextRendering = true;
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
@@ -98,7 +98,7 @@
             this.Controls.Add(this.OpenFile);
             this.Name = "chooseFileOrFolderToScan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "chooseFileOrFolderToScan";
+            this.Text = "Chọn tệp hoặc thư mục để quét";
             this.ResumeLayout(false);
             this.PerformLayout();
 

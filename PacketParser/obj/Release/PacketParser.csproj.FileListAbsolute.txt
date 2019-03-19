@@ -1,0 +1,16 @@
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\CleartextTools\all-words.txt
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\dhcp.xml
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\oui.txt
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\tcp.xml
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\etter.finger.os
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0f.fp
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0fa.fp
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0f.fp.netsa
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\PacketParser.dll
+D:\NCKH\networkminer_vie_version\PacketParser\bin\Release\NetworkWrapper.dll
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csprojAssemblyReference.cache
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.Properties.Resources.resources
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.GenerateResource.cache
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CoreCompileInputs.cache
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CopyComplete
+D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.dll

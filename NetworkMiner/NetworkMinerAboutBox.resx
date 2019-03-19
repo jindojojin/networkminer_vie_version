@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -135,6 +135,9 @@
   <data name="linkLabelHomepage.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
+  <data name="linkLabelHomepage.Text" xml:space="preserve">
+    <value>UET</value>
+  </data>
   <data name="&gt;&gt;linkLabelHomepage.Name" xml:space="preserve">
     <value>linkLabelHomepage</value>
   </data>
@@ -161,6 +164,9 @@
   </data>
   <data name="okButton.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
+  </data>
+  <data name="okButton.Text" xml:space="preserve">
+    <value>Đồng ý</value>
   </data>
   <data name="&gt;&gt;okButton.Name" xml:space="preserve">
     <value>okButton</value>
@@ -195,6 +201,9 @@
   <data name="textBoxDescription.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
+  <data name="textBoxDescription.Text" xml:space="preserve">
+    <value>Phần mềm phân tích gói tin PCAP</value>
+  </data>
   <data name="&gt;&gt;textBoxDescription.Name" xml:space="preserve">
     <value>textBoxDescription</value>
   </data>
@@ -224,6 +233,9 @@
   </data>
   <data name="labelCopyright.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
+  </data>
+  <data name="labelCopyright.Text" xml:space="preserve">
+    <value>Bản quyền</value>
   </data>
   <data name="labelCopyright.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -258,6 +270,9 @@
   <data name="labelVersion.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
+  <data name="labelVersion.Text" xml:space="preserve">
+    <value>Phiên bản</value>
+  </data>
   <data name="labelVersion.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
@@ -290,6 +305,9 @@
   </data>
   <data name="labelProductName.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
+  </data>
+  <data name="labelProductName.Text" xml:space="preserve">
+    <value>Sản phẩm</value>
   </data>
   <data name="labelProductName.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -363,37 +381,13 @@
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>NetworkMinerAboutBox</value>
+  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>NetworkMinerAboutBox</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="textBoxDescription.Text" xml:space="preserve">
-    <value>NetworkMiner is an open source Network Forensic Analysis Tool (NFAT) with a built-in passive network sniffer/packet capturing tool. It can detect OS's, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis.
-
-Author: Erik Hjelmvik, &lt;erik.hjelmvik [at] gmail.com&gt;
-
-Website: http://www.netresec.com/
-
-NetworkMiner is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License.</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>NetworkMinerAboutBox</value>
-  </data>
-  <data name="okButton.Text" xml:space="preserve">
-    <value>&amp;OK</value>
-  </data>
-  <data name="linkLabelHomepage.Text" xml:space="preserve">
-    <value>http://www.netresec.com/?page=NetworkMiner</value>
-  </data>
-  <data name="labelVersion.Text" xml:space="preserve">
-    <value>Version</value>
-  </data>
-  <data name="labelProductName.Text" xml:space="preserve">
-    <value>Product</value>
-  </data>
-  <data name="labelCopyright.Text" xml:space="preserve">
-    <value>Copyright</value>
   </data>
 </root>

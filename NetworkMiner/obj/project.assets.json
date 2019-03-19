@@ -213,20 +213,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\": {}
+    "C:\\Users\\jindo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "projectUniqueName": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
       "projectName": "NetworkMiner",
-      "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
-      "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
-      "outputPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\NetworkMiner\\obj\\",
+      "projectPath": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "packagesPath": "C:\\Users\\jindo\\.nuget\\packages\\",
+      "outputPath": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Win 8.1 VS8 X64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -239,17 +239,17 @@
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
-              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
+            "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
+              "projectPath": "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
             },
-            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj": {
-              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj"
+            "D:\\NCKH\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj": {
+              "projectPath": "D:\\NCKH\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj"
             },
-            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\Player\\Player.csproj": {
-              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\Player\\Player.csproj"
+            "D:\\NCKH\\networkminer_vie_version\\Player\\Player.csproj": {
+              "projectPath": "D:\\NCKH\\networkminer_vie_version\\Player\\Player.csproj"
             },
-            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }

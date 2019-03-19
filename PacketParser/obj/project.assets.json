@@ -59,20 +59,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\": {}
+    "C:\\Users\\jindo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "projectUniqueName": "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
       "projectName": "PacketParser",
-      "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
-      "packagesPath": "C:\\Users\\Win 8.1 VS8 X64\\.nuget\\packages\\",
-      "outputPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\PacketParser\\obj\\",
+      "projectPath": "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj",
+      "packagesPath": "C:\\Users\\jindo\\.nuget\\packages\\",
+      "outputPath": "D:\\NCKH\\networkminer_vie_version\\PacketParser\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Win 8.1 VS8 X64\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -85,8 +85,8 @@
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "E:\\Dev\\voip_wireshark\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }

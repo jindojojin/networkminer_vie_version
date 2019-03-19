@@ -28,3 +28,9 @@ E:\Dev\voip_wireshark\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkW
 E:\Dev\voip_wireshark\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.csproj.CoreCompileInputs.cache
 E:\Dev\voip_wireshark\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.dll
 E:\Dev\voip_wireshark\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.pdb
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\bin\Debug\NetworkWrapper.dll
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\bin\Debug\NetworkWrapper.pdb
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.csprojAssemblyReference.cache
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.csproj.CoreCompileInputs.cache
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.dll
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Debug\NetworkWrapper.pdb

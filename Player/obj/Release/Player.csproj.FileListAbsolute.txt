@@ -1,0 +1,17 @@
+D:\NCKH\networkminer_vie_version\Player\bin\Release\Player.exe.config
+D:\NCKH\networkminer_vie_version\Player\bin\Release\Player.exe
+D:\NCKH\networkminer_vie_version\Player\bin\Release\Player.pdb
+D:\NCKH\networkminer_vie_version\Player\bin\Release\pcapdatacopy.dll
+D:\NCKH\networkminer_vie_version\Player\bin\Release\pcapdatacopy.pdb
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csprojAssemblyReference.cache
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Interop.WMPLib.dll
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Interop.WMPRichPreviewLauncher.dll
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.ResolveComReference.cache
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.chooseFileOrFolderToScan.resources
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.Properties.Resources.resources
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.VoipPlayer.resources
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.GenerateResource.cache
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.CoreCompileInputs.cache
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.CopyComplete
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.exe
+D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.pdb

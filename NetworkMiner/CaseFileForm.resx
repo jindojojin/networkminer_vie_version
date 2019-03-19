@@ -395,6 +395,6 @@
     <value>statusStrip1</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Metadata</value>
+    <value>Siêu dữ liệu (metadata)</value>
   </data>
 </root>

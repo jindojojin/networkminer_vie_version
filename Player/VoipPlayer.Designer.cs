@@ -102,7 +102,7 @@
             this.PlayerGroup.Size = new System.Drawing.Size(710, 58);
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
-            this.PlayerGroup.Text = "Player";
+            this.PlayerGroup.Text = "Trình phát";
             // 
             // curr
             // 
@@ -234,7 +234,7 @@
             this.AnalyseGroup.Size = new System.Drawing.Size(116, 58);
             this.AnalyseGroup.TabIndex = 14;
             this.AnalyseGroup.TabStop = false;
-            this.AnalyseGroup.Text = "Analyse";
+            this.AnalyseGroup.Text = "Phân tích";
             // 
             // OpenFolder
             // 
@@ -296,7 +296,7 @@
             this.Controls.Add(this.voipDataGridView);
             this.Name = "VoipPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Network Miner - VoIP Player";
+            this.Text = "Trình phát VoIP";
             ((System.ComponentModel.ISupportInitialize)(this.voipDataGridView)).EndInit();
             this.PlayerGroup.ResumeLayout(false);
             this.PlayerGroup.PerformLayout();

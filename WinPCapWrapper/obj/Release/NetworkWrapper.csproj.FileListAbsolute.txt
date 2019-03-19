@@ -1,0 +1,3 @@
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\bin\Release\NetworkWrapper.dll
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Release\NetworkWrapper.csproj.CoreCompileInputs.cache
+D:\NCKH\networkminer_vie_version\WinPCapWrapper\obj\Release\NetworkWrapper.dll

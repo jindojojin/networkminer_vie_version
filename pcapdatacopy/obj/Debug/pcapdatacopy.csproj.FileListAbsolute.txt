@@ -25,3 +25,12 @@ E:\Dev\voip_wireshark\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdataco
 E:\Dev\voip_wireshark\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.csproj.CoreCompileInputs.cache
 E:\Dev\voip_wireshark\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.dll
 E:\Dev\voip_wireshark\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.pdb
+D:\NCKH\networkminer_vie_version\pcapdatacopy\bin\Debug\pcapdatacopy.dll
+D:\NCKH\networkminer_vie_version\pcapdatacopy\bin\Debug\pcapdatacopy.pdb
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.csprojAssemblyReference.cache
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.Form1.resources
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.Resources.resources
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.csproj.GenerateResource.cache
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.csproj.CoreCompileInputs.cache
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.dll
+D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Debug\pcapdatacopy.pdb

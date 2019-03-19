@@ -75,7 +75,7 @@ namespace NetworkMiner {
         private PacketParser.CleartextDictionary.WordDictionary dictionary;
         private int pcapFileReaderQueueSize = 1000;
         private string aboutText = null;
-        private string productLink = "http://www.netresec.com/?page=NetworkMiner";
+        private string productLink = "";
         private ToolInterfaces.ISettingsForm settingsForm = null;
         private bool keywordWarningMessageShown = false;
 
