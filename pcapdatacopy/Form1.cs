@@ -1685,11 +1685,11 @@ namespace pcapdatacopy
 					int value7 = checked(56 + this.mybytes.Length);
 					string str = fileInfo.Name.Replace(".bin", ".wav");
 					BinaryWriter binaryWriter = new BinaryWriter(File.Open(fileInfo.DirectoryName + "\\" + str, FileMode.Create));
-					binaryWriter.Write(1179011410);
+					binaryWriter.Write("RIFF");
 					binaryWriter.Write(value7);
-					binaryWriter.Write(1163280727);
-					binaryWriter.Write(544501094);
-					binaryWriter.Write(value);
+					binaryWriter.Write("WAVEfmt ");
+					binaryWriter.Write(16);
+					binaryWriter.Write(1);
 					binaryWriter.Write(value2);
 					binaryWriter.Write(value3);
 					binaryWriter.Write(value4);

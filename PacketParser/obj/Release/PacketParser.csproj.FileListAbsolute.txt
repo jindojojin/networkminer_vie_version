@@ -14,3 +14,19 @@ D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.Ge
 D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CoreCompileInputs.cache
 D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CopyComplete
 D:\NCKH\networkminer_vie_version\PacketParser\obj\Release\PacketParser.dll
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\CleartextTools\all-words.txt
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\dhcp.xml
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\oui.txt
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\tcp.xml
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\etter.finger.os
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0f.fp
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0fa.fp
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\Fingerprints\p0f.fp.netsa
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\PacketParser.dll
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\bin\Release\NetworkWrapper.dll
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csprojAssemblyReference.cache
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.Properties.Resources.resources
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.GenerateResource.cache
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CoreCompileInputs.cache
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.csproj.CopyComplete
+E:\Code\Network Data miner\networkminer_vie_version\PacketParser\obj\Release\PacketParser.dll

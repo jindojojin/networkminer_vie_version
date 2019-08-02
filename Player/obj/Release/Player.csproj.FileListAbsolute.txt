@@ -15,3 +15,20 @@ D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.CoreCompileInp
 D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.csproj.CopyComplete
 D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.exe
 D:\NCKH\networkminer_vie_version\Player\obj\Release\Player.pdb
+E:\Code\Network Data miner\networkminer_vie_version\Player\bin\Release\Player.exe.config
+E:\Code\Network Data miner\networkminer_vie_version\Player\bin\Release\Player.exe
+E:\Code\Network Data miner\networkminer_vie_version\Player\bin\Release\Player.pdb
+E:\Code\Network Data miner\networkminer_vie_version\Player\bin\Release\pcapdatacopy.dll
+E:\Code\Network Data miner\networkminer_vie_version\Player\bin\Release\pcapdatacopy.pdb
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.csprojAssemblyReference.cache
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Interop.WMPLib.dll
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Interop.WMPRichPreviewLauncher.dll
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.csproj.ResolveComReference.cache
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.chooseFileOrFolderToScan.resources
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.Properties.Resources.resources
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.csproj.GenerateResource.cache
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.csproj.CoreCompileInputs.cache
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.csproj.CopyComplete
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.exe
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.pdb
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.VoipPlayer.resources

@@ -18,12 +18,12 @@ namespace pcapdatacopy.My
 	[StandardModule]
 	[GeneratedCode("MyTemplate", "8.0.0.0")]
 	[HideModuleName]
-	internal sealed class MyProject
+	public class MyProject
 	{
 		// Token: 0x17000001 RID: 1
 		// (get) Token: 0x06000007 RID: 7 RVA: 0x00002440 File Offset: 0x00000840
 		[HelpKeyword("My.Computer")]
-		internal static MyComputer Computer
+		public static MyComputer Computer
 		{
 			[DebuggerHidden]
 			get

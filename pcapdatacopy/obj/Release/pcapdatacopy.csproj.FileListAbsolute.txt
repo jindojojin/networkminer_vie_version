@@ -7,3 +7,12 @@ D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.csproj.Ge
 D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.csproj.CoreCompileInputs.cache
 D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.dll
 D:\NCKH\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.pdb
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\bin\Release\pcapdatacopy.dll
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\bin\Release\pcapdatacopy.pdb
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.csprojAssemblyReference.cache
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.Form1.resources
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.Resources.resources
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.csproj.GenerateResource.cache
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.csproj.CoreCompileInputs.cache
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.dll
+E:\Code\Network Data miner\networkminer_vie_version\pcapdatacopy\obj\Release\pcapdatacopy.pdb

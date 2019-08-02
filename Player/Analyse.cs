@@ -70,6 +70,7 @@ namespace Player
             processor.use_current_file(currentFile, err);
             processor.create_raw_file_Click(processor.detect_rtp, err);
             //Interaction.MsgBox("scanned files list", MsgBoxStyle.OkOnly, "scan clicked -> analyse.usefile");
+            List<string> l= this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList);
             return new List<string>(this.GenerateAudio(ref processor, ref err, ENABLE_NOTI, ref audioList));
         }
         /*

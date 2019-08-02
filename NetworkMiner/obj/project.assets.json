@@ -213,20 +213,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jindo\\.nuget\\packages\\": {}
+    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "projectUniqueName": "E:\\Code\\Network Data miner\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
       "projectName": "NetworkMiner",
-      "projectPath": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
-      "packagesPath": "C:\\Users\\jindo\\.nuget\\packages\\",
-      "outputPath": "D:\\NCKH\\networkminer_vie_version\\NetworkMiner\\obj\\",
+      "projectPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\NetworkMiner\\NetworkMiner.csproj",
+      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+      "outputPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\NetworkMiner\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\jindo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -239,17 +239,17 @@
       "frameworks": {
         "net45": {
           "projectReferences": {
-            "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
-              "projectPath": "D:\\NCKH\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
+            "E:\\Code\\Network Data miner\\networkminer_vie_version\\PacketParser\\PacketParser.csproj": {
+              "projectPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\PacketParser\\PacketParser.csproj"
             },
-            "D:\\NCKH\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj": {
-              "projectPath": "D:\\NCKH\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj"
+            "E:\\Code\\Network Data miner\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj": {
+              "projectPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\pcapdatacopy\\pcapdatacopy.csproj"
             },
-            "D:\\NCKH\\networkminer_vie_version\\Player\\Player.csproj": {
-              "projectPath": "D:\\NCKH\\networkminer_vie_version\\Player\\Player.csproj"
+            "E:\\Code\\Network Data miner\\networkminer_vie_version\\Player\\Player.csproj": {
+              "projectPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\Player\\Player.csproj"
             },
-            "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
-              "projectPath": "D:\\NCKH\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
+            "E:\\Code\\Network Data miner\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj": {
+              "projectPath": "E:\\Code\\Network Data miner\\networkminer_vie_version\\WinPCapWrapper\\NetworkWrapper.csproj"
             }
           }
         }
