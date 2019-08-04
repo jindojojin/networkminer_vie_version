@@ -35,13 +35,9 @@ namespace Player
             this.currentDuration = new System.Windows.Forms.TextBox();
             this.fileNameTextbox = new System.Windows.Forms.TextBox();
             this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.nextTrack = new System.Windows.Forms.PictureBox();
-            this.skip = new System.Windows.Forms.PictureBox();
             this.stop = new System.Windows.Forms.PictureBox();
             this.pause = new System.Windows.Forms.PictureBox();
             this.play = new System.Windows.Forms.PictureBox();
-            this.back = new System.Windows.Forms.PictureBox();
-            this.prevTrack = new System.Windows.Forms.PictureBox();
             this.AnalyseGroup = new System.Windows.Forms.GroupBox();
             this.OpenFolder = new System.Windows.Forms.PictureBox();
             this.OpenFile = new System.Windows.Forms.PictureBox();
@@ -49,14 +45,11 @@ namespace Player
             this.currentListView = new System.Windows.Forms.ListView();
             this.baseclock = new System.Windows.Forms.Timer(this.components);
             this.voipDataGridView = new System.Windows.Forms.DataGridView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.PlayerGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nextTrack)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.skip)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.stop)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pause)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.play)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prevTrack)).BeginInit();
             this.AnalyseGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OpenFolder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenFile)).BeginInit();
@@ -72,18 +65,14 @@ namespace Player
             this.PlayerGroup.Controls.Add(this.currentDuration);
             this.PlayerGroup.Controls.Add(this.fileNameTextbox);
             this.PlayerGroup.Controls.Add(this.progressBar);
-            this.PlayerGroup.Controls.Add(this.nextTrack);
-            this.PlayerGroup.Controls.Add(this.skip);
             this.PlayerGroup.Controls.Add(this.stop);
             this.PlayerGroup.Controls.Add(this.pause);
             this.PlayerGroup.Controls.Add(this.play);
-            this.PlayerGroup.Controls.Add(this.back);
-            this.PlayerGroup.Controls.Add(this.prevTrack);
-            this.PlayerGroup.Location = new System.Drawing.Point(100, 10);
+            this.PlayerGroup.Location = new System.Drawing.Point(242, 10);
             this.PlayerGroup.Margin = new System.Windows.Forms.Padding(2);
             this.PlayerGroup.Name = "PlayerGroup";
             this.PlayerGroup.Padding = new System.Windows.Forms.Padding(2);
-            this.PlayerGroup.Size = new System.Drawing.Size(532, 47);
+            this.PlayerGroup.Size = new System.Drawing.Size(1172, 47);
             this.PlayerGroup.TabIndex = 1;
             this.PlayerGroup.TabStop = false;
             this.PlayerGroup.Text = "Trình phát";
@@ -93,7 +82,7 @@ namespace Player
             this.curr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.curr.BackColor = System.Drawing.SystemColors.Control;
-            this.curr.Location = new System.Drawing.Point(380, 29);
+            this.curr.Location = new System.Drawing.Point(1020, 29);
             this.curr.Margin = new System.Windows.Forms.Padding(2);
             this.curr.Name = "curr";
             this.curr.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -105,7 +94,7 @@ namespace Player
             this.currentDuration.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.currentDuration.BackColor = System.Drawing.SystemColors.Control;
-            this.currentDuration.Location = new System.Drawing.Point(454, 29);
+            this.currentDuration.Location = new System.Drawing.Point(1094, 29);
             this.currentDuration.Margin = new System.Windows.Forms.Padding(2);
             this.currentDuration.Name = "currentDuration";
             this.currentDuration.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -117,52 +106,28 @@ namespace Player
             this.fileNameTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.fileNameTextbox.BackColor = System.Drawing.SystemColors.Control;
-            this.fileNameTextbox.Location = new System.Drawing.Point(207, 11);
+            this.fileNameTextbox.Location = new System.Drawing.Point(229, 11);
             this.fileNameTextbox.Margin = new System.Windows.Forms.Padding(2);
             this.fileNameTextbox.Name = "fileNameTextbox";
-            this.fileNameTextbox.Size = new System.Drawing.Size(322, 20);
+            this.fileNameTextbox.Size = new System.Drawing.Size(940, 20);
             this.fileNameTextbox.TabIndex = 11;
             // 
             // progressBar
             // 
             this.progressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.progressBar.Location = new System.Drawing.Point(207, 33);
+            this.progressBar.Location = new System.Drawing.Point(229, 33);
             this.progressBar.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(168, 8);
+            this.progressBar.Size = new System.Drawing.Size(786, 8);
             this.progressBar.Step = 1;
             this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.progressBar.TabIndex = 9;
             this.progressBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.progressBar_MouseDown);
             // 
-            // nextTrack
-            // 
-            this.nextTrack.Image = global::Player.Properties.Resources.Media_Controls_End_icon;
-            this.nextTrack.Location = new System.Drawing.Point(171, 17);
-            this.nextTrack.Margin = new System.Windows.Forms.Padding(2);
-            this.nextTrack.Name = "nextTrack";
-            this.nextTrack.Size = new System.Drawing.Size(22, 24);
-            this.nextTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.nextTrack.TabIndex = 8;
-            this.nextTrack.TabStop = false;
-            this.nextTrack.Click += new System.EventHandler(this.nextTrack_Click);
-            // 
-            // skip
-            // 
-            this.skip.Image = global::Player.Properties.Resources.Media_Controls_Fast_Forward_icon;
-            this.skip.Location = new System.Drawing.Point(144, 17);
-            this.skip.Margin = new System.Windows.Forms.Padding(2);
-            this.skip.Name = "skip";
-            this.skip.Size = new System.Drawing.Size(22, 24);
-            this.skip.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.skip.TabIndex = 7;
-            this.skip.TabStop = false;
-            this.skip.Click += new System.EventHandler(this.skip_Click);
-            // 
             // stop
             // 
             this.stop.Image = global::Player.Properties.Resources.Media_Controls_Stop_icon;
-            this.stop.Location = new System.Drawing.Point(117, 16);
+            this.stop.Location = new System.Drawing.Point(66, 19);
             this.stop.Margin = new System.Windows.Forms.Padding(2);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(22, 24);
@@ -174,7 +139,7 @@ namespace Player
             // pause
             // 
             this.pause.Image = global::Player.Properties.Resources.Media_Controls_Pause_icon;
-            this.pause.Location = new System.Drawing.Point(90, 17);
+            this.pause.Location = new System.Drawing.Point(40, 17);
             this.pause.Margin = new System.Windows.Forms.Padding(2);
             this.pause.Name = "pause";
             this.pause.Size = new System.Drawing.Size(22, 24);
@@ -186,7 +151,7 @@ namespace Player
             // play
             // 
             this.play.Image = global::Player.Properties.Resources.Media_Controls_Play_icon;
-            this.play.Location = new System.Drawing.Point(63, 16);
+            this.play.Location = new System.Drawing.Point(14, 16);
             this.play.Margin = new System.Windows.Forms.Padding(2);
             this.play.Name = "play";
             this.play.Size = new System.Drawing.Size(22, 24);
@@ -194,30 +159,6 @@ namespace Player
             this.play.TabIndex = 4;
             this.play.TabStop = false;
             this.play.Click += new System.EventHandler(this.play_Click);
-            // 
-            // back
-            // 
-            this.back.Image = global::Player.Properties.Resources.Media_Controls_Rewind_icon;
-            this.back.Location = new System.Drawing.Point(36, 16);
-            this.back.Margin = new System.Windows.Forms.Padding(2);
-            this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(22, 24);
-            this.back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.back.TabIndex = 3;
-            this.back.TabStop = false;
-            this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // prevTrack
-            // 
-            this.prevTrack.Image = global::Player.Properties.Resources.Media_Controls_Skip_To_Start_icon;
-            this.prevTrack.Location = new System.Drawing.Point(9, 16);
-            this.prevTrack.Margin = new System.Windows.Forms.Padding(2);
-            this.prevTrack.Name = "prevTrack";
-            this.prevTrack.Size = new System.Drawing.Size(22, 24);
-            this.prevTrack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.prevTrack.TabIndex = 2;
-            this.prevTrack.TabStop = false;
-            this.prevTrack.Click += new System.EventHandler(this.prevTrack_Click);
             // 
             // AnalyseGroup
             // 
@@ -228,7 +169,7 @@ namespace Player
             this.AnalyseGroup.Margin = new System.Windows.Forms.Padding(2);
             this.AnalyseGroup.Name = "AnalyseGroup";
             this.AnalyseGroup.Padding = new System.Windows.Forms.Padding(2);
-            this.AnalyseGroup.Size = new System.Drawing.Size(87, 47);
+            this.AnalyseGroup.Size = new System.Drawing.Size(218, 47);
             this.AnalyseGroup.TabIndex = 14;
             this.AnalyseGroup.TabStop = false;
             this.AnalyseGroup.Text = "Phân tích";
@@ -277,15 +218,10 @@ namespace Player
             this.currentListView.Location = new System.Drawing.Point(9, 64);
             this.currentListView.Margin = new System.Windows.Forms.Padding(2);
             this.currentListView.Name = "currentListView";
-            this.currentListView.Size = new System.Drawing.Size(124, 313);
+            this.currentListView.Size = new System.Drawing.Size(218, 445);
             this.currentListView.TabIndex = 15;
             this.currentListView.UseCompatibleStateImageBehavior = false;
             this.currentListView.View = System.Windows.Forms.View.List;
-            this.currentListView.SelectedIndexChanged += new System.EventHandler(this.CurrentListView_SelectedIndexChanged);
-            this.currentListView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.CurrentListView_MouseClick);
-            this.currentListView.ContextMenu = new System.Windows.Forms.ContextMenu();
-            this.currentListView.ContextMenu.MenuItems.Add(new System.Windows.Forms.MenuItem("Xóa", Delete_Click));
-
             // 
             // baseclock
             // 
@@ -304,23 +240,31 @@ namespace Player
             this.voipDataGridView.BackgroundColor = System.Drawing.SystemColors.Window;
             this.voipDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.voipDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.voipDataGridView.Location = new System.Drawing.Point(136, 64);
+            this.voipDataGridView.Location = new System.Drawing.Point(242, 64);
             this.voipDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.voipDataGridView.Name = "voipDataGridView";
             this.voipDataGridView.RowTemplate.Height = 24;
-            this.voipDataGridView.Size = new System.Drawing.Size(496, 312);
+            this.voipDataGridView.Size = new System.Drawing.Size(1172, 496);
             this.voipDataGridView.TabIndex = 0;
             this.voipDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.voipDataGridView_CellContentDoubleClick);
             this.voipDataGridView.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.VoipDataGridView_CellMouseClick);
             this.voipDataGridView.MouseClick += new System.Windows.Forms.MouseEventHandler(this.voipDataGridView_MouseClick);
-            this.voipDataGridView.ContextMenu = new System.Windows.Forms.ContextMenu();
-            this.voipDataGridView.ContextMenu.MenuItems.Add(new System.Windows.Forms.MenuItem("Đổi tên file", EditName_Click));
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(9, 514);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(218, 46);
+            this.textBox1.TabIndex = 16;
             // 
             // VoipPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(642, 382);
+            this.ClientSize = new System.Drawing.Size(1424, 566);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.currentListView);
             this.Controls.Add(this.AnalyseGroup);
             this.Controls.Add(this.PlayerGroup);
@@ -329,22 +273,20 @@ namespace Player
             this.Name = "VoipPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Trình phát VoIP";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.VoipPlayer_Load);
             this.PlayerGroup.ResumeLayout(false);
             this.PlayerGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nextTrack)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.skip)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.stop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pause)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.play)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prevTrack)).EndInit();
             this.AnalyseGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.OpenFolder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OpenFile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.scan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.voipDataGridView)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -352,14 +294,10 @@ namespace Player
 
         #endregion
         private System.Windows.Forms.GroupBox PlayerGroup;
-        private System.Windows.Forms.PictureBox prevTrack;
         private System.Windows.Forms.ProgressBar progressBar;
-        private System.Windows.Forms.PictureBox nextTrack;
-        private System.Windows.Forms.PictureBox skip;
         private System.Windows.Forms.PictureBox stop;
         private System.Windows.Forms.PictureBox pause;
         private System.Windows.Forms.PictureBox play;
-        private System.Windows.Forms.PictureBox back;
         private System.Windows.Forms.PictureBox OpenFile;
         private System.Windows.Forms.TextBox fileNameTextbox;
         private System.Windows.Forms.PictureBox scan;
@@ -369,6 +307,7 @@ namespace Player
         private System.Windows.Forms.Timer baseclock;
         private System.Windows.Forms.TextBox curr;
         private System.Windows.Forms.DataGridView voipDataGridView;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

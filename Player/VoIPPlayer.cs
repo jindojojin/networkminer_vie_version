@@ -42,31 +42,44 @@ namespace Player
             this.CurrentFileList = new List<string>();
             this.processor = processor;
             this.core = core;
-            this.CurrentFileList = pcapFiles;
-            this.CurrentFolderList = pcapFolders;
-            this.audioList = audioList;
+            this.CurrentFileList = new List<string>();
+            this.CurrentFolderList =new List<string>();
+            this.audioList = new List<string>();
             this.WMPlayer = new WindowsMediaPlayer();
             InitializeComponent();
             this.voiptable = new DataTable();
             this.voipDataGridView.DataSource = this.voiptable;
             this.initdatagrid();
             this.currentDuration.Text = "";
-            
+            voipDatagridInit();
+            currentListviewInit();
             this.progressBar.Minimum = 0;
             this.progressBar.Maximum = 0;
-            
+            textBox1.Text = "";
             if (pcapFiles.Count > 0)
                 foreach ( string file in pcapFiles ) this.currentListView.Items.Add(file);
             if(pcapFolders.Count > 0)
                 foreach( string folder in pcapFolders ) this.currentListView.Items.Add(folder);
 
         }
-
-        protected override void OnFormClosing(FormClosingEventArgs e)
+       
+        private void voipDatagridInit()
         {
-            if (this.WMPlayer.playState == WMPPlayState.wmppsPlaying) this.WMPlayer.controls.stop();
-            base.OnFormClosing(e);
+            voipDataGridView.ContextMenu = new ContextMenu();
+            voipDataGridView.ContextMenu.MenuItems.Add("Sửa tên", new EventHandler(Rename_Click));
         }
+        private void currentListviewInit()
+        {
+            currentListView.ContextMenu = new ContextMenu();
+            currentListView.ContextMenu.MenuItems.Add("Xóa", new EventHandler(Delete_Click));
+        }
+
+        private void Rename_Click(object sender, EventArgs e)
+        {
+            TextBox txtBoxName = new System.Windows.Forms.TextBox();
+            txtBoxName.Show();
+        }
+
         public string[] splitString(string s)
         {
             string[] arr = new string[20];
@@ -206,6 +219,16 @@ namespace Player
             List<string> streamdata = new List<string>();
             bool hasFile = this.CurrentFileList.Count > 0;
             bool hasFolder = this.CurrentFolderList.Count > 0;
+            string audioFolder =@"Audio";
+            if (!Directory.Exists(audioFolder))
+            {
+                Directory.CreateDirectory(audioFolder);
+            }
+            string tmpFolder =@"Tmp";
+            if (!Directory.Exists(tmpFolder))
+            {
+                Directory.CreateDirectory(tmpFolder);
+            }
             if (hasFile || hasFolder)
             {
                 int sum_result = 0;
@@ -221,23 +244,21 @@ namespace Player
                 {
 
                     //if(_MODE == MODE.NORMAL) Interaction.MsgBox("start scanning files list", MsgBoxStyle.OkOnly, "scan clicked");
-                    foreach (string file in this.CurrentFileList)
-                    {
-                        StreamWriter sw = new StreamWriter("F:\\test.txt");
-                        sw.WriteLine(file);
+                    int currentFile=0;
+                    foreach (string file in this.CurrentFileList) {
+                        currentFile++;
+                        textBox1.Text = "Đang xử lý " + currentFile; 
                         string pcap_name = Path.GetFileName(file);
-                        sw.WriteLine(pcap_name);
-                        string pcap_edit = "F:\\edit_" + pcap_name;
-                        sw.WriteLine(pcap_edit);
-                        runHandle("editcap \"" + file + "\" \"" + pcap_edit+"\"");
+                        string pcap_edit = tmpFolder+"\\edit_" + pcap_name;
+                        runHandle("editcap -d \"" + file + "\" \"" + pcap_edit+"\"");
                         string dir = "rtp.txt";
                         runHandle("tshark -r  \"" + pcap_edit + " \" -o \"rtp.heuristic_rtp: TRUE\" -q -z rtp,streams > " + dir);
                         int count = 0;
                         ArrayList rtpList = new ArrayList();
                         using (var reader = new System.IO.StreamReader(dir))
                         {
-                            reader.ReadLine(); // skip first
-                            reader.ReadLine();
+                            reader.ReadLine(); // skip first row
+                            reader.ReadLine(); // skip second row
                             string line;
                             while ((line = reader.ReadLine()) != null)
                             {
@@ -260,9 +281,13 @@ namespace Player
                                 rtpList.Add(rtp);
                             }
                         }
+                        int total = rtpList.Count;
+                        int curr = 0;
                         foreach (Rtp rtp in rtpList)
                         {
-                            string name = rtp.src_ip+'_'+rtp.dst_ip+'_'+rtp.payload_type+'_'+rtp.src_port+'_'+rtp.dst_port;
+                            curr++;
+                            textBox1.Text = "Đang xử lý tệp tin "+ currentFile+ ", "+ + curr + " / " + total + " rtp stream"; 
+                            string name = rtp.src_ip+'_'+rtp.dst_ip+'_'+rtp.payload_type+'_'+rtp.src_port+'_'+rtp.dst_port+'_'+rtp.ssrc;
                             string cmd = "tshark -r \"" + pcap_edit + "\" -o \"rtp.heuristic_rtp: TRUE\" -Y \"udp.srcport=="+rtp.src_port+" && udp.dstport=="+rtp.dst_port
                             +" && rtp.ssrc==" + rtp.ssrc + "\"" + " -T fields -e rtp.payload > " + name + ".raw";
                             runHandle(cmd);
@@ -272,7 +297,7 @@ namespace Player
                                 string decode_cmd = "cp_g729_decoder.exe payload.raw " + name + ".bin";         //Decode
                                 Console.WriteLine(decode_cmd);
                                 runHandle(decode_cmd);
-                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + name + ".wav\"";      //Convert to wav
+                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + audioFolder+"\\"+name + ".wav\"";      //Convert to wav
                                 runHandle(conv_cmd);
                                 runCommand("del payload.raw");
                                 runCommand("del " + name + ".bin");
@@ -283,7 +308,7 @@ namespace Player
                                 string decode_cmd = "g711_decoder.exe payload.raw alaw_pcm " + name + ".bin";   //Decode
                                 Console.WriteLine(decode_cmd);
                                 runHandle(decode_cmd);
-                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \""+ name +".wav\"";        //Convert to wav
+                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + audioFolder + "\\" + name + ".wav\"";      //Convert to wav
                                 runHandle(conv_cmd);
                                 runCommand("del payload.raw");
                                 runCommand("del " + name + ".bin");
@@ -294,7 +319,7 @@ namespace Player
                                 string decode_cmd = "g711_decoder.exe payload.raw ulaw_pcm " + name + ".bin";   //Decode
                                 Console.WriteLine(decode_cmd);
                                 runHandle(decode_cmd);
-                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + name + ".wav\"";      //Convert to wav
+                                string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + audioFolder + "\\" + name + ".wav\"";      //Convert to wav
                                 runHandle(conv_cmd);
                                 runCommand("del payload.raw");
                                 runCommand("del " + name + ".raw");
@@ -302,15 +327,14 @@ namespace Player
                             }
                             runCommand("del tmpabcdef.raw");
                             Console.WriteLine(name);
-                            streamdata.Add(name);
-                            audioList.Add(name+".wav");
+                            streamdata.Add(audioFolder + "\\"+name);
+                            audioList.Add(audioFolder+"\\"+name+".wav");
                         }
                         foreach (string s in streamdata)
                         {
                             Console.WriteLine(s);
                         }
                         
-                       sw.Close();
                         /*if (_MODE == MODE.QUIET)
                         {
                             //streamdata.AddRange(rtpdata);
@@ -343,12 +367,13 @@ namespace Player
                         listFolderScanned += "\n" + CurrentFolderList[i];
                     }
                     if (noFolder > 5) listFolderScanned += "\n...";
-                    foreach (string data in streamdata)
+                    foreach (string data in audioList)
                     {
                         //insert bao datagrid
                         rowObject dataOfAudioFromName = new rowObject(data);
                         this.addtodatagrid(dataOfAudioFromName);
                     }
+                    textBox1.Text = "Đã xử lý xong!";
                 }
 
                 else if (_MODE == MODE.NORMAL)
@@ -426,6 +451,7 @@ namespace Player
             this.voiptable.Columns.Add("Dst");
             this.voiptable.Columns.Add("Codec");
             this.voiptable.Columns.Add("SSRC");
+            this.voiptable.Columns.Add("Audio Path");
             this.voipDataGridView.DataSource = this.voiptable;
 
         }
@@ -473,7 +499,8 @@ namespace Player
                     if (row.Cells[1].Value.ToString().Equals(data.durationString) &&
                         row.Cells[2].Value.ToString().Equals(data.from) &&
                         row.Cells[3].Value.ToString().Equals(data.to) &&
-                        row.Cells[4].Value.ToString().Equals(data.codec)
+                        row.Cells[4].Value.ToString().Equals(data.codec) &&
+                        row.Cells[5].Value.ToString().Equals(data.ssrc)
                         )
                     {
                         is_duplicate = true;
@@ -488,7 +515,7 @@ namespace Player
             }
             if (can_i_add)
             {
-                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.durationString, data.from, data.to, data.codec);
+                this.voiptable.Rows.Add(this.voiptable.Rows.Count + 1, data.durationString, data.from, data.to, data.codec, data.ssrc, data.audioPath);
                 this.voipDataGridView.DataSource = this.voiptable;
             }
         }
@@ -563,35 +590,16 @@ namespace Player
 
         }
 
-        private void CurrentListView_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void VoipDataGridView_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
 
         }
 
-        private void CurrentListView_MouseClick(object sender, MouseEventArgs e)
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            bool selected = false;
-            if (e.Button == MouseButtons.Right)
-            {
-                for (int i = currentListView.Items.Count - 1; i >= 0; i--)
-                {
-                    if (currentListView.Items[i].Selected)
-                    {
-                        selected = true;
-                        break;
-                    }
-                }
-                if (selected==true)
-                {
-                    //currentListView.ContextMenu.Show(currentListView, new Point(e.X, e.Y));
-                }
-            }
+            this.WMPlayer.controls.stop();
         }
+
     }
 
     class Addcount {
@@ -619,14 +627,12 @@ namespace Player
         public string from;
         public string to;
         public string codec;
-
-
-        public rowObject(string filename){
+        public string ssrc;
+        public string audioPath;
+        public rowObject(string filePath){
             //string filenamewithoutext = Path.GetFileNameWithoutExtension(filename);
-            string filenamewithoutext = filename;
-            Console.WriteLine(filenamewithoutext);
-            string path = filename + ".wav";
-            IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(path);//.newMedia(path);
+            string filenamewithoutext = Path.GetFileNameWithoutExtension(filePath);     
+            IWMPMedia mediainfo = new WindowsMediaPlayer().newMedia(filePath);//.newMedia(path);
             //mediainfo.sourceURL = path;
             //Console.WriteLine(mediainfo.get);
             this.initRowObject
@@ -635,22 +641,23 @@ namespace Player
                 mediainfo.durationString,
                 filenamewithoutext.Split('_')[0] + ":" + filenamewithoutext.Split('_')[3],  //from
                 filenamewithoutext.Split('_')[1] + ":" + filenamewithoutext.Split('_')[4],  //to
-                filenamewithoutext.Split('_')[2]                                           //code, so 2 chua ro y nghi
+                filenamewithoutext.Split('_')[2],
+                filenamewithoutext.Split('_')[5],
+                filePath
             );
             Console.WriteLine("add Done!");
-            // vd 10-1-3-143_10-1-6-18_222-224-238-143_5000_2006.wav
-
-            // 1:ip1 2:ip2 3:so 4:port1 5:port2
 
         }
 
-        private void initRowObject(double duration, string durationString, string from, string to, string codec) { 
+        private void initRowObject(double duration, string durationString, string from, string to, string codec,string SSRC, string audioPath ) { 
             //this.id = id;
             this.from = from;
             this.to = to;
             this.codec = codec;
             this.durationString = durationString;
             this.duration = duration;
+            this.ssrc = SSRC;
+            this.audioPath = audioPath;
         }
     }
     class Rtp
