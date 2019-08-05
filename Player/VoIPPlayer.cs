@@ -39,7 +39,6 @@ namespace Player
 
         public VoipPlayer(ref Form1 processor, ref EventArgs err, ref Analyse core, ref List<string> pcapFiles, ref List<string> pcapFolders, ref List<string> audioList)
         {
-            this.CurrentFileList = new List<string>();
             this.processor = processor;
             this.core = core;
             this.CurrentFileList = new List<string>();
@@ -76,8 +75,40 @@ namespace Player
 
         private void Rename_Click(object sender, EventArgs e)
         {
-            TextBox txtBoxName = new System.Windows.Forms.TextBox();
-            txtBoxName.Show();
+            //RenameForm rnf = new RenameForm();
+            //rnf.Show();
+            using (var form = new RenameForm())
+            {
+                var result = form.ShowDialog();
+                if (result == DialogResult.OK)
+                {
+                    string audioFolder = @"Audio\";
+                    string newPath = audioFolder+form.newName+".wav";            //values preserved after close
+                    int index = voipDataGridView.CurrentCell.RowIndex;
+                    string oldPath = audioList[index];
+                    int count = 1;
+                    bool ok = false;
+                    while (1==1)
+                    {
+                        try
+                        {
+                            System.IO.File.Move(oldPath, newPath);
+                            ok = true;
+                        }
+                        catch (IOException ex)
+                        {
+                            newPath=Path.GetFileNameWithoutExtension(newPath) + "("+count+")"+".wav";
+                            count++;
+                            ok = false;
+                        }
+                        if (ok == true) break;
+                    }
+                    audioList[index] = newPath;
+                    //voipDataGridView.CurrentCell.Value = newPath;
+                    voipDataGridView.Rows[index].Cells[6].Value = newPath;
+                    voipDataGridView.NotifyCurrentCellDirty(true);
+                }
+            }
         }
 
         public string[] splitString(string s)
@@ -113,7 +144,7 @@ namespace Player
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            string cmd = "/C .\\Handletool\\" + s;
+            string cmd = "/C .\\RtpHandleTool\\" + s;
             Console.WriteLine(cmd);
             startInfo.Arguments = cmd;
             process.StartInfo = startInfo;
@@ -177,14 +208,15 @@ namespace Player
 
         public void OpenFolder_Click(object sender, EventArgs e)
         {
-            this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
+            /*this.core.SetFolder(ref this.processor, ref this.err, ref this.audioList); //giaodien.analyse.open
             if (this.processor.folder_selected_textbox.Text.Length > 0 && !this.CurrentFolderList.Contains(this.processor.folder_selected_textbox.Text))
             {
                 //Interaction.MsgBox("Opened " + this.processor.folder_selected_textbox.Text, MsgBoxStyle.OkOnly, "Openfolder_click");
                 this.addToListView(this.processor.folder_selected_textbox.Text);
                 this.findPcapFile();
                 this.addToLists();
-            }
+            }*/
+            MessageBox.Show("Tính năng này vẫn đang trong quá trình phát triển","Thông báo");
             
         }
         public void addToListView(string path)
@@ -216,6 +248,11 @@ namespace Player
         public void scan_Click(object sender, EventArgs e) { this.scan_Click(sender, e, MODE.NORMAL); }
         public void scan_Click(object sender, EventArgs e, MODE _MODE)
         {
+            for (int i = voipDataGridView.Rows.Count - 1; i >= 0; i--)
+            {
+                voipDataGridView.Rows.RemoveAt(i);
+            }
+            if (this.audioList.Count>0) this.audioList.Clear();
             List<string> streamdata = new List<string>();
             bool hasFile = this.CurrentFileList.Count > 0;
             bool hasFolder = this.CurrentFolderList.Count > 0;
@@ -330,6 +367,7 @@ namespace Player
                             streamdata.Add(audioFolder + "\\"+name);
                             audioList.Add(audioFolder+"\\"+name+".wav");
                         }
+                        runCommand("del " + pcap_edit);
                         foreach (string s in streamdata)
                         {
                             Console.WriteLine(s);
@@ -481,6 +519,7 @@ namespace Player
                 if (currentListView.Items[i].Selected)
                 {
                     currentListView.Items[i].Remove();
+                    CurrentFileList.RemoveAt(i);
                 }
             }
         }

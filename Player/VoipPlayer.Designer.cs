@@ -127,7 +127,7 @@ namespace Player
             // stop
             // 
             this.stop.Image = global::Player.Properties.Resources.Media_Controls_Stop_icon;
-            this.stop.Location = new System.Drawing.Point(66, 19);
+            this.stop.Location = new System.Drawing.Point(66, 16);
             this.stop.Margin = new System.Windows.Forms.Padding(2);
             this.stop.Name = "stop";
             this.stop.Size = new System.Drawing.Size(22, 24);

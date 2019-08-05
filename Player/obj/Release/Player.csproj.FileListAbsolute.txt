@@ -32,3 +32,4 @@ E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.cs
 E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.exe
 E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.pdb
 E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.VoipPlayer.resources
+E:\Code\Network Data miner\networkminer_vie_version\Player\obj\Release\Player.RenameForm.resources
