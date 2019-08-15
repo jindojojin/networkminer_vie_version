@@ -97,7 +97,7 @@ namespace Player
                         }
                         catch (IOException ex)
                         {
-                            newPath=Path.GetFileNameWithoutExtension(newPath) + "("+count+")"+".wav";
+                            newPath=audioFolder+Path.GetFileNameWithoutExtension(newPath) + "("+count+")"+".wav";
                             count++;
                             ok = false;
                         }
@@ -144,7 +144,7 @@ namespace Player
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            string cmd = "/C .\\RtpHandleTool\\" + s;
+            string cmd = "/C .\\program\\KhaiThacDLMang\\RtpHandleTool\\" + s;
             Console.WriteLine(cmd);
             startInfo.Arguments = cmd;
             process.StartInfo = startInfo;
@@ -256,12 +256,12 @@ namespace Player
             List<string> streamdata = new List<string>();
             bool hasFile = this.CurrentFileList.Count > 0;
             bool hasFolder = this.CurrentFolderList.Count > 0;
-            string audioFolder =@"Audio";
+            string audioFolder = @"program\KhaiThacDLMang\Audio";
             if (!Directory.Exists(audioFolder))
             {
                 Directory.CreateDirectory(audioFolder);
             }
-            string tmpFolder =@"Tmp";
+            string tmpFolder = @"program\KhaiThacDLMang\Tmp";
             if (!Directory.Exists(tmpFolder))
             {
                 Directory.CreateDirectory(tmpFolder);
@@ -359,6 +359,7 @@ namespace Player
                                 string conv_cmd = "bin2wav.exe \"" + name + ".bin\" \"" + audioFolder + "\\" + name + ".wav\"";      //Convert to wav
                                 runHandle(conv_cmd);
                                 runCommand("del payload.raw");
+                                //File.Delete("payload.raw");
                                 runCommand("del " + name + ".raw");
                                 runCommand("del " + name + ".bin");
                             }
